@@ -1,5 +1,5 @@
 import { bindings, getAuth, sameOrigin, reply, fail, HttpError } from '@/lib/server';
-import { studentEmail } from '@/lib/student-account.mjs';
+import { minimumAdminPasswordLength, studentEmail } from '@/lib/student-account.mjs';
 export const dynamic='force-dynamic';
 export async function GET() {
   try {
@@ -15,7 +15,7 @@ export async function POST(request:Request) {
     const {token,studentId,password,name}=await request.json() as {token:string;studentId:string;password:string;name:string};
     if (!bindings().BOOTSTRAP_TOKEN || token!==bindings().BOOTSTRAP_TOKEN) throw new HttpError(403,'初始化凭证不正确。');
     const email=studentEmail(studentId);
-    if (!email||typeof name!=='string'||!name.trim()||name.length>40||typeof password!=='string'||password.length<12||password.length>128) throw new HttpError(400,'请填写学号、姓名和至少 12 位的密码。');
+    if (!email||typeof name!=='string'||!name.trim()||name.length>40||typeof password!=='string'||password.length<minimumAdminPasswordLength) throw new HttpError(400,`请填写学号、姓名和至少 ${minimumAdminPasswordLength} 位的密码。`);
     if (await db.prepare('SELECT id FROM user LIMIT 1').first()) throw new HttpError(409,'管理员已设置，请直接登录。');
     const lock=await db.prepare("INSERT OR IGNORE INTO setup_lock(id,created_at) VALUES('owner',?)").bind(new Date().toISOString()).run();
     if (lock.meta.changes!==1) throw new HttpError(409,'初始化正在进行，请稍后重试。');

@@ -1,6 +1,6 @@
 import { createHash, randomBytes, randomUUID } from 'node:crypto';
 import { bindings, fail, getAuth, HttpError, reply, requireEditor, sameOrigin } from '@/lib/server';
-import { initialAdminPassword, studentEmail, studentIdFromEmail } from '@/lib/student-account.mjs';
+import { initialAdminPassword, minimumAdminPasswordLength, studentEmail, studentIdFromEmail } from '@/lib/student-account.mjs';
 
 export const dynamic = 'force-dynamic';
 
@@ -72,8 +72,7 @@ export async function POST(request: Request) {
       const user = await DB.prepare("SELECT id,role FROM user WHERE email=? AND role IN ('admin','user') AND COALESCE(banned,0)=0")
         .bind(email).first<{ id: string; role: string }>();
       if (!user) throw new HttpError(403, '该账号未授权');
-      if (input.password === initialAdminPassword) throw new HttpError(403, '首次登录请打开总管理员发给你的激活链接。');
-      if (user.role === 'admin' && await DB.prepare("SELECT 1 FROM verification WHERE value=? AND identifier LIKE 'reset-password:%' AND expiresAt>?").bind(user.id, Date.now()).first()) {
+      if ((user.role === 'admin' || input.password === initialAdminPassword) && await DB.prepare("SELECT 1 FROM verification WHERE value=? AND identifier LIKE 'reset-password:%' AND expiresAt>?").bind(user.id, Date.now()).first()) {
         throw new HttpError(403, '请通过你的激活链接设置新密码。');
       }
       return auth.handler(authRequest(request, { email, password: input.password }));
@@ -90,8 +89,8 @@ export async function POST(request: Request) {
     }
 
     if (input.initialPassword !== initialAdminPassword) throw new HttpError(400, '初始密码不正确。');
-    if (typeof input.newPassword !== 'string' || input.newPassword.length < 12 || input.newPassword.length > 128) {
-      throw new HttpError(400, '请设置 12 至 128 位的新密码。');
+    if (typeof input.newPassword !== 'string' || input.newPassword.length < minimumAdminPasswordLength) {
+      throw new HttpError(400, `请设置至少 ${minimumAdminPasswordLength} 位的新密码。`);
     }
     const invalidLink = '激活链接已失效或与学号不匹配，请向总管理员索取。';
     if (typeof input.token !== 'string' || !/^[\w-]{32}$/.test(input.token)) throw new HttpError(400, invalidLink);

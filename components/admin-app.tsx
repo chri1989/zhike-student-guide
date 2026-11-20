@@ -2,7 +2,7 @@
 import {useEffect,useMemo,useRef,useState} from 'react';
 import {ArrowLeft,ArrowUpRight,Plus,Search,Save,Eye,Send,LogOut,Users,ImagePlus,Trash2,Check,KeyRound,RefreshCw,BookOpen,Heading2,List,ListOrdered,MessageSquare} from 'lucide-react';
 import {Article,Release,categories,dateLabel,searchArticles,changeLabels} from '@/lib/guide';
-import {studentIdFromEmail,studentIdPattern} from '@/lib/student-account.mjs';
+import {minimumAdminPasswordLength,studentIdFromEmail,studentIdPattern} from '@/lib/student-account.mjs';
 import {Brand,CategoryIcon,Modal,ArticleBody,ArticleMeta} from './shared';
 import FeedbackInbox from './feedback-inbox';
 import type {Feedback} from '@/lib/feedback';
@@ -126,7 +126,7 @@ export default function AdminApp(){
       {stage==='setup'?<><label>初始化凭证<input value={token} onChange={e=>setToken(e.target.value)} type="password" required autoComplete="off" placeholder="通过专属初始化入口自动填写"/></label><label>你的姓名<input value={name} onChange={e=>setName(e.target.value)} required maxLength={40} autoComplete="name"/></label></>:null}
       <label>学号<input name="studentId" type="text" inputMode="numeric" pattern={studentIdPattern} maxLength={20} required autoComplete="username" placeholder="请输入学号"/></label>
       {stage==='activate'?<label>初始密码<input name="initialPassword" type="password" inputMode="numeric" minLength={6} maxLength={6} required autoComplete="off"/></label>:null}
-      <label>{stage==='activate'?'新密码':'密码'}<input name="password" type="password" required minLength={stage==='login'?1:12} maxLength={128} autoComplete={stage==='login'?'current-password':'new-password'} placeholder={stage==='login'?'输入你的密码':'至少 12 位'}/></label>
+      <label>{stage==='activate'?'新密码':'密码'}<input name="password" type="password" required minLength={stage==='login'?1:minimumAdminPasswordLength} autoComplete={stage==='login'?'current-password':'new-password'} placeholder={stage==='login'?'输入你的密码':`至少 ${minimumAdminPasswordLength} 位`}/></label>
       <button className="button primary full" disabled={busy}>{busy?'正在处理…':stage==='setup'?'创建管理员并登录':stage==='activate'?'激活并登录':'登录管理后台'}<ArrowUpRight size={16}/></button></form><p className="auth-footnote">{stage==='setup'?'初始化只需完成一次，请保管好你的账号密码。':stage==='activate'?'激活后使用学号和新密码登录。':'管理员账号由总管理员开通。首次使用请打开激活链接。'}</p></main><footer className="auth-footer">同学无需登录即可查阅指南</footer></div>;
   const owner=data?.user.role==='admin';
   const notice=(error||message)&&!membersOpen&&!passwordOpen&&!publishing.length?<div className={edit?'admin-edit-notice':'admin-announcements'}>{error?<div className="error-banner" role="alert">{error}</div>:null}{message?<div className="success-banner" role="status"><Check size={16}/>{message}</div>:null}</div>:null;
@@ -183,7 +183,7 @@ export default function AdminApp(){
         <button className="button" onClick={async()=>{try{await navigator.clipboard.writeText(activationUrl);setMessage('激活链接已复制。');}catch{setError('请选中激活链接后手动复制。');}}}>复制激活链接</button>
       </div>:null}
     </Modal>:null}
-    {passwordOpen?<Modal title="修改你的登录密码" onClose={()=>setPasswordOpen(false)}><form onSubmit={changePassword}><label>原密码<input type="password" value={oldPassword} onChange={e=>setOldPassword(e.target.value)} required autoComplete="current-password"/></label><label>新密码<input type="password" value={newPassword} onChange={e=>setNewPassword(e.target.value)} required minLength={12} autoComplete="new-password"/></label>{error?<div className="error-banner">{error}</div>:null}<button className="button primary full" disabled={busy}>保存新密码</button></form></Modal>:null}
+    {passwordOpen?<Modal title="修改你的登录密码" onClose={()=>setPasswordOpen(false)}><form onSubmit={changePassword}><label>原密码<input type="password" value={oldPassword} onChange={e=>setOldPassword(e.target.value)} required autoComplete="current-password"/></label><label>新密码<input type="password" value={newPassword} onChange={e=>setNewPassword(e.target.value)} required minLength={minimumAdminPasswordLength} autoComplete="new-password"/></label>{error?<div className="error-banner">{error}</div>:null}<button className="button primary full" disabled={busy}>保存新密码</button></form></Modal>:null}
     {zoom?<Modal title={zoom.alt} onClose={()=>setZoom(null)} wide><img className="lightbox-image" src={zoom.src} alt={zoom.alt}/></Modal>:null}
   </div>;
 }

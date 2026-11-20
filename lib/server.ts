@@ -5,6 +5,7 @@ import { drizzleAdapter } from 'better-auth/adapters/drizzle';
 import { getDb } from '@/db';
 import * as schema from '@/db/schema';
 import { Article, publicArticle, categories, Release } from './guide';
+import { minimumAdminPasswordLength } from './student-account.mjs';
 
 export { bindings } from './storage';
 export function getAuth(request: Request, bootstrap = false) {
@@ -14,7 +15,7 @@ export function getAuth(request: Request, bootstrap = false) {
     appName: '智科学代指南', secret: bindings().AUTH_SECRET,
     baseURL: origin,
     database: drizzleAdapter(getDb(), { provider: 'sqlite', schema, transaction: false }),
-    emailAndPassword: { enabled: true, disableSignUp: !bootstrap, minPasswordLength: 12, revokeSessionsOnPasswordReset: true },
+    emailAndPassword: { enabled: true, disableSignUp: !bootstrap, minPasswordLength: minimumAdminPasswordLength, maxPasswordLength: Number.POSITIVE_INFINITY, revokeSessionsOnPasswordReset: true },
     plugins: [admin({ defaultRole: bootstrap ? 'admin' : 'user' })],
     session: { expiresIn: 60*60*24*7, updateAge: 60*60*12, cookieCache: { enabled: false } },
     rateLimit: { enabled: true, storage: 'database', customRules: { '/sign-in/email': { window:60, max:8 } } },
