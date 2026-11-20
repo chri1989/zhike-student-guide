@@ -1,8 +1,14 @@
 'use client';
 import {useEffect,useRef,ReactNode} from 'react';
-import {BookOpen,GraduationCap,House,Wifi,HeartPulse,Activity,Utensils,Building2,Bus,Compass,X,ArrowUpRight,Phone,Mail,Expand} from 'lucide-react';
+import {BookOpen,GraduationCap,House,Wifi,HeartPulse,Activity,Utensils,Building2,Compass,X,ArrowUpRight,Phone,Mail,Expand} from 'lucide-react';
 import {Article,dateLabel} from '@/lib/guide';
-export const icons={study:BookOpen,evaluation:GraduationCap,dorm:House,network:Wifi,health:HeartPulse,sports:Activity,food:Utensils,services:Building2,'campus-bus':Bus};
+export const icons={study:BookOpen,evaluation:GraduationCap,dorm:House,network:Wifi,health:HeartPulse,sports:Activity,food:Utensils,services:Building2};
+export function DelegateIcon({size=19}:{size?:number}) {
+  return <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+    <circle cx="10" cy="7" r="4"/>
+    <path d="M8.5 8a2 2 0 0 0 3 0M4 21v-2a6 6 0 0 1 12 0v2M15 16c1.8-.3 3-2 4-4m.2-4 .7 1.4m2.1-.2-1 1.1"/>
+  </svg>;
+}
 export function CategoryIcon({id,size=20}:{id:string;size?:number}){const Icon=icons[id as keyof typeof icons]||Compass;return <Icon size={size} strokeWidth={1.8} aria-hidden="true"/>;}
 export function Brand(){return <a href="/" className="brand"><span className="brand-mark"><BookOpen size={23}/></span><strong>智科学代指南</strong><small>暨南大学·智能科学与工程学院</small></a>;}
 export function GuideFooter(){

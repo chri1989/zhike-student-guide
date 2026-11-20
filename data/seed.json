@@ -4434,42 +4434,6 @@
       "featured": false
     },
     {
-      "id": "g-f40ad3be20",
-      "title": "校园巴士购票与时刻表",
-      "category": "campus-bus",
-      "summary": "珠海往返广州，微信关注「岐关拱运巴士」购买暨大校园专线车票。",
-      "body": "微信关注「岐关拱运巴士」，在定制出行中选择暨大校园专线，按实际出发地、目的地和日期购票。发车时刻与上车点请查看当日购票页面。\n\n学校校际交通指引 https://jnu.edu.cn/2022/0829/c36421a714343/page.htm",
-      "tags": [
-        "巴士",
-        "校车",
-        "车票",
-        "购票",
-        "交通",
-        "歧关",
-        "样样",
-        "岐关拱运巴士",
-        "校巴",
-        "广州购票"
-      ],
-      "images": [
-        {
-          "src": "/seed-images/391b3ad265256626ca70.png",
-          "alt": "校园巴士购票与时刻表"
-        }
-      ],
-      "sources": [
-        {
-          "sheet": "校园巴士",
-          "cells": [
-            "A1",
-            "A4"
-          ]
-        }
-      ],
-      "verification": "pending",
-      "featured": true
-    },
-    {
       "id": "g-54b9170eee",
       "title": "宿舍门禁与夜间管理",
       "category": "dorm",

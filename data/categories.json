@@ -46,11 +46,5 @@
     "name": "校园部处",
     "description": "部处联系方式、办事时间与学代反馈",
     "color": "slate"
-  },
-  {
-    "id": "campus-bus",
-    "name": "校园巴士",
-    "description": "珠海往返广州的校园巴士购票与时刻表",
-    "color": "blue"
   }
 ]

@@ -5,8 +5,9 @@ import path from 'node:path';
 const [file,target]=process.argv.slice(2);
 if(!file||!target) throw new Error('Usage: node scripts/restore-store.mjs private-backup.json new-data-directory');
 const backup=JSON.parse(readFileSync(file,'utf8'));
-const names=['user','account','drafts','releases','media','setup_lock','feedback'];
+const names=['user','account','drafts','releases','media','setup_lock','feedback','feedback_progress'];
 if(backup.format===1&&backup.tables&&backup.tables.feedback===undefined) backup.tables.feedback=[];
+if(backup.format===1&&backup.tables&&backup.tables.feedback_progress===undefined) backup.tables.feedback_progress=[];
 if(backup.format!==1||!backup.tables||names.some(name=>!Array.isArray(backup.tables[name]))||!Array.isArray(backup.images)) throw new Error('Invalid backup');
 const filename=path.join(target,'guide.sqlite');
 if(existsSync(filename)) throw new Error('Restore only into a new data directory; existing data was not changed.');
@@ -21,6 +22,7 @@ db.exec('BEGIN IMMEDIATE');
 try {
   db.exec(readFileSync('drizzle/0000_friendly_wildside.sql','utf8'));
   db.exec(readFileSync('drizzle/0001_tidy_rafael_vega.sql','utf8'));
+  db.exec(readFileSync('drizzle/0002_feedback_progress.sql','utf8'));
   for(const name of names) {
     const columns=db.prepare('PRAGMA table_info("'+name+'")').all().map(c=>c.name);
     const insert=db.prepare('INSERT INTO "'+name+'" ('+columns.map(c=>'"'+c+'"').join(',')+') VALUES('+columns.map(()=>'?').join(',')+')');

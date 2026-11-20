@@ -1,13 +1,14 @@
 'use client';
 
 import { useEffect, useRef, useState, type FormEvent } from 'react';
-import { ArrowLeft, MessageSquare, Send } from 'lucide-react';
+import { ArrowLeft, ArrowUpRight, BookOpen, MessageSquare, Send } from 'lucide-react';
 import type { XiaozhiAnswer } from '@/lib/xiaozhi';
 import { GuideFooter } from './shared';
 import { recordGuideActivity } from './guide-interaction';
 
 type Availability = { enabled: false } | { enabled: true; model: string; record: string };
 type Turn = XiaozhiAnswer & { question: string };
+const sampleQuestions = ['综测总分怎么计算？','校内办事去哪里找部处？','宿舍坏了怎么报修？','最近学习压力挺大，可以找谁聊聊？'];
 
 function useAvailability() {
   const [status, setStatus] = useState<Availability | null>(null);
@@ -47,9 +48,8 @@ export function XiaozhiChat() {
     if (view) view.scrollTop = view.scrollHeight;
   }, [turns, pending]);
 
-  async function ask(event: FormEvent<HTMLFormElement>) {
-    event.preventDefault();
-    const question = draft.trim();
+  async function ask(value:string) {
+    const question = value.trim();
     if (!question || sending.current || !status?.enabled) return;
     sending.current = true;
     setPending(true);
@@ -87,6 +87,9 @@ export function XiaozhiChat() {
         </div>
       </header>
       <section className="xiaozhi-panel" aria-label="小智对话">
+        {status?.enabled?<div className="xiaozhi-suggestions" role="group" aria-label="快捷提问">
+          {sampleQuestions.map(question=><button key={question} type="button" disabled={pending} onClick={()=>void ask(question)}>{question}</button>)}
+        </div>:null}
         <div className="xiaozhi-messages" ref={messages} role="log" aria-label="对话记录" aria-live="polite">
           {turns.length === 0 && !pending && <div className="xiaozhi-welcome">
             <p className="xiaozhi-greeting">哈喽！我是小智，学代指南的小助理，有什么可以帮你吗？</p>
@@ -97,7 +100,10 @@ export function XiaozhiChat() {
               <p className="xiaozhi-question">{turn.question}</p>
               <div className="xiaozhi-answer">
                 <p>{turn.answer}</p>
-                {turn.sources.length > 0 && <ul aria-label="指南原文">{turn.sources.map(source => <li key={source.id}><a href={source.href}>{source.title}</a></li>)}</ul>}
+                {turn.sources.length > 0 && <ul className="xiaozhi-references" aria-label="指南依据">{turn.sources.map(source => <li key={source.id}><a href={source.href}>
+                  <BookOpen size={16}/><span><strong>依据《{source.title}》</strong>{source.summary?<small>{source.summary}</small>:null}</span><ArrowUpRight size={15}/>
+                </a></li>)}</ul>}
+                {turn.resources?.length ? <ul className="xiaozhi-references" aria-label="学校与学院资源">{turn.resources.map(source=><li key={source.href}><a href={source.href} target="_blank" rel="noreferrer"><BookOpen size={16}/><span>{source.title}</span><ArrowUpRight size={15}/></a></li>)}</ul>:null}
               </div>
             </div>
           ))}
@@ -106,7 +112,7 @@ export function XiaozhiChat() {
         <div className="xiaozhi-composer">
           {error && <p role="alert" className="error-banner">{error}</p>}
           {status?.enabled ? (
-            <form className="xiaozhi-form" onSubmit={ask}>
+            <form className="xiaozhi-form" onSubmit={(event:FormEvent<HTMLFormElement>)=>{event.preventDefault();void ask(draft);}}>
               <textarea aria-label="向小智提问" placeholder="输入消息" maxLength={500} rows={2} value={draft}
                 readOnly={pending} onChange={event => setDraft(event.target.value)}
                 onKeyDown={event => {

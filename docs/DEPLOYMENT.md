@@ -27,7 +27,8 @@
 ## 配置与数据
 
 - 小智使用服务端的 `DASHSCOPE_API_KEY`、`DASHSCOPE_BASE_URL`、`XIAOZHI_ENABLED` 和 `XIAOZHI_MODEL_RECORD`。当前公示内容从服务配置渲染到 `/xiaozhi/about`。
-- 公众号自动同步使用服务端的 `WECHAT_APP_ID` 和 `WECHAT_APP_SECRET`。学院管理者先在公众号后台的开发者中心核对“获取已发布的消息列表”权限，并按公众号平台要求配置服务器实际出网地址。管理凭据在服务器配置。
-- 推文功能读取微信的已发布列表并展示近期卡片。依据 [微信发布列表接口](https://developers.weixin.qq.com/doc/service/api/public/api_freepublish_batchget.html) 的账号权限。当前实现每次取 8 组，首页最多显示 12 篇，并保留公众号原文链接。
+- 学代团 News 的标题和发布日期在 `lib/news.ts` 中维护，封面和原文 PDF 放在 `public/news`。增加推文时按原发布日期从新到旧排列。
+- 在后台「学生反馈」点击「编辑公开进展」，另填脱敏内容后保存。标为已解决时选择一篇已发布的指南。看板的已解决数统计公开且仍有有效指南的事项。
+- 升级现有数据库时，在切换应用前运行 `scripts/initialize-store.mjs`，创建诉求进展表并保留现有指南和账号。
 - 备份由主管理员经 `/api/admin/export` 获取，私下保存。备份含站点维护数据，恢复时使用全新的目标目录。正式密钥、账号和反馈数据使用私有运行目录。
 - 浏览量和赞保存在正式 SQLite 数据库中，匿名访客统计由浏览器生成的 ID 去重，同一访问的同一条目点赞由数据库约束。

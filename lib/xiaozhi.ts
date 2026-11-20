@@ -4,7 +4,8 @@ export const xiaozhiModelName = '通义千问 Flash';
 
 export type XiaozhiAnswer = {
   answer: string;
-  sources: { id: string; title: string; href: string }[];
+  sources: { id: string; title: string; href: string; summary?: string }[];
+  resources?: { title: string; href: string }[];
   releaseId: number;
 };
 
@@ -16,9 +17,6 @@ const questionWords = new Set([
   '资料', '指南', '信息', '内容', '问题', '相关', '珠海', '广州',
 ]);
 const aliases = [
-  ['校巴', '校园巴士'], ['校车', '校园巴士'], ['岐关', '校园巴士'], ['校园巴士', '校园巴士'],
-  ['校际交通', '校园巴士'], ['暨大校园专线', '校园巴士'],
-  ['购票', '购票'], ['买票', '购票'], ['订票', '购票'],
   ['没网', '校园网'], ['没网', '无法连接'], ['断网', '校园网'], ['断网', '无法连接'],
   ['校园网断', '无法连接'],
   ['wifi', '校园网'], ['连不上', '无法连接'],
@@ -32,7 +30,6 @@ function keywords(question: string) {
     .filter(({ isWordLike, segment }) => isWordLike && segment.length >= 2 && !questionWords.has(segment))
     .map(({ segment }) => segment);
   const expanded = aliases.filter(([phrase]) => text.includes(phrase)).map(([, word]) => word);
-  if (/珠海[^，。！？]{0,12}(?:去|到|回|往返)广州|广州[^，。！？]{0,12}(?:去|到|回)珠海/.test(text)) expanded.push('校园巴士');
   return [...new Set([...expanded, ...words, ...searchTerms(text)])].filter(word => word.length >= 2 && !questionWords.has(word));
 }
 

@@ -17,7 +17,7 @@ export function dateLabel(value?: string, time = false) {
 export function searchTerms(query: string) {
   const q = query.trim().toLowerCase().replace(/\s+/g,'');
   const terms = q.split(/[，,、]/).filter(Boolean);
-  const aliases = [['连不上','无法连接'],['断网','校园网'],['校园网','校园网'],['材料缺失','材料'],['报销','报销'],['校车','巴士'],['图书馆','图书馆']];
+  const aliases = [['连不上','无法连接'],['断网','校园网'],['校园网','校园网'],['材料缺失','材料'],['报销','报销'],['图书馆','图书馆']];
   for (const [from,to] of aliases) if (q.includes(from)) terms.push(to);
   return [...new Set(terms)];
 }

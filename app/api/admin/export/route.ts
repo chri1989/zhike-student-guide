@@ -3,7 +3,7 @@ export const dynamic='force-dynamic';
 export async function GET(request:Request) {
   try {
     await requireEditor(request,true);
-    const names=['user','account','drafts','releases','media','setup_lock','feedback'] as const;
+    const names=['user','account','drafts','releases','media','setup_lock','feedback','feedback_progress'] as const;
     const {DB,BUCKET}=bindings();
     const snapshot=await DB.batch(names.map(name=>DB.prepare('SELECT * FROM "'+name+'"')));
     const tables=Object.fromEntries(names.map((name,i)=>[name,snapshot[i].results]));

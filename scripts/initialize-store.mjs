@@ -45,6 +45,7 @@ export function initializeStore() {
       db.exec('COMMIT');
     } catch(error) { db.exec('ROLLBACK'); db.close(); throw error; }
   }
+  db.exec(readFileSync('drizzle/0002_feedback_progress.sql','utf8'));
   db.close();
 }
 
