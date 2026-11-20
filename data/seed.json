@@ -1,0 +1,4619 @@
+{
+  "categories": [
+    {
+      "id": "study",
+      "name": "学习教务",
+      "description": "图书馆、课室、常用网站与校历",
+      "color": "blue"
+    },
+    {
+      "id": "evaluation",
+      "name": "综测评优",
+      "description": "材料认定、加分规则与常见疑问",
+      "color": "purple"
+    },
+    {
+      "id": "dorm",
+      "name": "宿舍报修",
+      "description": "水电、报修、调宿与宿舍生活",
+      "color": "orange"
+    },
+    {
+      "id": "network",
+      "name": "校园网络",
+      "description": "联网、缴费、校园卡与故障处理",
+      "color": "cyan"
+    },
+    {
+      "id": "health",
+      "name": "就医医保",
+      "description": "医务室、转诊、报销与参保",
+      "color": "rose"
+    },
+    {
+      "id": "sports",
+      "name": "运动场馆",
+      "description": "场馆、体测与阳光跑",
+      "color": "green"
+    },
+    {
+      "id": "food",
+      "name": "饮食生活",
+      "description": "食堂时间、服务与问题反馈",
+      "color": "amber"
+    },
+    {
+      "id": "services",
+      "name": "交通与办事",
+      "description": "校园巴士、办事联系与学代反馈",
+      "color": "slate"
+    }
+  ],
+  "articles": [
+    {
+      "id": "g-5c152fb820",
+      "title": "校园网开通、缴费方式",
+      "category": "network",
+      "summary": "微信APP关注公众号“暨南大学服务号”->信息服务->微服务->校园网->用户自助服务平台，选择相应的网络服务进行缴(续)费办理。校园网用户自助服务平台网址：https://mynet.jnu",
+      "body": "微信APP关注公众号“暨南大学服务号”->信息服务->微服务->校园网->用户自助服务平台，选择相应的网络服务进行缴(续)费办理。校园网用户自助服务平台网址：https://mynet.jnu.edu.cn",
+      "tags": [
+        "网络中心",
+        "校园网",
+        "断网",
+        "连不上",
+        "网速慢",
+        "网络故障"
+      ],
+      "images": [],
+      "sources": [
+        {
+          "sheet": "常见问题解答",
+          "cells": [
+            "A3",
+            "B3",
+            "C3"
+          ]
+        }
+      ],
+      "verification": "pending",
+      "featured": true
+    },
+    {
+      "id": "g-1a5f10ad59",
+      "title": "校园网无法连接",
+      "category": "network",
+      "summary": "关于网络问题，若非在特定考试期间，无线网络的传输速度为500kb/s，但仍出现无法连接或网络，有以下渠道直接反馈： 1、网址：https://mynet.jnu.edu.cn 2、电话：020",
+      "body": "关于网络问题，若非在特定考试期间，无线网络的传输速度为500kb/s，但仍出现无法连接或网络，有以下渠道直接反馈：  1、网址：https://mynet.jnu.edu.cn\n2、电话：020-85220304/020-85220305\n3、邮箱：owl@jnu.edu.cn\n4、微信客服：暨南大学服务号-信息服务-微服务-校园网-故障报修，或微信端直接访问https://mynet.jnu.edu.cn/wxkf\n5、微信服务号：暨南大学服务号（jinanuniversity）\n6、企业微信：“暨南大学”-通讯录-员工服务-“校园网校园卡服务”",
+      "tags": [
+        "网络中心",
+        "校园网",
+        "断网",
+        "连不上",
+        "网速慢",
+        "网络故障"
+      ],
+      "images": [],
+      "sources": [
+        {
+          "sheet": "常见问题解答",
+          "cells": [
+            "B4",
+            "C4"
+          ]
+        }
+      ],
+      "verification": "pending",
+      "featured": false
+    },
+    {
+      "id": "g-a18ee58a97",
+      "title": "校园网网速慢、卡顿",
+      "category": "network",
+      "summary": "校园网在Wi-Fi连接状态下，限速500kb/s，网线连接下是3-5mb左右。如若出现异常缓慢情况时，可以通过联系网络中心，与工作人员对接调试。（联系方式如上）",
+      "body": "校园网在Wi-Fi连接状态下，限速500kb/s，网线连接下是3-5mb左右。如若出现异常缓慢情况时，可以通过联系网络中心，与工作人员对接调试。（联系方式如上）",
+      "tags": [
+        "网络中心",
+        "校园网",
+        "断网",
+        "连不上",
+        "网速慢",
+        "网络故障"
+      ],
+      "images": [],
+      "sources": [
+        {
+          "sheet": "常见问题解答",
+          "cells": [
+            "B5",
+            "C5"
+          ]
+        }
+      ],
+      "verification": "pending",
+      "featured": false
+    },
+    {
+      "id": "g-e523d5486a",
+      "title": "校园卡丢失如何补办",
+      "category": "network",
+      "summary": "需本人在上班时间到实验楼C412进行补办",
+      "body": "需本人在上班时间到实验楼C412进行补办",
+      "tags": [
+        "网络中心",
+        "校园网",
+        "断网",
+        "连不上",
+        "网速慢",
+        "网络故障"
+      ],
+      "images": [],
+      "sources": [
+        {
+          "sheet": "常见问题解答",
+          "cells": [
+            "B6",
+            "C6"
+          ]
+        }
+      ],
+      "verification": "pending",
+      "featured": false
+    },
+    {
+      "id": "g-b6b7ba1125",
+      "title": "校园网断连，购买了双接口服务但只能连接一个设备，其他设备会抢占网络",
+      "category": "network",
+      "summary": "如果是个别案例，需要个人打电话至网络中心：020-85220304或联系微信客服进行解决。（推荐联系微信客服）如果线上无法解决，一般网络中心会上门检查或维修。",
+      "body": "如果是个别案例，需要个人打电话至网络中心：020-85220304或联系微信客服进行解决。（推荐联系微信客服）如果线上无法解决，一般网络中心会上门检查或维修。",
+      "tags": [
+        "网络中心",
+        "校园网",
+        "断网",
+        "连不上",
+        "网速慢",
+        "网络故障"
+      ],
+      "images": [],
+      "sources": [
+        {
+          "sheet": "常见问题解答",
+          "cells": [
+            "B7",
+            "C7"
+          ]
+        }
+      ],
+      "verification": "pending",
+      "featured": false
+    },
+    {
+      "id": "g-a010036c61",
+      "title": "账号被加入黑名单如何处理",
+      "category": "network",
+      "summary": "若登录网络的设备输入密码错误50次将进入黑名单，网络认证系统30分钟后会自动解除黑名单。 如问题重复出现，建议重置密码，再次登录网络前需要把所有网络设备的登录信息清除。 如忘记曾登录过的设备，",
+      "body": "若登录网络的设备输入密码错误50次将进入黑名单，网络认证系统30分钟后会自动解除黑名单。\n\n如问题重复出现，建议重置密码，再次登录网络前需要把所有网络设备的登录信息清除。\n\n如忘记曾登录过的设备，请与现代教育技术中心0756-8505230联系处理。",
+      "tags": [
+        "网络中心",
+        "校园网",
+        "断网",
+        "连不上",
+        "网速慢",
+        "网络故障"
+      ],
+      "images": [],
+      "sources": [
+        {
+          "sheet": "常见问题解答",
+          "cells": [
+            "B8",
+            "C8"
+          ]
+        }
+      ],
+      "verification": "pending",
+      "featured": false
+    },
+    {
+      "id": "g-d5399ee94a",
+      "title": "学生宿舍有线网如何接入",
+      "category": "network",
+      "summary": "请访问https://zh-metc.jnu.edu.cn/2021/0918/c30591a649421/page.htm",
+      "body": "请访问https://zh-metc.jnu.edu.cn/2021/0918/c30591a649421/page.htm",
+      "tags": [
+        "网络中心",
+        "校园网",
+        "断网",
+        "连不上",
+        "网速慢",
+        "网络故障"
+      ],
+      "images": [],
+      "sources": [
+        {
+          "sheet": "常见问题解答",
+          "cells": [
+            "B9",
+            "C9"
+          ]
+        }
+      ],
+      "verification": "pending",
+      "featured": false
+    },
+    {
+      "id": "g-662d8fd8a4",
+      "title": "关于有线网络使用",
+      "category": "network",
+      "summary": "关于有线网络使用",
+      "body": "网线需自行购买",
+      "tags": [
+        "网络中心",
+        "校园网",
+        "断网",
+        "连不上",
+        "网速慢",
+        "网络故障"
+      ],
+      "images": [],
+      "sources": [
+        {
+          "sheet": "常见问题解答",
+          "cells": [
+            "B11",
+            "C11"
+          ]
+        }
+      ],
+      "verification": "pending",
+      "featured": false
+    },
+    {
+      "id": "g-562eda529a",
+      "title": "食堂开放时间",
+      "category": "food",
+      "summary": "食堂开放时间",
+      "body": "",
+      "tags": [
+        "饮食服务中心"
+      ],
+      "images": [
+        {
+          "src": "/seed-images/c05f295db939db0a5b13.jpeg",
+          "alt": "食堂开放时间"
+        }
+      ],
+      "sources": [
+        {
+          "sheet": "常见问题解答",
+          "cells": [
+            "A12",
+            "B12",
+            "C12"
+          ]
+        }
+      ],
+      "verification": "pending",
+      "featured": false
+    },
+    {
+      "id": "g-4f73484386",
+      "title": "若热水卡尚未使用就显示不足怎么办？",
+      "category": "dorm",
+      "summary": "先更换卡片，如果另一张卡可以用就是卡片的问题，可以去一楼找宿管阿姨更换备用卡片；如果更换卡片也无热水，可能是机器的问题，可用云丹田报修。",
+      "body": "先更换卡片，如果另一张卡可以用就是卡片的问题，可以去一楼找宿管阿姨更换备用卡片；如果更换卡片也无热水，可能是机器的问题，可用云丹田报修。",
+      "tags": [
+        "宿舍"
+      ],
+      "images": [],
+      "sources": [
+        {
+          "sheet": "常见问题解答",
+          "cells": [
+            "A14",
+            "B14",
+            "C14"
+          ]
+        }
+      ],
+      "verification": "pending",
+      "featured": false
+    },
+    {
+      "id": "g-812576dec1",
+      "title": "宿舍安全问题反馈",
+      "category": "dorm",
+      "summary": "优先拨打宿舍楼栋电话和云丹田电话，同时问题反馈给班级学代，再反馈到上级学代进行上报解决",
+      "body": "优先拨打宿舍楼栋电话和云丹田电话，同时问题反馈给班级学代，再反馈到上级学代进行上报解决",
+      "tags": [
+        "宿舍"
+      ],
+      "images": [],
+      "sources": [
+        {
+          "sheet": "常见问题解答",
+          "cells": [
+            "B16",
+            "C16"
+          ]
+        }
+      ],
+      "verification": "pending",
+      "featured": false
+    },
+    {
+      "id": "g-a145441ae8",
+      "title": "失物招领处位置",
+      "category": "dorm",
+      "summary": "失物招领处位置",
+      "body": "一栋楼下",
+      "tags": [
+        "宿舍"
+      ],
+      "images": [],
+      "sources": [
+        {
+          "sheet": "常见问题解答",
+          "cells": [
+            "B17",
+            "C17"
+          ]
+        }
+      ],
+      "verification": "pending",
+      "featured": false
+    },
+    {
+      "id": "g-ca9f06f668",
+      "title": "部分可通过云丹田报修解决的问题",
+      "category": "dorm",
+      "summary": "部分可通过云丹田报修解决的问题",
+      "body": "部分可通过报修解决的问题\n\n宿舍厕所冲水设备有问题\n\n空调饮水机等设备故障\n\n厕所水箱压力不够\n\n宿舍空调忽冷忽热，且时常漏水\n\n阳台洗衣机的地漏有点堵",
+      "tags": [
+        "宿舍"
+      ],
+      "images": [],
+      "sources": [
+        {
+          "sheet": "常见问题解答",
+          "cells": [
+            "B18",
+            "C18",
+            "C19",
+            "C20",
+            "C21",
+            "C22",
+            "C23"
+          ]
+        }
+      ],
+      "verification": "pending",
+      "featured": false
+    },
+    {
+      "id": "g-b93a0bd8a8",
+      "title": "为什么医务室只能刷校园卡",
+      "category": "health",
+      "summary": "考虑到在医务室就医需要验证患者的身份，所以校园卡其实更加方便，如果没带的也可以借同学的刷卡；微信结算的poss机还在讨论阶段，因为医务室是非盈利性质的，所以还涉及到数据处理和成本问题。",
+      "body": "考虑到在医务室就医需要验证患者的身份，所以校园卡其实更加方便，如果没带的也可以借同学的刷卡；微信结算的poss机还在讨论阶段，因为医务室是非盈利性质的，所以还涉及到数据处理和成本问题。",
+      "tags": [
+        "医务室",
+        "看病",
+        "医保"
+      ],
+      "images": [],
+      "sources": [
+        {
+          "sheet": "常见问题解答",
+          "cells": [
+            "A24",
+            "B24",
+            "C24"
+          ]
+        }
+      ],
+      "verification": "pending",
+      "featured": false
+    },
+    {
+      "id": "g-9c3a82ebfd",
+      "title": "医务室开放时间设置原因",
+      "category": "health",
+      "summary": "1.上午医务室开放时间是到12:00，同学们11:40下课，只要在12点前来到医务室，都会看完的；下午同学们是17:05分下课，医务室是17:30下班，会给17:30前到的同学看完病，才会下班",
+      "body": "1.上午医务室开放时间是到12:00，同学们11:40下课，只要在12点前来到医务室，都会看完的；下午同学们是17:05分下课，医务室是17:30下班，会给17:30前到的同学看完病，才会下班。\n\n2.如果我们的同学在非开诊时间需要治疗，应该也是急诊，考虑到能更好的得到治疗，可以直接去三甲医院看病，然后给予报销。",
+      "tags": [
+        "医务室",
+        "看病",
+        "医保"
+      ],
+      "images": [],
+      "sources": [
+        {
+          "sheet": "常见问题解答",
+          "cells": [
+            "B25",
+            "C25",
+            "C26"
+          ]
+        }
+      ],
+      "verification": "pending",
+      "featured": false
+    },
+    {
+      "id": "g-bace78bde7",
+      "title": "综测评议小组成员的综测分数算在哪一年？",
+      "category": "evaluation",
+      "summary": "综测评定小组成员的分数算在本学年，例如评定大一学年的综测，分数即计入到大一学年",
+      "body": "综测评定小组成员的分数算在本学年，例如评定大一学年的综测，分数即计入到大一学年",
+      "tags": [
+        "综测",
+        "评优",
+        "加分",
+        "材料认定",
+        "综合测评"
+      ],
+      "images": [],
+      "sources": [
+        {
+          "sheet": "综测系统疑问解答",
+          "cells": [
+            "A2",
+            "B2",
+            "C2"
+          ]
+        }
+      ],
+      "verification": "pending",
+      "featured": false
+    },
+    {
+      "id": "g-9867f3fe92",
+      "title": "教务系统的中英文成绩单无法查看怎么办？",
+      "category": "evaluation",
+      "summary": "学业基本分由系统自动计算，同学们将重心放在学业附加分的材料整理上即可",
+      "body": "学业基本分由系统自动计算，同学们将重心放在学业附加分的材料整理上即可",
+      "tags": [
+        "综测",
+        "评优",
+        "加分",
+        "材料认定",
+        "综合测评"
+      ],
+      "images": [],
+      "sources": [
+        {
+          "sheet": "综测系统疑问解答",
+          "cells": [
+            "A3",
+            "B3",
+            "C3"
+          ]
+        }
+      ],
+      "verification": "pending",
+      "featured": false
+    },
+    {
+      "id": "g-d1eefd9526",
+      "title": "转专业的同学综测如何计算？",
+      "category": "evaluation",
+      "summary": "转专业的同学综测统一由转前原班级负责计算",
+      "body": "转专业的同学综测统一由转前原班级负责计算",
+      "tags": [
+        "综测",
+        "评优",
+        "加分",
+        "材料认定",
+        "综合测评"
+      ],
+      "images": [],
+      "sources": [
+        {
+          "sheet": "综测系统疑问解答",
+          "cells": [
+            "A4",
+            "B4",
+            "C4"
+          ]
+        }
+      ],
+      "verification": "pending",
+      "featured": false
+    },
+    {
+      "id": "g-52f21b3718",
+      "title": "材料汇总中有活动缺失怎么办？",
+      "category": "evaluation",
+      "summary": "需要同学去联系活动举办有关部门补齐材料或开具相关证明",
+      "body": "需要同学去联系活动举办有关部门补齐材料或开具相关证明",
+      "tags": [
+        "综测",
+        "评优",
+        "加分",
+        "材料认定",
+        "综合测评"
+      ],
+      "images": [],
+      "sources": [
+        {
+          "sheet": "综测系统疑问解答",
+          "cells": [
+            "A5",
+            "B5",
+            "C5"
+          ]
+        }
+      ],
+      "verification": "pending",
+      "featured": true
+    },
+    {
+      "id": "g-3652cd6834",
+      "title": "活动清单中的加分与《实施方案》中有出入怎么办？",
+      "category": "evaluation",
+      "summary": "活动清单中的加分与《实施方案》中有出入怎么办？",
+      "body": "以《实施方案》为准",
+      "tags": [
+        "综测",
+        "评优",
+        "加分",
+        "材料认定",
+        "综合测评"
+      ],
+      "images": [],
+      "sources": [
+        {
+          "sheet": "综测系统疑问解答",
+          "cells": [
+            "A6",
+            "B6",
+            "C6"
+          ]
+        }
+      ],
+      "verification": "pending",
+      "featured": false
+    },
+    {
+      "id": "g-13c3fa5308",
+      "title": "名单中姓名（或专业等其他信息）有误怎么办？",
+      "category": "evaluation",
+      "summary": "需要同学去联系活动举办有关部门开具相关证明",
+      "body": "需要同学去联系活动举办有关部门开具相关证明",
+      "tags": [
+        "综测",
+        "评优",
+        "加分",
+        "材料认定",
+        "综合测评"
+      ],
+      "images": [],
+      "sources": [
+        {
+          "sheet": "综测系统疑问解答",
+          "cells": [
+            "A7",
+            "B7",
+            "C7"
+          ]
+        }
+      ],
+      "verification": "pending",
+      "featured": false
+    },
+    {
+      "id": "g-5c00402a8a",
+      "title": "学生组织干事聘书丢失怎么办？",
+      "category": "evaluation",
+      "summary": "学生组织干事聘书丢失怎么办？",
+      "body": "联系有关部门负责人进行证明",
+      "tags": [
+        "综测",
+        "评优",
+        "加分",
+        "材料认定",
+        "综合测评"
+      ],
+      "images": [],
+      "sources": [
+        {
+          "sheet": "综测系统疑问解答",
+          "cells": [
+            "A8",
+            "B8",
+            "C8"
+          ]
+        }
+      ],
+      "verification": "pending",
+      "featured": false
+    },
+    {
+      "id": "g-3d084b9558",
+      "title": "系统中有误确认项目怎么办？",
+      "category": "evaluation",
+      "summary": "同学及时将详细情况汇报给综测小组组长，组长统计完后向学院学代团上报，后续统一处理",
+      "body": "同学及时将详细情况汇报给综测小组组长，组长统计完后向学院学代团上报，后续统一处理",
+      "tags": [
+        "综测",
+        "评优",
+        "加分",
+        "材料认定",
+        "综合测评"
+      ],
+      "images": [],
+      "sources": [
+        {
+          "sheet": "综测系统疑问解答",
+          "cells": [
+            "A9",
+            "B9",
+            "C9"
+          ]
+        }
+      ],
+      "verification": "pending",
+      "featured": false
+    },
+    {
+      "id": "g-c9e088cb39",
+      "title": "宿舍长、宿舍层长相关证明在哪里可以找到？",
+      "category": "evaluation",
+      "summary": "根据班委名单，由班委进行有关职务的确认后加分",
+      "body": "根据班委名单，由班委进行有关职务的确认后加分",
+      "tags": [
+        "综测",
+        "评优",
+        "加分",
+        "材料认定",
+        "综合测评"
+      ],
+      "images": [],
+      "sources": [
+        {
+          "sheet": "综测系统疑问解答",
+          "cells": [
+            "A10",
+            "B10",
+            "C10"
+          ]
+        }
+      ],
+      "verification": "pending",
+      "featured": false
+    },
+    {
+      "id": "g-ee0725628f",
+      "title": "军训先进个人及标兵、新生训练营优秀营员如何加分？",
+      "category": "evaluation",
+      "summary": "军训先进个人及标兵、新生训练营优秀营员如何加分？",
+      "body": "以个人荣誉称号加德育分",
+      "tags": [
+        "综测",
+        "评优",
+        "加分",
+        "材料认定",
+        "综合测评"
+      ],
+      "images": [],
+      "sources": [
+        {
+          "sheet": "综测系统疑问解答",
+          "cells": [
+            "A11",
+            "B11",
+            "C11"
+          ]
+        }
+      ],
+      "verification": "pending",
+      "featured": false
+    },
+    {
+      "id": "g-1d63cbdc71",
+      "title": "集体荣誉如何加分？",
+      "category": "evaluation",
+      "summary": "集体荣誉如何加分？",
+      "body": "以撰写申报材料的团体为加分范围",
+      "tags": [
+        "综测",
+        "评优",
+        "加分",
+        "材料认定",
+        "综合测评"
+      ],
+      "images": [],
+      "sources": [
+        {
+          "sheet": "综测系统疑问解答",
+          "cells": [
+            "A12",
+            "B12",
+            "C12"
+          ]
+        }
+      ],
+      "verification": "pending",
+      "featured": false
+    },
+    {
+      "id": "g-6ab268b9a0",
+      "title": "四六级加分可以重复加吗？",
+      "category": "evaluation",
+      "summary": "四六级加分只能各加一次，重复加分按伪造综测材料扣除德育分",
+      "body": "四六级加分只能各加一次，重复加分按伪造综测材料扣除德育分",
+      "tags": [
+        "综测",
+        "评优",
+        "加分",
+        "材料认定",
+        "综合测评"
+      ],
+      "images": [],
+      "sources": [
+        {
+          "sheet": "综测系统疑问解答",
+          "cells": [
+            "A13",
+            "B13",
+            "C13"
+          ]
+        }
+      ],
+      "verification": "pending",
+      "featured": false
+    },
+    {
+      "id": "g-9b83e7becb",
+      "title": "优秀社团可以加分吗？",
+      "category": "evaluation",
+      "summary": "校区团委社团管理部评选的优秀社团不加分，校级优秀社团仅部长和干事加分，社员不加分",
+      "body": "校区团委社团管理部评选的优秀社团不加分，校级优秀社团仅部长和干事加分，社员不加分",
+      "tags": [
+        "综测",
+        "评优",
+        "加分",
+        "材料认定",
+        "综合测评"
+      ],
+      "images": [],
+      "sources": [
+        {
+          "sheet": "综测系统疑问解答",
+          "cells": [
+            "A14",
+            "B14",
+            "C14"
+          ]
+        }
+      ],
+      "verification": "pending",
+      "featured": false
+    },
+    {
+      "id": "g-530368c83d",
+      "title": "班委需要提供什么证明材料呢？",
+      "category": "evaluation",
+      "summary": "班委需要提供什么证明材料呢？",
+      "body": "班级自拟名单即可",
+      "tags": [
+        "综测",
+        "评优",
+        "加分",
+        "材料认定",
+        "综合测评"
+      ],
+      "images": [],
+      "sources": [
+        {
+          "sheet": "综测系统疑问解答",
+          "cells": [
+            "A15",
+            "B15",
+            "C15"
+          ]
+        }
+      ],
+      "verification": "pending",
+      "featured": false
+    },
+    {
+      "id": "g-394e864664",
+      "title": "计算数据有小数点保留规定吗？",
+      "category": "evaluation",
+      "summary": "计算数据有小数点保留规定吗？",
+      "body": "无",
+      "tags": [
+        "综测",
+        "评优",
+        "加分",
+        "材料认定",
+        "综合测评"
+      ],
+      "images": [],
+      "sources": [
+        {
+          "sheet": "综测系统疑问解答",
+          "cells": [
+            "A16",
+            "B16",
+            "C16"
+          ]
+        }
+      ],
+      "verification": "pending",
+      "featured": false
+    },
+    {
+      "id": "g-da350c37dc",
+      "title": "综测培训会可以加分吗？",
+      "category": "evaluation",
+      "summary": "参会属于综测评定小组的义务，不可额外加分",
+      "body": "参会属于综测评定小组的义务，不可额外加分",
+      "tags": [
+        "综测",
+        "评优",
+        "加分",
+        "材料认定",
+        "综合测评"
+      ],
+      "images": [],
+      "sources": [
+        {
+          "sheet": "综测系统疑问解答",
+          "cells": [
+            "A17",
+            "B17",
+            "C17"
+          ]
+        }
+      ],
+      "verification": "pending",
+      "featured": false
+    },
+    {
+      "id": "g-a73f49efef",
+      "title": "参与活动中既是工作人员也是参与人员是叠加算分还是只能取一个加分？",
+      "category": "evaluation",
+      "summary": "参与活动中既是工作人员也是参与人员是叠加算分还是只能取一个加分？",
+      "body": "只能取一个计算",
+      "tags": [
+        "综测",
+        "评优",
+        "加分",
+        "材料认定",
+        "综合测评"
+      ],
+      "images": [],
+      "sources": [
+        {
+          "sheet": "综测系统疑问解答",
+          "cells": [
+            "A18",
+            "B18",
+            "C18"
+          ]
+        }
+      ],
+      "verification": "pending",
+      "featured": false
+    },
+    {
+      "id": "g-4f2221605a",
+      "title": "外招“灯塔计划”活动如何加分？",
+      "category": "evaluation",
+      "summary": "按照“校、院级学生组织、社团组织的长期活动”有关内容加分",
+      "body": "按照“校、院级学生组织、社团组织的长期活动”有关内容加分",
+      "tags": [
+        "综测",
+        "评优",
+        "加分",
+        "材料认定",
+        "综合测评"
+      ],
+      "images": [],
+      "sources": [
+        {
+          "sheet": "综测系统疑问解答",
+          "cells": [
+            "A19",
+            "B19",
+            "C19"
+          ]
+        }
+      ],
+      "verification": "pending",
+      "featured": false
+    },
+    {
+      "id": "g-f7fe60707f",
+      "title": "放弃综测的同学应该如何提交材料？",
+      "category": "evaluation",
+      "summary": "放弃综测的同学在个人表内所有加分填写为0，提交空的Word证明材料，同时需要手写一张自愿放弃综测声明书并上传；系统上的个人基础自评仍需正常完成。",
+      "body": "放弃综测的同学在个人表内所有加分填写为0，提交空的Word证明材料，同时需要手写一张自愿放弃综测声明书并上传；系统上的个人基础自评仍需正常完成。",
+      "tags": [
+        "综测",
+        "评优",
+        "加分",
+        "材料认定",
+        "综合测评"
+      ],
+      "images": [],
+      "sources": [
+        {
+          "sheet": "综测系统疑问解答",
+          "cells": [
+            "A20",
+            "B20",
+            "C20"
+          ]
+        }
+      ],
+      "verification": "pending",
+      "featured": false
+    },
+    {
+      "id": "g-d612d94d12",
+      "title": "部分签到表截图无法截取到表头怎么办？",
+      "category": "evaluation",
+      "summary": "截图中没有表头时，用文字标注表头信息即可。",
+      "body": "截图中没有表头时，用文字标注表头信息即可。",
+      "tags": [
+        "综测",
+        "评优",
+        "加分",
+        "材料认定",
+        "综合测评"
+      ],
+      "images": [],
+      "sources": [
+        {
+          "sheet": "综测系统疑问解答",
+          "cells": [
+            "A21",
+            "B21",
+            "C21"
+          ]
+        }
+      ],
+      "verification": "pending",
+      "featured": false
+    },
+    {
+      "id": "g-dbf60575ca",
+      "title": "签到表截图无法截取到来源目录怎么办？",
+      "category": "evaluation",
+      "summary": "签到表截图无法截取到来源目录怎么办？",
+      "body": "用文字标注详细的来源目录即可。",
+      "tags": [
+        "综测",
+        "评优",
+        "加分",
+        "材料认定",
+        "综合测评"
+      ],
+      "images": [],
+      "sources": [
+        {
+          "sheet": "综测系统疑问解答",
+          "cells": [
+            "A22",
+            "B22",
+            "C22"
+          ]
+        }
+      ],
+      "verification": "pending",
+      "featured": false
+    },
+    {
+      "id": "g-50bd0177d2",
+      "title": "挂科页面缺少对应的身份证明材料怎么办？",
+      "category": "evaluation",
+      "summary": "挂科页面缺少对应的身份证明材料怎么办？",
+      "body": "暂时使用截图上传即可。",
+      "tags": [
+        "综测",
+        "评优",
+        "加分",
+        "材料认定",
+        "综合测评"
+      ],
+      "images": [],
+      "sources": [
+        {
+          "sheet": "综测系统疑问解答",
+          "cells": [
+            "A23",
+            "B23",
+            "C23"
+          ]
+        }
+      ],
+      "verification": "pending",
+      "featured": false
+    },
+    {
+      "id": "g-4206519760",
+      "title": "校区团委评定的优秀社团、优秀部门可以加分吗？",
+      "category": "evaluation",
+      "summary": "不可以，校区团委评定的优秀社团、优秀部门均不给加分。",
+      "body": "不可以，校区团委评定的优秀社团、优秀部门均不给加分。",
+      "tags": [
+        "综测",
+        "评优",
+        "加分",
+        "材料认定",
+        "综合测评"
+      ],
+      "images": [],
+      "sources": [
+        {
+          "sheet": "综测系统疑问解答",
+          "cells": [
+            "A24",
+            "B24",
+            "C24"
+          ]
+        }
+      ],
+      "verification": "pending",
+      "featured": false
+    },
+    {
+      "id": "g-d1aae84718",
+      "title": "“优异本科生”按照什么等级加分？",
+      "category": "evaluation",
+      "summary": "“优异本科生”属于个人荣誉，等级以最终评定单位为准。例如由校教务处发文评定，则按照校级荣誉计算。",
+      "body": "“优异本科生”属于个人荣誉，等级以最终评定单位为准。例如由校教务处发文评定，则按照校级荣誉计算。",
+      "tags": [
+        "综测",
+        "评优",
+        "加分",
+        "材料认定",
+        "综合测评"
+      ],
+      "images": [],
+      "sources": [
+        {
+          "sheet": "综测系统疑问解答",
+          "cells": [
+            "A25",
+            "B25",
+            "C25"
+          ]
+        }
+      ],
+      "verification": "pending",
+      "featured": false
+    },
+    {
+      "id": "g-004c369a49",
+      "title": "红色观影活动如何加分？",
+      "category": "evaluation",
+      "summary": "红色观影属于党支部集体活动，按照德育相关规定加分。",
+      "body": "红色观影属于党支部集体活动，按照德育相关规定加分。",
+      "tags": [
+        "综测",
+        "评优",
+        "加分",
+        "材料认定",
+        "综合测评"
+      ],
+      "images": [],
+      "sources": [
+        {
+          "sheet": "综测系统疑问解答",
+          "cells": [
+            "A26",
+            "B26",
+            "C26"
+          ]
+        }
+      ],
+      "verification": "pending",
+      "featured": false
+    },
+    {
+      "id": "g-37e250bf00",
+      "title": "朋辈分享会、红色观影等集体活动的组织人员如何加分？",
+      "category": "evaluation",
+      "summary": "朋辈分享会、红色观影等集体活动属于院一级统筹组织，组织活动的同学可以按照美育部分的外调相关规定加分。",
+      "body": "朋辈分享会、红色观影等集体活动属于院一级统筹组织，组织活动的同学可以按照美育部分的外调相关规定加分。",
+      "tags": [
+        "综测",
+        "评优",
+        "加分",
+        "材料认定",
+        "综合测评"
+      ],
+      "images": [],
+      "sources": [
+        {
+          "sheet": "综测系统疑问解答",
+          "cells": [
+            "A27",
+            "B27",
+            "C27"
+          ]
+        }
+      ],
+      "verification": "pending",
+      "featured": false
+    },
+    {
+      "id": "g-fa9878ca9c",
+      "title": "码届杯及蓝桥杯培训签到表表头有误，作为证明材料时应该如何处理？",
+      "category": "evaluation",
+      "summary": "签到表本身的内容没有问题，但表头有误，因此作为证明材料时可以将错误表头截去，不予显示，同时标注来源目录即可。",
+      "body": "签到表本身的内容没有问题，但表头有误，因此作为证明材料时可以将错误表头截去，不予显示，同时标注来源目录即可。",
+      "tags": [
+        "综测",
+        "评优",
+        "加分",
+        "材料认定",
+        "综合测评"
+      ],
+      "images": [],
+      "sources": [
+        {
+          "sheet": "综测系统疑问解答",
+          "cells": [
+            "A28",
+            "B28",
+            "C28"
+          ]
+        }
+      ],
+      "verification": "pending",
+      "featured": false
+    },
+    {
+      "id": "g-b3dbed4087",
+      "title": "“智能基座”的课程如何加分？",
+      "category": "evaluation",
+      "summary": "“智能基座”的课程属于美育互动类活动，每次加0.5分。",
+      "body": "“智能基座”的课程属于美育互动类活动，每次加0.5分。",
+      "tags": [
+        "综测",
+        "评优",
+        "加分",
+        "材料认定",
+        "综合测评"
+      ],
+      "images": [],
+      "sources": [
+        {
+          "sheet": "综测系统疑问解答",
+          "cells": [
+            "A29",
+            "B29",
+            "C29"
+          ]
+        }
+      ],
+      "verification": "pending",
+      "featured": false
+    },
+    {
+      "id": "g-999a45edfa",
+      "title": "校级或院级主办的比赛不在科技竞赛列表中，可以加分吗？",
+      "category": "evaluation",
+      "summary": "可以。校级或院级直接主办组织的比赛不要求列入科技竞赛列表，可按照相应的校级或院级获奖等级加分。",
+      "body": "可以。校级或院级直接主办组织的比赛不要求列入科技竞赛列表，可按照相应的校级或院级获奖等级加分。",
+      "tags": [
+        "综测",
+        "评优",
+        "加分",
+        "材料认定",
+        "综合测评"
+      ],
+      "images": [],
+      "sources": [
+        {
+          "sheet": "综测系统疑问解答",
+          "cells": [
+            "A30",
+            "B30",
+            "C30"
+          ]
+        }
+      ],
+      "verification": "pending",
+      "featured": false
+    },
+    {
+      "id": "g-b1ace6385c",
+      "title": "团日班会如何加分？",
+      "category": "evaluation",
+      "summary": "团日班会属于班会，正常按照班会相关规定计算加分。",
+      "body": "团日班会属于班会，正常按照班会相关规定计算加分。",
+      "tags": [
+        "综测",
+        "评优",
+        "加分",
+        "材料认定",
+        "综合测评"
+      ],
+      "images": [],
+      "sources": [
+        {
+          "sheet": "综测系统疑问解答",
+          "cells": [
+            "A31",
+            "B31",
+            "C31"
+          ]
+        }
+      ],
+      "verification": "pending",
+      "featured": false
+    },
+    {
+      "id": "g-d11a075c90",
+      "title": "班级集体活动包括哪些活动，如何加分？",
+      "category": "evaluation",
+      "summary": "签到表中的男女生节活动、篮球赛、推文等属于班级集体活动，按照美育部分的班级活动相关规定加分。",
+      "body": "签到表中的男女生节活动、篮球赛、推文等属于班级集体活动，按照美育部分的班级活动相关规定加分。",
+      "tags": [
+        "综测",
+        "评优",
+        "加分",
+        "材料认定",
+        "综合测评"
+      ],
+      "images": [],
+      "sources": [
+        {
+          "sheet": "综测系统疑问解答",
+          "cells": [
+            "A32",
+            "B32",
+            "C32"
+          ]
+        }
+      ],
+      "verification": "pending",
+      "featured": false
+    },
+    {
+      "id": "g-3b8e1591bd",
+      "title": "校团委学术科技部2025—2026学年第二学期自习打卡活动如何提供证明材料？",
+      "category": "evaluation",
+      "summary": "该自习打卡活动以人证作为证明方式，有相关需要的同学可以联系组长获取证明。",
+      "body": "该自习打卡活动以人证作为证明方式，有相关需要的同学可以联系组长获取证明。",
+      "tags": [
+        "综测",
+        "评优",
+        "加分",
+        "材料认定",
+        "综合测评"
+      ],
+      "images": [],
+      "sources": [
+        {
+          "sheet": "综测系统疑问解答",
+          "cells": [
+            "A33",
+            "B33",
+            "C33"
+          ]
+        }
+      ],
+      "verification": "pending",
+      "featured": false
+    },
+    {
+      "id": "g-8e8d475ab9",
+      "title": "不在竞赛名单中的比赛可以加智育分吗？",
+      "category": "evaluation",
+      "summary": "原则上不可以。可以加智育分的竞赛包括推免竞赛名单内的竞赛、额外认定竞赛等级名单内的竞赛，以及学校或学院直接开展的比赛。",
+      "body": "原则上不可以。可以加智育分的竞赛包括推免竞赛名单内的竞赛、额外认定竞赛等级名单内的竞赛，以及学校或学院直接开展的比赛。",
+      "tags": [
+        "综测",
+        "评优",
+        "加分",
+        "材料认定",
+        "综合测评"
+      ],
+      "images": [],
+      "sources": [
+        {
+          "sheet": "综测系统疑问解答",
+          "cells": [
+            "A34",
+            "B34",
+            "C34"
+          ]
+        }
+      ],
+      "verification": "pending",
+      "featured": false
+    },
+    {
+      "id": "g-857ada4f0b",
+      "title": "大创立项名单中只有组长姓名，组员应该如何证明自己参与项目？",
+      "category": "evaluation",
+      "summary": "大创申报书前面有一页会注明团队成员名单，可将该页面与大创立项名单同时作为证明材料提交。挑战杯立项的情况同理。",
+      "body": "大创申报书前面有一页会注明团队成员名单，可将该页面与大创立项名单同时作为证明材料提交。挑战杯立项的情况同理。",
+      "tags": [
+        "综测",
+        "评优",
+        "加分",
+        "材料认定",
+        "综合测评"
+      ],
+      "images": [],
+      "sources": [
+        {
+          "sheet": "综测系统疑问解答",
+          "cells": [
+            "A35",
+            "B35",
+            "C35"
+          ]
+        }
+      ],
+      "verification": "pending",
+      "featured": false
+    },
+    {
+      "id": "g-40249ee5f5",
+      "title": "朋辈心理辅导员如何计算职务加分？",
+      "category": "evaluation",
+      "summary": "朋辈心理辅导员参照普通班级委员计算职务分，加3分。",
+      "body": "朋辈心理辅导员参照普通班级委员计算职务分，加3分。",
+      "tags": [
+        "综测",
+        "评优",
+        "加分",
+        "材料认定",
+        "综合测评"
+      ],
+      "images": [],
+      "sources": [
+        {
+          "sheet": "综测系统疑问解答",
+          "cells": [
+            "A36",
+            "B36",
+            "C36"
+          ]
+        }
+      ],
+      "verification": "pending",
+      "featured": false
+    },
+    {
+      "id": "g-4d630e82b4",
+      "title": "像“团支风”这类存在院级、校级多级比赛的项目，获奖后如何加分？",
+      "category": "evaluation",
+      "summary": "同一项分级比赛不能同时计算多次获奖分。若参加分级比赛并最终获奖，可以加最高一级获奖分和x次参与分",
+      "body": "同一项分级比赛不能同时计算多次获奖分。若参加分级比赛并最终获奖，可以加最高一级获奖分和x次参与分",
+      "tags": [
+        "综测",
+        "评优",
+        "加分",
+        "材料认定",
+        "综合测评"
+      ],
+      "images": [],
+      "sources": [
+        {
+          "sheet": "综测系统疑问解答",
+          "cells": [
+            "A37",
+            "B37",
+            "C37"
+          ]
+        }
+      ],
+      "verification": "pending",
+      "featured": false
+    },
+    {
+      "id": "g-68859469ba",
+      "title": "“妈妈杯”区域赛二等奖如何认定加分等级？",
+      "category": "evaluation",
+      "summary": "如果获得国奖，则按照综测文件中“妈妈杯”的最高认定等级，即市级计算；目前若为区域赛，则在市级基础上再下降一级认定。其他类似比赛同理。",
+      "body": "如果获得国奖，则按照综测文件中“妈妈杯”的最高认定等级，即市级计算；目前若为区域赛，则在市级基础上再下降一级认定。其他类似比赛同理。",
+      "tags": [
+        "综测",
+        "评优",
+        "加分",
+        "材料认定",
+        "综合测评"
+      ],
+      "images": [],
+      "sources": [
+        {
+          "sheet": "综测系统疑问解答",
+          "cells": [
+            "A38",
+            "B38",
+            "C38"
+          ]
+        }
+      ],
+      "verification": "pending",
+      "featured": false
+    },
+    {
+      "id": "g-20e25af68c",
+      "title": "珠海校区“梦想杯”创新创业大赛获奖如何加分？",
+      "category": "evaluation",
+      "summary": "珠海校区“梦想杯”创新创业大赛获奖加智育分，竞赛等级按照校级计算。",
+      "body": "珠海校区“梦想杯”创新创业大赛获奖加智育分，竞赛等级按照校级计算。",
+      "tags": [
+        "综测",
+        "评优",
+        "加分",
+        "材料认定",
+        "综合测评"
+      ],
+      "images": [],
+      "sources": [
+        {
+          "sheet": "综测系统疑问解答",
+          "cells": [
+            "A39",
+            "B39",
+            "C39"
+          ]
+        }
+      ],
+      "verification": "pending",
+      "featured": false
+    },
+    {
+      "id": "g-862a18af45",
+      "title": "某一综测板块分数已经达到上限后，还可以继续提交材料吗？",
+      "category": "evaluation",
+      "summary": "可以。即使该板块分数已经达到上限，也可以继续提交相关材料，避免已有材料后续被核减后影响最终分数。",
+      "body": "可以。即使该板块分数已经达到上限，也可以继续提交相关材料，避免已有材料后续被核减后影响最终分数。",
+      "tags": [
+        "综测",
+        "评优",
+        "加分",
+        "材料认定",
+        "综合测评"
+      ],
+      "images": [],
+      "sources": [
+        {
+          "sheet": "综测系统疑问解答",
+          "cells": [
+            "A40",
+            "B40",
+            "C40"
+          ]
+        }
+      ],
+      "verification": "pending",
+      "featured": false
+    },
+    {
+      "id": "g-feed04df62",
+      "title": "码界杯及蓝桥杯培训如何加分？",
+      "category": "evaluation",
+      "summary": "码界杯及蓝桥杯培训属于观看类美育活动，每次加0.3分。",
+      "body": "码界杯及蓝桥杯培训属于观看类美育活动，每次加0.3分。",
+      "tags": [
+        "综测",
+        "评优",
+        "加分",
+        "材料认定",
+        "综合测评"
+      ],
+      "images": [],
+      "sources": [
+        {
+          "sheet": "综测系统疑问解答",
+          "cells": [
+            "A41",
+            "B41",
+            "C41"
+          ]
+        }
+      ],
+      "verification": "pending",
+      "featured": false
+    },
+    {
+      "id": "g-dd95adafb1",
+      "title": "全国大学生数学建模竞赛国赛优胜奖如何加分？",
+      "category": "evaluation",
+      "summary": "数模国赛优胜奖不可以加智育分，按照成功参赛加美育分。",
+      "body": "数模国赛优胜奖不可以加智育分，按照成功参赛加美育分。",
+      "tags": [
+        "综测",
+        "评优",
+        "加分",
+        "材料认定",
+        "综合测评"
+      ],
+      "images": [],
+      "sources": [
+        {
+          "sheet": "综测系统疑问解答",
+          "cells": [
+            "A42",
+            "B42",
+            "C42"
+          ]
+        }
+      ],
+      "verification": "pending",
+      "featured": false
+    },
+    {
+      "id": "g-080d8736db",
+      "title": "不在保研竞赛榜单或认定名单中的比赛获奖，可以加美育分吗？",
+      "category": "evaluation",
+      "summary": "不可以。不在保研竞赛榜单或相关认定名单中的比赛获奖，不可以加美育分。",
+      "body": "不可以。不在保研竞赛榜单或相关认定名单中的比赛获奖，不可以加美育分。",
+      "tags": [
+        "综测",
+        "评优",
+        "加分",
+        "材料认定",
+        "综合测评"
+      ],
+      "images": [],
+      "sources": [
+        {
+          "sheet": "综测系统疑问解答",
+          "cells": [
+            "A43",
+            "B43",
+            "C43"
+          ]
+        }
+      ],
+      "verification": "pending",
+      "featured": false
+    },
+    {
+      "id": "g-d5500ac865",
+      "title": "“校史知识竞赛”如何加分？",
+      "category": "evaluation",
+      "summary": "“校史知识竞赛”不加德育分，按照相关规定加美育分。",
+      "body": "“校史知识竞赛”不加德育分，按照相关规定加美育分。",
+      "tags": [
+        "综测",
+        "评优",
+        "加分",
+        "材料认定",
+        "综合测评"
+      ],
+      "images": [],
+      "sources": [
+        {
+          "sheet": "综测系统疑问解答",
+          "cells": [
+            "A44",
+            "B44",
+            "C44"
+          ]
+        }
+      ],
+      "verification": "pending",
+      "featured": false
+    },
+    {
+      "id": "g-813308d83c",
+      "title": "本学年的困难认定评议分数应计入哪个学年？",
+      "category": "evaluation",
+      "summary": "本学年的困难认定评议分数计入本学年，即在明年9月进行综测计算时计入。",
+      "body": "本学年的困难认定评议分数计入本学年，即在明年9月进行综测计算时计入。",
+      "tags": [
+        "综测",
+        "评优",
+        "加分",
+        "材料认定",
+        "综合测评"
+      ],
+      "images": [],
+      "sources": [
+        {
+          "sheet": "综测系统疑问解答",
+          "cells": [
+            "A45",
+            "B45",
+            "C45"
+          ]
+        }
+      ],
+      "verification": "pending",
+      "featured": false
+    },
+    {
+      "id": "g-9dd714f612",
+      "title": "常用公众号",
+      "category": "study",
+      "summary": "（暨南大学珠海校区图书馆公众号）",
+      "body": "- 暨南大学\n- 暨南大学服务号\n- 暨南大学珠海校区\n- 暨南大学招生办公室\n- 暨大图书馆\n- 暨图图 （暨南大学珠海校区图书馆公众号）\n- 暨南大学智能科学与工程学院\n- 暨南大学学生学习与发展",
+      "tags": [
+        "网站",
+        "入口"
+      ],
+      "images": [],
+      "sources": [
+        {
+          "sheet": "智科er 必备、校历",
+          "cells": [
+            "A1",
+            "A2",
+            "A3",
+            "A4",
+            "A5",
+            "A6",
+            "A7",
+            "B7",
+            "A8",
+            "A9"
+          ]
+        }
+      ],
+      "verification": "pending",
+      "featured": false
+    },
+    {
+      "id": "g-cb7bd9b4aa",
+      "title": "校园常用网站",
+      "category": "study",
+      "summary": "一些暨大常用官网(建议添加书签):",
+      "body": "一些暨大常用官网(建议添加书签):\n\n①暨南大学教务系统:\n\n暨南大学本科生院(jnu.edu.cn)\n\n②官网，新门户:\n\n暨南大学-华侨最高学府-国家“双一流”建设高校(jnu.edu.cn)\n\n③选课:\n\nhttps://jwxk.jnu.edu.cn/\n\n④融合门户:\n\n融合门户(jnu.edu.cn)\n\n⑤暨南大学学生处\n\nhttps://xsc.jnu.edu.cn/\n\n⑥网上服务大厅\n\nhttps://icas.jnu.edu.cn\n\n⑦暨南大学图书馆\n\nhttp://lib.jnu.edu.cn/\n\n⑧全国大学英语四六级考试\n\nhttp://cet.jnu.edu.cn/cet/",
+      "tags": [
+        "网站",
+        "入口"
+      ],
+      "images": [],
+      "sources": [
+        {
+          "sheet": "智科er 必备、校历",
+          "cells": [
+            "A12",
+            "A13",
+            "B13",
+            "A14",
+            "B14",
+            "A15",
+            "B15",
+            "A16",
+            "B16",
+            "A17",
+            "B17",
+            "A18",
+            "B18",
+            "A19",
+            "B19",
+            "A20",
+            "B20"
+          ]
+        }
+      ],
+      "verification": "pending",
+      "featured": false
+    },
+    {
+      "id": "g-1fd8853867",
+      "title": "学习平台入口",
+      "category": "study",
+      "summary": "学习平台入口",
+      "body": "·学习上需要的的网站:\n\n①实验室安全考试:\n\nhttps://agpx.jnu.edu.cn/\n\n②雨课堂登录网站:\n\nhttps://www.yuketang.cn/web\n\n③智慧树:\n\nhttps://www.zhihuishu.com/\n\n④慕课:\n\nhttps://www.icoursel63.org/?frm=msidevs.net&tg=uuby",
+      "tags": [
+        "网站",
+        "入口"
+      ],
+      "images": [],
+      "sources": [
+        {
+          "sheet": "智科er 必备、校历",
+          "cells": [
+            "A22",
+            "A23",
+            "B23",
+            "A24",
+            "B24",
+            "A25",
+            "B25",
+            "A26",
+            "B26"
+          ]
+        }
+      ],
+      "verification": "pending",
+      "featured": false
+    },
+    {
+      "id": "g-7e84fac325",
+      "title": "学院教务与辅导员联系",
+      "category": "study",
+      "summary": "0756-8505678，行政楼634A，负责人智、软工、信安专业",
+      "body": "智科的教务室\n\n① 教学办:\n\n石老师:\n\n0756-8505678，行政楼634A，负责人智、软工、信安专业\n\n吕老师:\n\n0756-8505636，行政楼634B，负责物联网、工业、电信专业\n\n② 辅导员:\n\n钟老师、吴老师:\n\n0756-8505691，行政楼623，学生按年级专业联系\n\n职能：负责党务、户籍负责学生会、港澳台侨\n\n李老师、余老师、邓老师:\n\n0756-8505313，行政楼642，学生按年级专业联系\n\n职能：负责就业、档案、心理、社区(宿舍)、奖助学贷、团务、医保",
+      "tags": [
+        "教务",
+        "辅导员"
+      ],
+      "images": [],
+      "sources": [
+        {
+          "sheet": "智科er 必备、校历",
+          "cells": [
+            "A30",
+            "A31",
+            "A32",
+            "B32",
+            "A33",
+            "B33",
+            "A34",
+            "A35",
+            "B35",
+            "F35",
+            "A36",
+            "B36",
+            "F36"
+          ]
+        }
+      ],
+      "verification": "pending",
+      "featured": false
+    },
+    {
+      "id": "g-bd03716f7b",
+      "title": "2026—2027学年校历",
+      "category": "study",
+      "summary": "暨南大学2026-2027学年校历",
+      "body": "暨南大学2026-2027学年校历\n\n暨南大学本科生院”网站（https://jwc.jnu.edu.cn/main.htm）——暨大校历",
+      "tags": [
+        "校历"
+      ],
+      "images": [
+        {
+          "src": "/seed-images/7d176361286146339c49.jpeg",
+          "alt": "2026—2027学年校历"
+        }
+      ],
+      "sources": [
+        {
+          "sheet": "智科er 必备、校历",
+          "cells": [
+            "A40",
+            "A41",
+            "A68"
+          ]
+        }
+      ],
+      "verification": "pending",
+      "featured": false
+    },
+    {
+      "id": "g-d9632a3eb3",
+      "title": "宿舍报修流程与电话",
+      "category": "dorm",
+      "summary": "宿舍报修可用微信「云丹田」或拨打 0756-8504603。后勤办咨询电话 0756-8505106。",
+      "body": "①全天报修，请同学们使用微信“云丹田”小程序或拨打紧急报修24小时服务热线0756-8504603进行报修\n\n23点前报修，物业将于2小时内响应处理；23点后报修，物业将于次日上午处理。\n\n常规保修解决的主要是灯泡不亮、门锁故障、管道堵塞、墙壁发霉或破损、房间渗漏水等情况\n\n②全天紧急报修，请拨打电话0756-8504603进行报修\n\n紧急报修解决的主要是水管破裂、严重漏水、水电故障等情况\n\n③报修注意事项\n\n（1）报修后请保证手机通畅。建议在小程序报修时备注方便接听电话的时间，以便工作人员联系。\n\n（2）确认维修方案后，重大报修问题将于7天内完成施工招标，20天内完成维修。\n\n（3）如有需要，请配合社区中心进行临时调宿或配合其他宿舍进行维修。\n\n（4）如遇缺少维修材料等特殊情况，工作人员将与学生提前沟通确认。\n\n（1）为保证维修效果，宿舍故障问题解决后，请配合工作人员通过电话或上门进行回访。\n\n（2）维修后若出现相同故障，可再次报修。若报修后仍未解决问题，可联系后勤办总务科0756-8505106进行反馈。\n\n（1）物业维修服务电话：0756-8504603\n\n（2）宿舍管理部电话：8505448\n\n（3）后勤办总务科电话：0756-8505106\n\n（4）学生社区教育管理中心电话：8505915、8505955\n\n（5）校区领导信箱：ronghao@jnu.edu.cn",
+      "tags": [
+        "报修",
+        "维修",
+        "漏水",
+        "灯泡",
+        "门锁",
+        "水电",
+        "紧急",
+        "宿舍"
+      ],
+      "images": [
+        {
+          "src": "/seed-images/be145e5d88920328d3d5.png",
+          "alt": "宿舍报修流程与电话"
+        },
+        {
+          "src": "/seed-images/f896fd9eb958e4ed94cb.png",
+          "alt": "宿舍报修流程与电话"
+        },
+        {
+          "src": "/seed-images/282f492a1d377524837c.jpeg",
+          "alt": "宿舍报修流程与电话"
+        }
+      ],
+      "sources": [
+        {
+          "sheet": "报修流程",
+          "cells": [
+            "A1",
+            "A2",
+            "A3",
+            "A4",
+            "A5",
+            "E5",
+            "I5",
+            "A26",
+            "A27",
+            "A29",
+            "A30",
+            "A31",
+            "A32",
+            "A33",
+            "A35",
+            "A36",
+            "A38",
+            "A39",
+            "A40",
+            "A41",
+            "A42"
+          ]
+        }
+      ],
+      "verification": "pending",
+      "featured": true
+    },
+    {
+      "id": "g-3f9f54543a",
+      "title": "医务室（开放时间、地址、支付方式）",
+      "category": "health",
+      "summary": "卫生服务中心位于行政楼162，电话 0756-8505210。珠海居民医保符合条件的普通门诊核准费用按 80% 联网结算。",
+      "body": "珠海校区卫生服务中心（行政楼162）\n\n电话0756-8505210\n\n开诊时间：\n\n● 工作日 8：00-12：00、14：30-17：30\n\n● 双休日 9：00-12：00、14：30-17：30\n\n● 法定节假日及寒暑假 9：00-11：30、15：00-17：00\n\n## 校内门诊结算\n\n到校区卫生服务中心就诊请带校园卡。参加珠海市居民医保并在选定的普通门诊统筹定点机构就诊时，核准的普通门诊费用按 80% 联网结算。\n\n珠海医保待遇说明 https://zhsi.zhuhai.gov.cn/rdwt/content/post_3893150.html",
+      "tags": [
+        "就医",
+        "医保",
+        "报销",
+        "医务室",
+        "看病"
+      ],
+      "images": [],
+      "sources": [
+        {
+          "sheet": "就医问题",
+          "cells": [
+            "A1",
+            "A2",
+            "A3",
+            "A4",
+            "A5",
+            "A6",
+            "A7"
+          ]
+        }
+      ],
+      "verification": "pending",
+      "featured": true
+    },
+    {
+      "id": "g-888839abef",
+      "title": "医保",
+      "category": "health",
+      "summary": "医保",
+      "body": "",
+      "tags": [
+        "就医",
+        "医保",
+        "报销",
+        "医务室",
+        "看病"
+      ],
+      "images": [
+        {
+          "src": "/seed-images/8d6b57dc649a89986433.jpeg",
+          "alt": "（二）医保"
+        },
+        {
+          "src": "/seed-images/dea7e401daaddceed8f0.jpeg",
+          "alt": "（二）医保"
+        }
+      ],
+      "sources": [
+        {
+          "sheet": "就医问题",
+          "cells": [
+            "A9",
+            "A10",
+            "H10"
+          ]
+        }
+      ],
+      "verification": "pending",
+      "featured": false
+    },
+    {
+      "id": "g-c45283b82d",
+      "title": "校外门诊看病报销流程",
+      "category": "health",
+      "summary": "校外普通门诊先按要求办理转诊。急救、抢救适用医保的相应规定。",
+      "body": "校外普通门诊需要转诊时，先到珠海校区卫生服务中心（行政楼162）就诊并开具转诊单，再去指定医疗机构。校区转诊单应在外出就医前办好。\n\n珠海市普通门诊统筹规定，除急救、抢救等情形外，未经规定转诊到非选定医疗机构的普通门诊费用，统筹基金不予支付。\n\n就诊后先核实能否联网结算。按校区流程申请报销时，按照转诊单准备原件和复印件、费用明细、门诊病历和转诊单，交行政楼165。办理可咨询 0756-8505361。\n\n校区就医指引 https://zh.jnu.edu.cn/_upload/article/files/de/23/65468cfa469eb1cb9e299382716c/895c325a-3750-49ae-a840-0dc26a3856e1.pdf\n\n珠海医保待遇说明 https://zhsi.zhuhai.gov.cn/rdwt/content/post_3893150.html",
+      "tags": [
+        "就医",
+        "医保",
+        "报销",
+        "医务室",
+        "看病"
+      ],
+      "images": [],
+      "sources": [
+        {
+          "sheet": "就医问题",
+          "cells": [
+            "A34",
+            "A35",
+            "A36"
+          ]
+        }
+      ],
+      "verification": "pending",
+      "featured": false
+    },
+    {
+      "id": "g-4cdf5c73ca",
+      "title": "在校区卫生服务中心未开诊期间发生疾病怎么报销？",
+      "category": "health",
+      "summary": "在开诊时间发生的疾病，及时到校区卫生服务中心就医。在未开诊时间发生的疾病，可按急诊报销，并同时联系辅导员。就医后，在总务科上班时间内凭急诊病历、工商银行卡号、发票及费用清单，先到校区卫生服务中",
+      "body": "在开诊时间发生的疾病，及时到校区卫生服务中心就医。在未开诊时间发生的疾病，可按急诊报销，并同时联系辅导员。就医后，在总务科上班时间内凭急诊病历、工商银行卡号、发票及费用清单，先到校区卫生服务中心办理相关手续，再交至总务科（行政楼165）办理报销。",
+      "tags": [
+        "就医",
+        "医保",
+        "报销",
+        "医务室",
+        "看病"
+      ],
+      "images": [],
+      "sources": [
+        {
+          "sheet": "就医问题",
+          "cells": [
+            "A40",
+            "A41"
+          ]
+        }
+      ],
+      "verification": "pending",
+      "featured": false
+    },
+    {
+      "id": "g-138a8a7561",
+      "title": "在珠海住院报销流程和待遇",
+      "category": "health",
+      "summary": "参加珠海市居民医保的大学生在珠海医保定点医院住院，出院时办理医保联网结算。",
+      "body": "参加珠海市居民医保的大学生，在珠海市内医保定点医院办理住院时出示医保凭证，出院时按规定直接结算。起付标准以上、年度最高支付限额以内的住院核准费用按居民医保待遇支付，政策范围内报销比例达 90%。\n\n异地住院按就医地和参保地规则办理备案并确认医院能否联网结算。涉及补充商业保险的费用，请按个人保单和学校当年通知核对理赔方式。\n\n珠海市大学生居民医保指引 https://www.zhuhai.gov.cn/hd/cjwtjd/ztfl/ysb/content/post_3954214.html",
+      "tags": [
+        "就医",
+        "医保",
+        "报销",
+        "医务室",
+        "看病"
+      ],
+      "images": [
+        {
+          "src": "/seed-images/017d544a32cb77bef5bf.jpeg",
+          "alt": "（五）在珠海住院报销流程和待遇"
+        },
+        {
+          "src": "/seed-images/e3aeaa29a3f0cdf62f0e.jpeg",
+          "alt": "（五）在珠海住院报销流程和待遇"
+        },
+        {
+          "src": "/seed-images/137043db4b574fb09cbe.jpeg",
+          "alt": "（五）在珠海住院报销流程和待遇"
+        }
+      ],
+      "sources": [
+        {
+          "sheet": "就医问题",
+          "cells": [
+            "A47",
+            "A48",
+            "A53",
+            "A62",
+            "A71"
+          ]
+        }
+      ],
+      "verification": "pending",
+      "featured": false
+    },
+    {
+      "id": "g-4d7c34a285",
+      "title": "大学生异地就医如何保障？",
+      "category": "health",
+      "summary": "大学生寒暑假期、休学和实习期间离开本市：",
+      "body": "大学生寒暑假期、休学和实习期间离开本市：\n\n住院：可办理异地就医备案手续，异地住院发生的费用可以直接联网结算（是否能直接联网结算以住院医院的实际情况为准）。备案后不能直接互联网结算或未办理异地就医备案手续的，因疾病在家庭所在地或实习地住院的，应选择定点医疗机构就医，发生的住院核准医疗费用或门诊特定病种费用，由本人先行垫付后，返校凭学院开具的《广东省珠海市异地就医备案登记表》及就医资料，到珠海市社会保险基金管理中心报销结算。其他办理异地就医具体注意事项，请联系珠海市社会保险基金管理中心电话（2121770）咨询或备案。\n\n门诊：门诊凭《市外门诊就医报销证明（寒暑假实习休学期间门诊用）》及就医资料，到行政楼165报销。门诊报销比例为：①在一级及以下医疗机构就医的报销70%。②在二级及以上医疗机构就医的，其费用计入社保年度转诊及急诊支付限额1500元内报销50%。",
+      "tags": [
+        "就医",
+        "医保",
+        "报销",
+        "医务室",
+        "看病"
+      ],
+      "images": [],
+      "sources": [
+        {
+          "sheet": "就医问题",
+          "cells": [
+            "A82",
+            "A83",
+            "A84",
+            "A89"
+          ]
+        }
+      ],
+      "verification": "pending",
+      "featured": false
+    },
+    {
+      "id": "g-ae8b5452c0",
+      "title": "如何办理跨省异地就医备案？",
+      "category": "health",
+      "summary": "第一步：开始备案,进入“国家医保局”微信公众号，点击“微服务”→“国家异地就医备案”，进入异地备案小程序页面。点击“异地就医备案申请”按钮，开始备案。 第二步：选择备案类型进入异地就医备案申请",
+      "body": "第一步：开始备案,进入“国家医保局”微信公众号，点击“微服务”→“国家异地就医备案”，进入异地备案小程序页面。点击“异地就医备案申请”按钮，开始备案。                                              第二步：选择备案类型进入异地就医备案申请页面，参保地为系统默认，参保人可以根据实际情况进行调整，同时做好就医地、参保险种、备案类型的选择。                                                          第三步：提交备案材料阅读备案告知书，选中【本人已仔细阅读备案告知书】后，点击【我已阅读，开始备案】按钮。填写备案信息、联系人信息并上传相关材料，确认无误后，点击“提交备案”按钮，完成备案申请。有些地区允许参保人通过个人承诺的方式办理备案，符合条件的参保人无法提交认定材料时，可以点击“个人承诺书”，按要求完成签名后，点击“提交备案”按钮，完成备案申请。温馨提示：如果已经入院，备案时间应在出院日期之前。备案成功后，按异地医保人员身份办理出院时能够享受跨省直接结算服务。第四步：查看备案进度点击首页【备案记录】按钮，进入异地就医备案记录页面，实时查看备案进度。如有疑问，请联系珠海市社会保险基金管理中心电话（2121770）咨询或备案。",
+      "tags": [
+        "就医",
+        "医保",
+        "报销",
+        "医务室",
+        "看病"
+      ],
+      "images": [],
+      "sources": [
+        {
+          "sheet": "就医问题",
+          "cells": [
+            "A94",
+            "A95"
+          ]
+        }
+      ],
+      "verification": "pending",
+      "featured": false
+    },
+    {
+      "id": "g-124d266a1a",
+      "title": "寒暑假、实习、休学等就医有什么注意事项？",
+      "category": "health",
+      "summary": "住校：正常来校区卫生服务中心就医即可。",
+      "body": "住校：正常来校区卫生服务中心就医即可。\n\n不住校：① 门诊：请在社区卫生服务中心及以上的公立医疗机构就医。凭学院开具的《市外门诊就医报销证明（寒暑假实习休学期间门诊用）》、病历、工商银行卡号、发票及费用清单至行政楼165报销。② 住院：在寒暑假、实习、休学在户籍所在地或父母现住地住院报销90%。特别提醒：若不满足以上适用情况在市外住院，则只能报销60%。市外住院可打珠海市社会保险基金管理中心电话（2121770）备案或咨询。所需资料：《广东省珠海市异地就医备案登记表》（需学院盖章证明）、身份证/珠海市医保卡、住院发票、住院费用汇总清单、疾病诊断证明书、病案首页、入院首次记录、出院小结记录。资料交珠海市社会保险基金管理中心报销后，再在工作时间打电话联系马小姐（18898609433）办理商业保险报销医保未报销的部分。",
+      "tags": [
+        "就医",
+        "医保",
+        "报销",
+        "医务室",
+        "看病"
+      ],
+      "images": [],
+      "sources": [
+        {
+          "sheet": "就医问题",
+          "cells": [
+            "A109",
+            "A110",
+            "A111"
+          ]
+        }
+      ],
+      "verification": "pending",
+      "featured": false
+    },
+    {
+      "id": "g-cc85a10e0a",
+      "title": "为什么有珠海医保，在外就医后不能在学校报销?",
+      "category": "health",
+      "summary": "以下情况学校不能办理报销(学校根据《珠海市基本医疗保险普通门诊统筹办法》代社保局执行)",
+      "body": "以下情况学校不能办理报销(学校根据《珠海市基本医疗保险普通门诊统筹办法》代社保局执行)\n\n1.没有定点在暨南大学珠海校区卫生服务中心的。\n\n2.非急诊未在校区卫生服务中心转诊的。\n\n3.正常在校学习期间，不在以下转诊协议医院就医的。转诊协议医院:珠海市香洲区人民医院、珠海市人民医院、珠海市中西医结合医院、中大五院:\n\n4.资料不齐全的。\n\n5.超出医保报销时间(就诊时间起算两年内可报销)不在报销范围内的:①药店和线上买药费用(因为大学生医保有别于职工医保，个人账户余额为0，故无法在药店、医美机构等使用个人账户进行支付)2疫苗费用(只有破伤风疫苗和狂犬疫苗可报销其他疫苗，如 HPV九价疫苗和乙肝疫苗等不可报销)。③ 推拿、按摩费用。④ 补牙费用。⑤ 健康体检费用。⑥ 戒毒、残疾康复、麻风病治疗费用。⑦ 无有效驾驶证或驾驶证被暂扣期间驾驶车辆、驾驶无有效牌证车辆以及酒后驾驶所发生的医疗费用。⑧ 打架斗殴以及服用、吸食或注射毒品所发生的医疗费用。⑨ 自杀、自伤或自残所发生的医疗费用(无民事行为能力的人除外)。⑩犯罪所发生的医疗费用。⑩ 其它不符合国家、省、市基本医疗保险支付范围的费用。\n\n6.不在医保待遇享受期内。",
+      "tags": [
+        "就医",
+        "医保",
+        "报销",
+        "医务室",
+        "看病"
+      ],
+      "images": [
+        {
+          "src": "/seed-images/726b83b076448f5e4007.jpeg",
+          "alt": "(九)为什么有珠海医保，在外就医后不能在学校报销?"
+        }
+      ],
+      "sources": [
+        {
+          "sheet": "就医问题",
+          "cells": [
+            "A121",
+            "A122",
+            "A123",
+            "A124",
+            "A125",
+            "A127",
+            "A128",
+            "A135",
+            "A136"
+          ]
+        }
+      ],
+      "verification": "pending",
+      "featured": false
+    },
+    {
+      "id": "g-7815939736",
+      "title": "为什么报销款项不能即时到账？",
+      "category": "health",
+      "summary": "因为需要经过以下报销程序，所以报销款项无法即时到账。报销程序：学校收集学生资料，统一审核后上传社保局→社保局审核→社保局审核通过，拨款到学校账户→学校统一拨款到学生银行账户。（一共需要3个月左",
+      "body": "因为需要经过以下报销程序，所以报销款项无法即时到账。报销程序：学校收集学生资料，统一审核后上传社保局→社保局审核→社保局审核通过，拨款到学校账户→学校统一拨款到学生银行账户。（一共需要3个月左右）",
+      "tags": [
+        "就医",
+        "医保",
+        "报销",
+        "医务室",
+        "看病"
+      ],
+      "images": [],
+      "sources": [
+        {
+          "sheet": "就医问题",
+          "cells": [
+            "A144",
+            "A145"
+          ]
+        }
+      ],
+      "verification": "pending",
+      "featured": false
+    },
+    {
+      "id": "g-5ca21760d8",
+      "title": "医保政策经常提到的核准医疗费用是什么意思？",
+      "category": "health",
+      "summary": "符合国家、省、市规定的医保目录（药品目录、诊疗服务项目目录和医用耗材目录）的医疗费用，除个人先自付一定比例的部分外，称为核准医疗费用。核准医疗费用是计算医保待遇的基础数据。",
+      "body": "符合国家、省、市规定的医保目录（药品目录、诊疗服务项目目录和医用耗材目录）的医疗费用，除个人先自付一定比例的部分外，称为核准医疗费用。核准医疗费用是计算医保待遇的基础数据。",
+      "tags": [
+        "就医",
+        "医保",
+        "报销",
+        "医务室",
+        "看病"
+      ],
+      "images": [],
+      "sources": [
+        {
+          "sheet": "就医问题",
+          "cells": [
+            "A152",
+            "A154"
+          ]
+        }
+      ],
+      "verification": "pending",
+      "featured": false
+    },
+    {
+      "id": "g-bd2d6e545d",
+      "title": "医保政策经常提到的支付限额是什么意思？",
+      "category": "health",
+      "summary": "支付限额全称是基本医疗保险年度最高支付限额，是指医保年度内按规定可以纳入统筹基金支付的核准医疗费用的最大值，包含了统筹基金支付金额和个人自付部分金额。",
+      "body": "支付限额全称是基本医疗保险年度最高支付限额，是指医保年度内按规定可以纳入统筹基金支付的核准医疗费用的最大值，包含了统筹基金支付金额和个人自付部分金额。",
+      "tags": [
+        "就医",
+        "医保",
+        "报销",
+        "医务室",
+        "看病"
+      ],
+      "images": [],
+      "sources": [
+        {
+          "sheet": "就医问题",
+          "cells": [
+            "A159",
+            "A161"
+          ]
+        }
+      ],
+      "verification": "pending",
+      "featured": false
+    },
+    {
+      "id": "g-e61ada42a3",
+      "title": "门诊特定病种（门诊慢特病）待遇有哪些？",
+      "category": "health",
+      "summary": "1、门诊特定病种目录。扫描下方二维码查看。",
+      "body": "1、门诊特定病种目录。扫描下方二维码查看。\n\n2、病种认定。患有门诊特定病种目录内疾病的大学生，应向珠海市门诊特定病种核准医院申请门诊特定病种待遇。如何办理详见以下链接：https://www.gdzwfw.gov.cn/portal/v2/guide/11440400MB2C92237L344218921100101（复制链接到浏览器打开）\n\n3、选定定点。审核通过后可在珠海市定点医疗机构中选择1-3家（其中至少一家应为社区卫生服务机构）作为其门诊特定病种费用结算机构。享受门诊特定病种待遇的参保人员签约的门诊统筹定点机构，同时为其门诊特定病种就医定点，合计不超过3家。\n\n4、看病就医联网结算。在选定门诊特定病种费用结算机构就医，在年度限额内发生的核准费用可按以下待遇联网结算。",
+      "tags": [
+        "就医",
+        "医保",
+        "报销",
+        "医务室",
+        "看病"
+      ],
+      "images": [
+        {
+          "src": "/seed-images/45f6f59f6dbc2bbf2778.jpeg",
+          "alt": "（十三）门诊特定病种（门诊慢特病）待遇有哪些？"
+        },
+        {
+          "src": "/seed-images/d3d5b7a0ea3bc91cecad.jpeg",
+          "alt": "（十三）门诊特定病种（门诊慢特病）待遇有哪些？"
+        }
+      ],
+      "sources": [
+        {
+          "sheet": "就医问题",
+          "cells": [
+            "A167",
+            "A169",
+            "A170",
+            "A175",
+            "A180",
+            "A184",
+            "A186"
+          ]
+        }
+      ],
+      "verification": "pending",
+      "featured": false
+    },
+    {
+      "id": "g-7721831db2",
+      "title": "什么是国家谈判药品？门诊如何报销？",
+      "category": "health",
+      "summary": "国家医保谈判药品简称国谈药品，是国家医保局集中组织谈判确定的药品。国家医保局与相关医药企业谈判，协商药品价格并纳入医保目录，以达到大幅降低临床必需、疗效确切的专利药品及独家药品价格的目的，减轻",
+      "body": "国家医保谈判药品简称国谈药品，是国家医保局集中组织谈判确定的药品。国家医保局与相关医药企业谈判，协商药品价格并纳入医保目录，以达到大幅降低临床必需、疗效确切的专利药品及独家药品价格的目的，减轻重大疾病和罕见病等患者用药负担。珠海医保参保人按规定享受普通门诊统筹或门诊特定病种待遇时，发生符合规定的国家谈判药品费用，按相应的待遇比例支付，计入住院核准费用支付限额累计。",
+      "tags": [
+        "就医",
+        "医保",
+        "报销",
+        "医务室",
+        "看病"
+      ],
+      "images": [],
+      "sources": [
+        {
+          "sheet": "就医问题",
+          "cells": [
+            "A195",
+            "A197"
+          ]
+        }
+      ],
+      "verification": "pending",
+      "featured": false
+    },
+    {
+      "id": "g-2e72d4f43e",
+      "title": "是否有珠海市社保局官方报销指南？",
+      "category": "health",
+      "summary": "有，校区是代同学们向珠海市社保局申请医疗费用的报销，所以报销指引都是以《珠海市基本医疗保险普通门诊统筹办法》《珠海市基本医疗保险指南》（见附件）等珠海的政策性文件为依据，指引是为了帮助同学们理",
+      "body": "有，校区是代同学们向珠海市社保局申请医疗费用的报销，所以报销指引都是以《珠海市基本医疗保险普通门诊统筹办法》《珠海市基本医疗保险指南》（见附件）等珠海的政策性文件为依据，指引是为了帮助同学们理解政策。同学们可以通过直接查阅文件，了解到更详细准确的报销政策。",
+      "tags": [
+        "就医",
+        "医保",
+        "报销",
+        "医务室",
+        "看病"
+      ],
+      "images": [],
+      "sources": [
+        {
+          "sheet": "就医问题",
+          "cells": [
+            "A204",
+            "A206"
+          ]
+        }
+      ],
+      "verification": "pending",
+      "featured": false
+    },
+    {
+      "id": "g-fd9d11a6f4",
+      "title": "狂犬疫苗报销问题？",
+      "category": "health",
+      "summary": "狂犬病疫苗属于商业保险范畴，请参考商业保险报销步骤，工作日正常上班时间电话联系马小姐（18898609433），由商业保险公司按比例报销。",
+      "body": "狂犬病疫苗属于商业保险范畴，请参考商业保险报销步骤，工作日正常上班时间电话联系马小姐（18898609433），由商业保险公司按比例报销。",
+      "tags": [
+        "就医",
+        "医保",
+        "报销",
+        "医务室",
+        "看病"
+      ],
+      "images": [],
+      "sources": [
+        {
+          "sheet": "就医问题",
+          "cells": [
+            "A211",
+            "A213"
+          ]
+        }
+      ],
+      "verification": "pending",
+      "featured": false
+    },
+    {
+      "id": "g-fb0e6f2f4a",
+      "title": "商业保险报销所需资料",
+      "category": "health",
+      "summary": "门急诊商保所需资料：适用意外伤害与住院前的急诊留观 （1）发票复印件（需要公医办盖章并注明报销金额，电子发票A4纸黑白打印）（2）费用清单原件与复印件（电子发票未显示需额外提供）（3）病历封面",
+      "body": "门急诊商保所需资料：适用意外伤害与住院前的急诊留观                                         （1）发票复印件（需要公医办盖章并注明报销金额，电子发票A4纸黑白打印）（2）费用清单原件与复印件（电子发票未显示需额外提供）（3）病历封面与就诊信息复印件（两份） 报销狂犬病疫苗时需提供接种凭证或全部病历。（4）检验、检查等报告纸质版（原件或复印件）（5）身份证正反面复印件（内招生）通行证正反面复印件（外招生）（6）银行卡正反面复印件（卡号清晰）（工行、建行、中行）证件与银行卡复印件正中需写：姓名，学号，学院，专业，手机号   银行卡复印件需手写一次：银行卡号                 住院商保所需资料：适用意外伤害与住院前的急诊留观 1.发票原件 2.费用清单原件或复印件3. 出院小结原件或复印件 4.社保结算单原件或复印件 5.检查报告原件或复印件6.身份证正反面复印件（内招生）通行证正反面复印件（外招生） 7.银行卡正反面复印件（卡号清晰） （四大银行）证件与银行卡复印件正中需写：姓名，学号，学院，专业，手机号  银行卡复印件需手写一次：银行卡号",
+      "tags": [
+        "就医",
+        "医保",
+        "报销",
+        "医务室",
+        "看病"
+      ],
+      "images": [],
+      "sources": [
+        {
+          "sheet": "就医问题",
+          "cells": [
+            "A217",
+            "A219"
+          ]
+        }
+      ],
+      "verification": "pending",
+      "featured": false
+    },
+    {
+      "id": "g-bc552503ac",
+      "title": "到校区卫生服务中心就诊需要带什么?",
+      "category": "health",
+      "summary": "（1）实体校园卡（用于缴费）。不支持微信、支付宝。（2）感冒和发烧的同学请佩戴口罩。",
+      "body": "（1）实体校园卡（用于缴费）。不支持微信、支付宝。（2）感冒和发烧的同学请佩戴口罩。",
+      "tags": [
+        "就医",
+        "医保",
+        "报销",
+        "医务室",
+        "看病"
+      ],
+      "images": [],
+      "sources": [
+        {
+          "sheet": "就医问题",
+          "cells": [
+            "A232",
+            "A234"
+          ]
+        }
+      ],
+      "verification": "pending",
+      "featured": false
+    },
+    {
+      "id": "g-c44d669c17",
+      "title": "为什么珠海校区卫生服务中心没有某些常见药物？",
+      "category": "health",
+      "summary": "药品厂家品种众多，为了减轻同学们的经济负担，校区卫生服务中心采购的药品都是医保范围内的，是同学们可以报销的药品，但不一定是同学心目中的大厂的药品。例如，999感冒颗粒、999皮炎平、京都念慈庵",
+      "body": "药品厂家品种众多，为了减轻同学们的经济负担，校区卫生服务中心采购的药品都是医保范围内的，是同学们可以报销的药品，但不一定是同学心目中的大厂的药品。例如，999感冒颗粒、999皮炎平、京都念慈庵、金嗓子喉片等都不是医保报销药物，故校区卫生服务中心会选择用同等作用的可报销的药物。",
+      "tags": [
+        "就医",
+        "医保",
+        "报销",
+        "医务室",
+        "看病"
+      ],
+      "images": [],
+      "sources": [
+        {
+          "sheet": "就医问题",
+          "cells": [
+            "A238",
+            "A240"
+          ]
+        }
+      ],
+      "verification": "pending",
+      "featured": false
+    },
+    {
+      "id": "g-28bc753062",
+      "title": "开请假条的标准是什么？",
+      "category": "health",
+      "summary": "珠海校区卫生服务中心仅为达到无法上课的程度的同学，出具医疗请假证明。不开具请假条的情况包括但不限于：扭伤、普通感冒、轻度腹泻等非急诊于校外就医。具体请电话咨询校区卫生服务中心（8505210）",
+      "body": "珠海校区卫生服务中心仅为达到无法上课的程度的同学，出具医疗请假证明。不开具请假条的情况包括但不限于：扭伤、普通感冒、轻度腹泻等非急诊于校外就医。具体请电话咨询校区卫生服务中心（8505210）。",
+      "tags": [
+        "就医",
+        "医保",
+        "报销",
+        "医务室",
+        "看病"
+      ],
+      "images": [],
+      "sources": [
+        {
+          "sheet": "就医问题",
+          "cells": [
+            "A245",
+            "A247"
+          ]
+        }
+      ],
+      "verification": "pending",
+      "featured": false
+    },
+    {
+      "id": "g-87a50ad174",
+      "title": "珠海校区卫生服务中心（行政楼162）开诊时间和总务科（行政楼165）报销受理时间？",
+      "category": "health",
+      "summary": "（1）珠海校区卫生服务中心：日常开诊时间：周一到周五8:00-12:00 14:30-17:30周末9:00-12:00 14:30-17:30（工作电话8505210）法定假日及寒暑假上班时",
+      "body": "（1）珠海校区卫生服务中心：日常开诊时间：周一到周五8:00-12:00 14:30-17:30周末9:00-12:00 14:30-17:30（工作电话8505210）法定假日及寒暑假上班时间：9:00-11:30 15:00-17:00（2）总务科：周一到周五8:00-12:00 14:30-17:30",
+      "tags": [
+        "就医",
+        "医保",
+        "报销",
+        "医务室",
+        "看病"
+      ],
+      "images": [],
+      "sources": [
+        {
+          "sheet": "就医问题",
+          "cells": [
+            "A252",
+            "A254"
+          ]
+        }
+      ],
+      "verification": "pending",
+      "featured": false
+    },
+    {
+      "id": "g-10838506b4",
+      "title": "珠海市社会保险基金管理中心业务办理的流程、预约方式、地址、电话是？",
+      "category": "health",
+      "summary": "在【珠海社保】公众号预约，点击【社保服务】中的【预约】栏预约（可选择香洲办事处）。地址：香洲区红山路245号；电话0756-2121506。",
+      "body": "在【珠海社保】公众号预约，点击【社保服务】中的【预约】栏预约（可选择香洲办事处）。地址：香洲区红山路245号；电话0756-2121506。",
+      "tags": [
+        "就医",
+        "医保",
+        "报销",
+        "医务室",
+        "看病"
+      ],
+      "images": [],
+      "sources": [
+        {
+          "sheet": "就医问题",
+          "cells": [
+            "A261",
+            "A263"
+          ]
+        }
+      ],
+      "verification": "pending",
+      "featured": false
+    },
+    {
+      "id": "g-054164f539",
+      "title": "珠海市附加补充医疗保险小知识",
+      "category": "health",
+      "summary": "【1】自2019年1月1日起，珠海市开始实施附加补充医疗保险“大爱无疆”。该项目为政府支持与引导、商业保险公司承办的公益性项目，与基本医疗保险互补衔接，旨在进一步提高本市医疗保障水平，防范因病",
+      "body": "【1】自2019年1月1日起，珠海市开始实施附加补充医疗保险“大爱无疆”。该项目为政府支持与引导、商业保险公司承办的公益性项目，与基本医疗保险互补衔接，旨在进一步提高本市医疗保障水平，防范因病致贫。●参保对象：珠海市基本医疗保险所有参保人。●参保方式：个人自愿投保，同学们可扫描下方二维码自行操作。●保费：年保费为190元。●结算方式：实现费用补偿“一站式”联网结算，并在珠海市医保各办事处和三级医院开设了“大爱无疆”服务窗口。\n【2】关注“珠海大爱无疆”微信公众号可进行参保及查阅相关细则，详情亦可致电12345咨询。\n【3】投保指引：微信识别下方二维码，进入“投保申请”页面，输入需投保的人员信息，按流程指引完成投保。",
+      "tags": [
+        "就医",
+        "医保",
+        "报销",
+        "医务室",
+        "看病"
+      ],
+      "images": [
+        {
+          "src": "/seed-images/393ae6f8109d82b67a67.jpeg",
+          "alt": "（二十三）珠海市附加补充医疗保险小知识"
+        }
+      ],
+      "sources": [
+        {
+          "sheet": "就医问题",
+          "cells": [
+            "A267",
+            "A269",
+            "A277"
+          ]
+        }
+      ],
+      "verification": "pending",
+      "featured": false
+    },
+    {
+      "id": "g-a4a705bacc",
+      "title": "学校在学生医保工作中承担的部分",
+      "category": "health",
+      "summary": "（1）参保：学校每年统一代社保局集中收集一次学生信息及参保费用，并上交，完成参保。（2）报销：学校按社保局《珠海市基本医疗保险普通门诊统筹办法》的要求，代社保局收集学生门诊报销材料（具体是否能",
+      "body": "（1）参保：学校每年统一代社保局集中收集一次学生信息及参保费用，并上交，完成参保。（2）报销：学校按社保局《珠海市基本医疗保险普通门诊统筹办法》的要求，代社保局收集学生门诊报销材料（具体是否能够报销由社保局决定）并上传。待社保局审核通过后，学校再代社保局把报销钱款发到学生登记的工商银行账户中。",
+      "tags": [
+        "就医",
+        "医保",
+        "报销",
+        "医务室",
+        "看病"
+      ],
+      "images": [],
+      "sources": [
+        {
+          "sheet": "就医问题",
+          "cells": [
+            "A283",
+            "A285"
+          ]
+        }
+      ],
+      "verification": "pending",
+      "featured": false
+    },
+    {
+      "id": "g-f45e93c8f7",
+      "title": "我们参加的是什么医保？",
+      "category": "health",
+      "summary": "参加的是珠海市基本医疗保险和暨南大学学生团体医疗补充保险。前者是我们常说的大学生医保，参加的是珠海市基本医疗保险（新传、信科、理工、法学院研究生参加的是校本部广州市城镇居民医保，详情请见《暨南",
+      "body": "参加的是珠海市基本医疗保险和暨南大学学生团体医疗补充保险。前者是我们常说的大学生医保，参加的是珠海市基本医疗保险（新传、信科、理工、法学院研究生参加的是校本部广州市城镇居民医保，详情请见《暨南大学信科、理工、新传、法学院在珠学生就医和医保报销指引》），缴费标准为每人每年380元，财政补贴标准为每人每年750元。平时感冒咳嗽等小病有普通门诊统筹待遇；慢病有门诊特定病种待遇；大病有住院待遇，个人负担由大病保险二次报销。后者是商业保险每人每年50元，是医保的补充保险，住院和意外伤害门诊未报销的部分，由商业保险按比例报销。",
+      "tags": [
+        "就医",
+        "医保",
+        "报销",
+        "医务室",
+        "看病"
+      ],
+      "images": [],
+      "sources": [
+        {
+          "sheet": "就医问题",
+          "cells": [
+            "A291",
+            "A293"
+          ]
+        }
+      ],
+      "verification": "pending",
+      "featured": false
+    },
+    {
+      "id": "g-0b6d9f0d1d",
+      "title": "参保后如何查询？",
+      "category": "health",
+      "summary": "方式一：进入“珠海社保掌上办”微信小程序，依次点击【信息查询】→【参保缴费查询】→【居民医保缴费】。 方式二：登录“珠海医保”微信公众号，选择【医保业务】→【医保业务办理】→【医保在线办理】→",
+      "body": "方式一：进入“珠海社保掌上办”微信小程序，依次点击【信息查询】→【参保缴费查询】→【居民医保缴费】。    方式二：登录“珠海医保”微信公众号，选择【医保业务】→【医保业务办理】→【医保在线办理】→【社保掌上办】→【信息查询】→【参保缴费查询】→【居民医保缴费】。                                                方式三：登录“珠海医保”微信小程序，点击：居民缴费查询，录入个人信息进行查询。如果医保费已成功缴纳，会显示参保缴费情况。                                                                                     方式四：登录“粤税通”小程序，选择【我的社保】→【城乡居民社保】→【城乡居民社保费查询】。             方式五：登录“广东税务”微信公众号，选择【微办税】→【我的社保】→【城乡居民社保】→【城乡居民社保费查询】。注：因为参保时间原因，同学缴费时间与系统显示参保成功时间有较长间隔。",
+      "tags": [
+        "就医",
+        "医保",
+        "报销",
+        "医务室",
+        "看病"
+      ],
+      "images": [],
+      "sources": [
+        {
+          "sheet": "就医问题",
+          "cells": [
+            "A302",
+            "A304"
+          ]
+        }
+      ],
+      "verification": "pending",
+      "featured": false
+    },
+    {
+      "id": "g-8a5e73728a",
+      "title": "为什么我缴纳了大学生医保，但系统显示为停保状态？",
+      "category": "health",
+      "summary": "社保局每年在集中参保期前（8月开始）会统一对大学生医保作停保处理，显示为“暂停参保”，以便学校申报下一年度大学生医保。这是社保局参保系统设置原因，实际上仍属于参保有效期，不影响医保正常使用，下",
+      "body": "社保局每年在集中参保期前（8月开始）会统一对大学生医保作停保处理，显示为“暂停参保”，以便学校申报下一年度大学生医保。这是社保局参保系统设置原因，实际上仍属于参保有效期，不影响医保正常使用，下一年度参保成功后，即可恢复显示“正常参保”状态（大约在11月）。",
+      "tags": [
+        "就医",
+        "医保",
+        "报销",
+        "医务室",
+        "看病"
+      ],
+      "images": [],
+      "sources": [
+        {
+          "sheet": "就医问题",
+          "cells": [
+            "A314",
+            "A316"
+          ]
+        }
+      ],
+      "verification": "pending",
+      "featured": false
+    },
+    {
+      "id": "g-9261879d35",
+      "title": "医保电子缴费凭证如何查询？",
+      "category": "health",
+      "summary": "方式一：微信查询：点击【我】的页面中的【服务】后，找到生活服务中的【医疗健康】；点击首页上的【医保电子凭证】或【医保码】；在此页面中点击【医保缴费明细】，即可查询。 方式二：支付宝查询：打开支",
+      "body": "方式一：微信查询：点击【我】的页面中的【服务】后，找到生活服务中的【医疗健康】；点击首页上的【医保电子凭证】或【医保码】；在此页面中点击【医保缴费明细】，即可查询。    方式二：支付宝查询：打开支付宝，在主页面中搜索【医保缴费】点击进入；在弹出来的页面中找到【医保电子凭证】点击进入；在【精选服务】中找到【医保缴费】或【医保查询】，就可以找到缴费记录了。",
+      "tags": [
+        "就医",
+        "医保",
+        "报销",
+        "医务室",
+        "看病"
+      ],
+      "images": [],
+      "sources": [
+        {
+          "sheet": "就医问题",
+          "cells": [
+            "A322",
+            "A324"
+          ]
+        }
+      ],
+      "verification": "pending",
+      "featured": false
+    },
+    {
+      "id": "g-21ab6f8d9b",
+      "title": "为什么我缴纳了大学生医保，但医保个人账户显示余额为0？",
+      "category": "health",
+      "summary": "简单来说，大学生医保是属于财政补贴的基本医疗保险的一种，无个账划拨进个人账户，（只有职工医保才会有个人社保账户划拨），学生在定点医疗机构可享受门诊统筹待遇。因个人账户余额为0，无法在药店、医美",
+      "body": "简单来说，大学生医保是属于财政补贴的基本医疗保险的一种，无个账划拨进个人账户，（只有职工医保才会有个人社保账户划拨），学生在定点医疗机构可享受门诊统筹待遇。因个人账户余额为0，无法在药店、医美机构等使用个人账户进行支付。作为学生身份时，社保卡仅作为就医凭证，即可凭卡报销结算，不需提前激活、充钱。若学生需到珠海市社会保障基金管理中心申请报销，珠海市社会保障基金管理中心报销的款项是转账到社保卡里的，此时则需到银行激活、取钱。另外，学生需将社保卡作为银行储蓄卡使用时，亦需激活。",
+      "tags": [
+        "就医",
+        "医保",
+        "报销",
+        "医务室",
+        "看病"
+      ],
+      "images": [],
+      "sources": [
+        {
+          "sheet": "就医问题",
+          "cells": [
+            "A331",
+            "A333"
+          ]
+        }
+      ],
+      "verification": "pending",
+      "featured": false
+    },
+    {
+      "id": "g-270114a053",
+      "title": "如何自己办理停保？",
+      "category": "health",
+      "summary": "正常情况下，学生不需要自己停保，毕业后珠海市基金管理中心会统一进行操作，有特殊需求才自己办理停保。手机停保是即时办理的，停保后将无医保保障，也不会退回当年参保医保费，故请慎重停保，建议在确定能",
+      "body": "正常情况下，学生不需要自己停保，毕业后珠海市基金管理中心会统一进行操作，有特殊需求才自己办理停保。手机停保是即时办理的，停保后将无医保保障，也不会退回当年参保医保费，故请慎重停保，建议在确定能有其他医保保障无缝衔接后再停。                             方式一：在“粤医保”微信小程序首页中，看到【我要办事】栏，点击【查看更多】，在【业务办理】中找到【居民医保停保】，填写信息即可。                                           方式二：在“珠海社保掌上办”微信小程序，点击【医疗生育保险办理】→【居民保险停保】。方式三：登录“珠海医保”微信公众号，选择【医保业务】→【医保业务办理】→【医保在线办理】→【社保掌上办】→【医疗生育保险办理】→【居民保险停保】。",
+      "tags": [
+        "就医",
+        "医保",
+        "报销",
+        "医务室",
+        "看病"
+      ],
+      "images": [],
+      "sources": [
+        {
+          "sheet": "就医问题",
+          "cells": [
+            "A341",
+            "A343"
+          ]
+        }
+      ],
+      "verification": "pending",
+      "featured": false
+    },
+    {
+      "id": "g-4f4d89e4d7",
+      "title": "没有社保卡是不是就意味着没有医保？",
+      "category": "health",
+      "summary": "不一定。因为办理社保卡成不成功和参保成不成功是相对独立的两件事情。只要参保成功，即使没有社保卡，医保的部分待遇仍能正常享受。参保成功后，是不退费且不能退费的（低保生除外），因为我们已经把医保费",
+      "body": "不一定。因为办理社保卡成不成功和参保成不成功是相对独立的两件事情。只要参保成功，即使没有社保卡，医保的部分待遇仍能正常享受。参保成功后，是不退费且不能退费的（低保生除外），因为我们已经把医保费划给医保局了。",
+      "tags": [
+        "就医",
+        "医保",
+        "报销",
+        "医务室",
+        "看病"
+      ],
+      "images": [],
+      "sources": [
+        {
+          "sheet": "就医问题",
+          "cells": [
+            "A354",
+            "A356"
+          ]
+        }
+      ],
+      "verification": "pending",
+      "featured": false
+    },
+    {
+      "id": "g-0613bfb4b8",
+      "title": "社保、医保、社保卡、医保卡是什么关系，有什么区别？",
+      "category": "health",
+      "summary": "社保包括五险，即养老保险、医疗保险、失业保险、工伤保险、生育保险，医疗保险（简称医保）只是社保其中一险。 医保对应的是医保卡，但现在已经没有独立的医保卡，统一办理的是社保卡，它承载医保卡功能。",
+      "body": "社保包括五险，即养老保险、医疗保险、失业保险、工伤保险、生育保险，医疗保险（简称医保）只是社保其中一险。 医保对应的是医保卡，但现在已经没有独立的医保卡，统一办理的是社保卡，它承载医保卡功能。社保对应的是社保卡，在学生阶段，学生只买了社保里面的医保，社保卡作为医保参保凭证，只能使用到相应的医保待遇。学生毕业参加工作后，社保卡的其他功能可启用，包括养老保险等。",
+      "tags": [
+        "就医",
+        "医保",
+        "报销",
+        "医务室",
+        "看病"
+      ],
+      "images": [],
+      "sources": [
+        {
+          "sheet": "就医问题",
+          "cells": [
+            "A362",
+            "A364"
+          ]
+        }
+      ],
+      "verification": "pending",
+      "featured": false
+    },
+    {
+      "id": "g-f4c234232a",
+      "title": "社保卡的用处？是否需要办理社保卡？学校是否会协助办理？丢了怎么办？",
+      "category": "health",
+      "summary": "校区卫生服务中心就医和在医院住院是不需要社保卡的，仅校外门诊某些情况下可能需要社保卡，区别如下：有社保卡，且社保卡与手机绑定，即可在手机上直接挂号、医保报销结算。无社保卡，则需在手机上自费挂号",
+      "body": "校区卫生服务中心就医和在医院住院是不需要社保卡的，仅校外门诊某些情况下可能需要社保卡，区别如下：有社保卡，且社保卡与手机绑定，即可在手机上直接挂号、医保报销结算。无社保卡，则需在手机上自费挂号（挂号费后续无法报销），再在医院收费处人工缴费，人工缴费部分的医疗费可按医保报销结算；或在医院收费处人工挂号或缴费，才能享受医保报销结算。学校不统一办理社保卡，因为不是所有学生都有办卡需求，且银行办卡方便。所以有需要办理社保卡的同学，可携带相关证件自行前往银行办理（仅限珠海市的银行，具体哪家不限，第一张社保卡是免费办理的）。如果遗失社保卡，可携带证件到原发卡银行的网点补办。",
+      "tags": [
+        "就医",
+        "医保",
+        "报销",
+        "医务室",
+        "看病"
+      ],
+      "images": [],
+      "sources": [
+        {
+          "sheet": "就医问题",
+          "cells": [
+            "A372",
+            "A374"
+          ]
+        }
+      ],
+      "verification": "pending",
+      "featured": false
+    },
+    {
+      "id": "g-e65d8fc877",
+      "title": "图书馆借书与开放时间",
+      "category": "study",
+      "summary": "（1）一律凭本人借书证（校园卡）外借图书。还书时不需要借书证，读者可直接在所在校区馆归还其他校区馆图书。请按期归还图书，否则将按“逾期处理”执行。如想继续阅读，可自行在网上续借，每本图书可续借",
+      "body": "图书馆\n\n1.借书说明\n\n（1）一律凭本人借书证（校园卡）外借图书。还书时不需要借书证，读者可直接在所在校区馆归还其他校区馆图书。请按期归还图书，否则将按“逾期处理”执行。如想继续阅读，可自行在网上续借，每本图书可续借2次。逾期或被预约的图书不能续借。\n\n（2）网上续借图书操作方法：登录图书馆主页，点击右上角“我的图书馆”—“图书借阅（我的借阅）”—“当前借阅”，即可见已借图书列表，点击图书信息后的“续借”按钮即可完成续借手续。\n\n（3）如果希望收到图书馆的各种通知，如图书逾期通知、预约书到馆通知等，请向图书馆提交Email和手机号，详情请见珠海校区图书馆官网的“流通通知”。\n\n（4）更多借阅细则可查看暨南大学珠海校区图书馆官网的借阅管理规定。\n\n2.图书馆开放时间：\n\n7:30-22:00（寒暑假期开馆时间会另行通知）\n\n3.讨论室借用流程\n\n到图书馆前台登记信息预约使用。\n\n4.其他情况\n\n（1）如发现灯、水龙头等损坏问题，可告知图书馆门口门卫工作人员进行登记维修\n\n（2）馆内严禁吸烟，如发现有同学吸烟，请及时告知工作人员，以便对其进行教育指导。\n\n（3）如遇发现有蛇等突发情况，请立即告知图书馆工作人员或门卫进行处理。\n\n5.入馆须知\n\n凭校园卡入馆 注意仪表着装\n\n馆内严禁吸烟 禁带危险物品\n\n维护馆内卫生 请勿带入饮食\n\n保持馆内安静 爱护书刊设备\n\n阅后人走桌清 共创文明馆风",
+      "tags": [
+        "图书馆",
+        "借书"
+      ],
+      "images": [],
+      "sources": [
+        {
+          "sheet": "学习类",
+          "cells": [
+            "A1",
+            "A2",
+            "A3",
+            "A8",
+            "A11",
+            "A13",
+            "A15",
+            "A16",
+            "A18",
+            "A19",
+            "A21",
+            "A22",
+            "A23",
+            "A24",
+            "A27",
+            "A28",
+            "A29",
+            "A30",
+            "A31",
+            "A32"
+          ]
+        }
+      ],
+      "verification": "pending",
+      "featured": true
+    },
+    {
+      "id": "g-1a697b073d",
+      "title": "课室借用与报修",
+      "category": "study",
+      "summary": "【借用课室规定】接课管通知，学生组织借用课室请提前7天在线上申请，非特殊情况不受理线下申请。",
+      "body": "教学楼\n\n（一）课室借用\n\n【借用课室规定】接课管通知，学生组织借用课室请提前7天在线上申请，非特殊情况不受理线下申请。\n\n1、线上借教室流程：\n\n暨南大学公众号→微门户→微服务→网上大厅→珠海校区→珠海校区课室借用申请\n\n2、报修\n\n教学楼内的设备报修问题都可以反映给本班学代，由学代反映至工作群解决；紧急情况可直接拨打课管电话8505838、8505779或到实验楼C206课室管理中心面对面反映。",
+      "tags": [
+        "教室",
+        "课室",
+        "自习"
+      ],
+      "images": [],
+      "sources": [
+        {
+          "sheet": "学习类",
+          "cells": [
+            "A35",
+            "A36",
+            "A37",
+            "A39",
+            "A40",
+            "A41",
+            "A42"
+          ]
+        }
+      ],
+      "verification": "pending",
+      "featured": false
+    },
+    {
+      "id": "g-d52f7c0123",
+      "title": "自习室开放与使用须知",
+      "category": "study",
+      "summary": "固定自习室开放时间为：7：00-22：30，开放的课室：教409,411,413,511,513。",
+      "body": "（二）自习室\n\n1、课管信息\n\n（1）工作时间:\n\n开放时间：\n\n固定自习室开放时间为：7：00-22：30，开放的课室：教409,411,413,511,513。\n\n流动自习室在没人上课时可使用，开放课室：教102，103，104，106，108。\n\n（2）工作电话:8505838、8505779\n\n（3）现办公地址:实验楼二楼C206\n\n2、课管通知：\n\n教学楼自习室是全校师生的公共资源。自习室严重的占座现象会导致很多座位长时间“书在人空”，公共资源浪费，且容易引发矛盾。为了充分利用自习室资源，营造良好的学习环境，自习室管理有关事项如下：\n\n（1）自习室开放时间为：每天7：00—22：30，请同学们自觉遵守。\n\n（2）请使用自习室的同学们离开座位时务必带走私人物品，课室管理中心及学代会工作人员会不定时巡查，发现占座现象会及时处理，对占座书籍收缴到课室管理中心仓库，对占座其他物品（非贵重物品）视为废品处理。同学若需要领回占座书籍需到课室管理中心申请领回\n\n（3）固定自习室内因故需短暂离座的，可以把书籍临时存放到相应编号的存书柜中。\n\n（4）同学之间应相互谦让，根据先到先使用原则使用自习室。如在自习室因占座而引发纠纷者,课室管理中心将视情节轻重，将情况报送学校相关部门，依据校纪校规严肃处理。\n\n（5）检查中所清理占座物品若在学期末仍无人认领，课室管理中心将以废品统一处理。\n\n（6）鼓励大家对自习室严重不良现象进行举报。联系电话：8505838、8505779\n\n自习室良好的环境秩序需要同学们共同维护，请广大同学共同遵守管理规定，对自习室管理工作给予理解与支持。\n\n（7）空调都是要同学或者老师手动打开，各位同学请根据需要自行决定开或关",
+      "tags": [
+        "教室",
+        "课室",
+        "自习"
+      ],
+      "images": [],
+      "sources": [
+        {
+          "sheet": "学习类",
+          "cells": [
+            "A44",
+            "A45",
+            "A46",
+            "A47",
+            "A48",
+            "A49",
+            "A50",
+            "A51",
+            "A53",
+            "A54",
+            "A57",
+            "A58",
+            "A61",
+            "A62",
+            "A64",
+            "A65",
+            "A66",
+            "A68"
+          ]
+        }
+      ],
+      "verification": "pending",
+      "featured": false
+    },
+    {
+      "id": "g-b36794fe21",
+      "title": "教学楼吸烟及问题反馈",
+      "category": "study",
+      "summary": "共建无烟健康校园，从你我做起。若同学们在教学区发现有人员吸烟影响公共健康的现象，可以及时拨打课管电话（8505838、8505779）联系老师进行抽烟行为的制止，同时反映给本班学代（注意反馈抽",
+      "body": "（三）吸烟及其他问题反馈\n\n共建无烟健康校园，从你我做起。若同学们在教学区发现有人员吸烟影响公共健康的现象，可以及时拨打课管电话（8505838、8505779）联系老师进行抽烟行为的制止，同时反映给本班学代（注意反馈抽烟情况时，需记录时间、地点和人数，方便后续作进一步工作）。",
+      "tags": [
+        "教室",
+        "课室",
+        "自习"
+      ],
+      "images": [],
+      "sources": [
+        {
+          "sheet": "学习类",
+          "cells": [
+            "A69",
+            "A70"
+          ]
+        }
+      ],
+      "verification": "pending",
+      "featured": false
+    },
+    {
+      "id": "g-0834d04e74",
+      "title": "固定自习室使用问题",
+      "category": "study",
+      "summary": "固定自习室是专门用作自习室的教室，使用和管理规则同流动自习室。请各位同学根据先到先使用、人走物清的原则使用自习室。",
+      "body": "（四）固定自习室使用问题\n\n固定自习室是专门用作自习室的教室，使用和管理规则同流动自习室。请各位同学根据先到先使用、人走物清的原则使用自习室。",
+      "tags": [
+        "教室",
+        "课室",
+        "自习"
+      ],
+      "images": [],
+      "sources": [
+        {
+          "sheet": "学习类",
+          "cells": [
+            "A75",
+            "A76"
+          ]
+        }
+      ],
+      "verification": "pending",
+      "featured": false
+    },
+    {
+      "id": "g-29a52e027e",
+      "title": "阳光跑小程序操作指引",
+      "category": "sports",
+      "summary": "学校已在校园运动区域布设了手机无线打卡点，同学们通过支付宝APP首页搜索【跬步暨善-阳光跑】小程序记录跑步数据。任意时间段皆可打卡。 操作指南： （1）下载并登录支付宝 APP 1.确保您的手",
+      "body": "学校已在校园运动区域布设了手机无线打卡点，同学们通过支付宝APP首页搜索【跬步暨善-阳光跑】小程序记录跑步数据。任意时间段皆可打卡。\n\n操作指南：\n（1）下载并登录支付宝 APP\n1.确保您的手机已安装支付宝 APP，并使用本人手机账号登录。\n\n（2）开通运动功能\n1.打开支付宝 APP，在首页搜索“跬步暨善-阳光跑”\n2.进入“暨南大学授权登入”页面，点击“授权登入”以同意获取你的手机\n号码用于为你提供注册登入服务。\n\n（3）填入个人的姓名和学号（学生）/工号（教师），同意获取你通过支付宝运动服务记录的运动详情数据，并点击去运动即可运动打卡。\n\n   (4)   首次登入注册的同学需要完成查看运动视频和参加答题测试，完成两项任务即可参加打卡。\n（注意：答题测试为 3 道多选题，每 1 题的 3 个答案都必须全选。）\n\n   (5)  完成以上两项任务后，需人脸识别核实身份，认证通过后即可开始打卡跑步。\n\n   (6)  开始运动，用户开始使用运动工具，开始后，可随时“暂停”，结束跑步时，点击“长按结束”，跑步结束后，显示跑步记录。",
+      "tags": [
+        "阳光跑",
+        "支付宝",
+        "打卡",
+        "跬步暨善"
+      ],
+      "images": [],
+      "sources": [
+        {
+          "sheet": "运动类",
+          "cells": [
+            "A26"
+          ]
+        }
+      ],
+      "verification": "pending",
+      "featured": false
+    },
+    {
+      "id": "g-d2ae9134fc",
+      "title": "羽毛球场",
+      "category": "sports",
+      "summary": "1、开放时段： 周一至周五（除周四）：16：00—22：00 周四：15：00—22：00 周末：8：30—12：00 14：30—22：00 （注：周五20：00—22：00以及周末早上8：",
+      "body": "1、开放时段：\n\n周一至周五（除周四）：16：00—22：00\n\n周四：15：00—22：00\n\n周末：8：30—12：00 14：30—22：00\n\n（注：周五20：00—22：00以及周末早上8：30—12：00、下午14：30—20：00为校外培训班租用时间段，周末可预定时间段为：20：30—21：30)\n\n2、收费标准：\n\n免费时段：\n\n周一至周五（除周四）：16：00—18：00\n\n周四：15：00—18：00\n\n其余时间段需收费（订场最晚至21：50）\n\n学生收费标准：白天（18：00前）15元每小时，晚上20元每小时",
+      "tags": [
+        "运动",
+        "场馆"
+      ],
+      "images": [],
+      "sources": [
+        {
+          "sheet": "运动类",
+          "cells": [
+            "A4",
+            "B4"
+          ]
+        }
+      ],
+      "verification": "pending",
+      "featured": false
+    },
+    {
+      "id": "g-16cf2b30ca",
+      "title": "篮球场",
+      "category": "sports",
+      "summary": "篮球场免费开放，晚间照明至 21:00。",
+      "body": "篮球场免费开放，晚间照明至 21:00。",
+      "tags": [
+        "运动",
+        "场馆"
+      ],
+      "images": [],
+      "sources": [
+        {
+          "sheet": "运动类",
+          "cells": [
+            "A5",
+            "B5"
+          ]
+        }
+      ],
+      "verification": "pending",
+      "featured": false
+    },
+    {
+      "id": "g-3242042b55",
+      "title": "网球场",
+      "category": "sports",
+      "summary": "1、开放时段： 周一至周五：16：00—22：00（除周四） 周四：15：00—22：00 周末：8：30—12：00、14：30—22：00 2、收费标准： 免费时段（仅限2、3号场） 周一",
+      "body": "1、开放时段：\n\n周一至周五：16：00—22：00（除周四）\n\n周四：15：00—22：00\n\n周末：8：30—12：00、14：30—22：00\n\n2、收费标准：\n\n免费时段（仅限2、3号场）\n\n周一至周五（除周四）16：00—18：00\n\n周四：15：00—18：00\n\n周末：8：30—11：00\n\n其余时间段需收费\n\n白天20元每小时，10元半小时\n\n晚上25元每小时，15元半小时",
+      "tags": [
+        "运动",
+        "场馆"
+      ],
+      "images": [],
+      "sources": [
+        {
+          "sheet": "运动类",
+          "cells": [
+            "A6",
+            "B6"
+          ]
+        }
+      ],
+      "verification": "pending",
+      "featured": false
+    },
+    {
+      "id": "g-f95fab33f0",
+      "title": "台球室",
+      "category": "sports",
+      "summary": "1、开放时段： 周一到周五：16：00——20：00 周末：8：30—11：30、14：30—20：00 2、收费标准：20元每小时（允许订半小时）",
+      "body": "1、开放时段：\n\n周一到周五：16：00——20：00\n\n周末：8：30—11：30、14：30—20：00\n\n2、收费标准：20元每小时（允许订半小时）",
+      "tags": [
+        "运动",
+        "场馆"
+      ],
+      "images": [],
+      "sources": [
+        {
+          "sheet": "运动类",
+          "cells": [
+            "A7",
+            "B7"
+          ]
+        }
+      ],
+      "verification": "pending",
+      "featured": false
+    },
+    {
+      "id": "g-682b827660",
+      "title": "游泳池（进入需要着泳衣，戴泳帽，一位家长只能带一名未成年人或65岁以上老人）",
+      "category": "sports",
+      "summary": "开放时间： 周一到周日每天17：00—19:00、19：15—21:15 收费标准：学生5元每人\\教职工及家属10元每人 入场人员须知 1、请泳客自觉遵守泳池相关管理规定。 2、为保持泳池的卫",
+      "body": "开放时间：\n周一到周日每天17：00—19:00、19：15—21:15\n\n收费标准：学生5元每人\\教职工及家属10元每人\n\n入场人员须知\n1、请泳客自觉遵守泳池相关管理规定。\n\n2、为保持泳池的卫生和清洁，入场须穿着泳衣，佩戴泳帽。\n\n3、每次游泳前请签署《游泳者健康承诺书》，并购买游泳票或出示工会票。每张票一次使用有效，学生不得使用工会票。\n\n4、请泳客们妥善保管好个人财物，购票后可使用储物柜保存个人物品，储物柜钥匙请妥善保管，若不慎丢失，须按价赔偿。\n\n5、游泳时请将自身及他人安全放在第一位，谨防发生意外事故。\n\n6、12岁以下儿童及65岁以上长者必须在监护人陪同下入场，监护人不得私自下水游泳或疏于照看；请注意保持泳池卫生，共同维护健康文明卫生的游泳环境。",
+      "tags": [
+        "运动",
+        "场馆"
+      ],
+      "images": [],
+      "sources": [
+        {
+          "sheet": "运动类",
+          "cells": [
+            "A8",
+            "B8"
+          ]
+        }
+      ],
+      "verification": "pending",
+      "featured": false
+    },
+    {
+      "id": "g-3d52d691e5",
+      "title": "健身房（同时在馆人数不能超过40人）",
+      "category": "sports",
+      "summary": "1、开放时段：周一到周五：16：00——20：00 周末：8：30—11：30、14：30—20：00 2、收费标准：单次健身，3元一次",
+      "body": "1、开放时段：周一到周五：16：00——20：00\n\n周末：8：30—11：30、14：30—20：00\n\n2、收费标准：单次健身，3元一次",
+      "tags": [
+        "运动",
+        "场馆"
+      ],
+      "images": [],
+      "sources": [
+        {
+          "sheet": "运动类",
+          "cells": [
+            "A9",
+            "B9"
+          ]
+        }
+      ],
+      "verification": "pending",
+      "featured": false
+    },
+    {
+      "id": "g-804c94d978",
+      "title": "排球场",
+      "category": "sports",
+      "summary": "开放时段：全天免费，灯光最晚至21：00",
+      "body": "开放时段：全天免费，灯光最晚至21：00",
+      "tags": [
+        "运动",
+        "场馆"
+      ],
+      "images": [],
+      "sources": [
+        {
+          "sheet": "运动类",
+          "cells": [
+            "A10",
+            "B10"
+          ]
+        }
+      ],
+      "verification": "pending",
+      "featured": false
+    },
+    {
+      "id": "g-2d2ba69754",
+      "title": "乒乓球场",
+      "category": "sports",
+      "summary": "1、开放时段: 周一至周五9:30-11:50、14:30-20:00 周六、周日8:30-11:30、14:30-20:00 2、收费标准: 免费开放：周一至周五16:00-20:00 周六",
+      "body": "1、开放时段:\n\n周一至周五9:30-11:50、14:30-20:00\n\n周六、周日8:30-11:30、14:30-20:00\n\n2、收费标准:\n\n免费开放：周一至周五16:00-20:00 周六、周日15:00-20:00\n\n其余时间需要收费，价格为:白天5元/小时:3元/半小时晚上5元/小时:3元/半小时",
+      "tags": [
+        "运动",
+        "场馆"
+      ],
+      "images": [],
+      "sources": [
+        {
+          "sheet": "运动类",
+          "cells": [
+            "A11",
+            "B11"
+          ]
+        }
+      ],
+      "verification": "pending",
+      "featured": false
+    },
+    {
+      "id": "g-2d73668c7c",
+      "title": "形体房",
+      "category": "sports",
+      "summary": "开档时段： 周二、周四下午16：00-18：00 周六上午8：00-12：00",
+      "body": "开档时段： 周二、周四下午16：00-18：00\n\n                    周六上午8：00-12：00",
+      "tags": [
+        "运动",
+        "场馆"
+      ],
+      "images": [],
+      "sources": [
+        {
+          "sheet": "运动类",
+          "cells": [
+            "A12",
+            "B12"
+          ]
+        }
+      ],
+      "verification": "pending",
+      "featured": false
+    },
+    {
+      "id": "g-24f465e509",
+      "title": "体测成绩及格才能评优评先吗？",
+      "category": "sports",
+      "summary": "按照国家体质测试标准，是的(不包括助学金)。",
+      "body": "按照国家体质测试标准，是的(不包括助学金)。",
+      "tags": [
+        "运动",
+        "体测"
+      ],
+      "images": [],
+      "sources": [
+        {
+          "sheet": "运动类",
+          "cells": [
+            "A15",
+            "B15"
+          ]
+        }
+      ],
+      "verification": "pending",
+      "featured": false
+    },
+    {
+      "id": "g-350d237087",
+      "title": "体测成绩是如何计算的？",
+      "category": "sports",
+      "summary": "大学四年，按毕业当学年总分的50%与其他学年总分平均得分的50%之和进行评定，不到50分的将按照结业或肄业处理。",
+      "body": "大学四年，按毕业当学年总分的50%与其他学年总分平均得分的50%之和进行评定，不到50分的将按照结业或肄业处理。",
+      "tags": [
+        "运动",
+        "体测"
+      ],
+      "images": [],
+      "sources": [
+        {
+          "sheet": "运动类",
+          "cells": [
+            "A16",
+            "B16"
+          ]
+        }
+      ],
+      "verification": "pending",
+      "featured": false
+    },
+    {
+      "id": "g-f0860d86da",
+      "title": "多次测试最后出现的不是最优成绩怎么办？",
+      "category": "sports",
+      "summary": "个别同学多次测试后，成绩没有更新覆盖为最优成绩，建议到体育馆和器材室两边的电脑都尝试还卡(后期系统会叠加更新成绩)。但也可能出现体测卡或者系统问题导致无法更改。",
+      "body": "个别同学多次测试后，成绩没有更新覆盖为最优成绩，建议到体育馆和器材室两边的电脑都尝试还卡(后期系统会叠加更新成绩)。但也可能出现体测卡或者系统问题导致无法更改。",
+      "tags": [
+        "运动",
+        "体测"
+      ],
+      "images": [],
+      "sources": [
+        {
+          "sheet": "运动类",
+          "cells": [
+            "A17",
+            "B17"
+          ]
+        }
+      ],
+      "verification": "pending",
+      "featured": false
+    },
+    {
+      "id": "g-9ac6e8b10d",
+      "title": "体测成绩有问题如何解决？",
+      "category": "sports",
+      "summary": "关于体测成绩有疑问的，可以到体育馆102登记处理(工作日时间)。",
+      "body": "关于体测成绩有疑问的，可以到体育馆102登记处理(工作日时间)。",
+      "tags": [
+        "运动",
+        "体测"
+      ],
+      "images": [],
+      "sources": [
+        {
+          "sheet": "运动类",
+          "cells": [
+            "A18",
+            "B18"
+          ]
+        }
+      ],
+      "verification": "pending",
+      "featured": false
+    },
+    {
+      "id": "g-78cdf25048",
+      "title": "请问相关证件可以使用电子证件吗？",
+      "category": "sports",
+      "summary": "需携带身份证，校园卡，学生证其中至少一张实体卡（图像清晰）。",
+      "body": "需携带身份证，校园卡，学生证其中至少一张实体卡（图像清晰）。",
+      "tags": [
+        "运动",
+        "体测"
+      ],
+      "images": [],
+      "sources": [
+        {
+          "sheet": "运动类",
+          "cells": [
+            "A19",
+            "B19"
+          ]
+        }
+      ],
+      "verification": "pending",
+      "featured": false
+    },
+    {
+      "id": "g-b1c9a43694",
+      "title": "如果没有在领卡期间领卡，后续需要怎么领卡？",
+      "category": "sports",
+      "summary": "可在测试期间到还卡处说明情况领卡。",
+      "body": "可在测试期间到还卡处说明情况领卡。",
+      "tags": [
+        "运动",
+        "体测"
+      ],
+      "images": [],
+      "sources": [
+        {
+          "sheet": "运动类",
+          "cells": [
+            "A20",
+            "B20"
+          ]
+        }
+      ],
+      "verification": "pending",
+      "featured": false
+    },
+    {
+      "id": "g-317c97ec73",
+      "title": "体测卡丢失怎么办？已测试的数据还有吗？",
+      "category": "sports",
+      "summary": "到体育馆前台说明情况，补交10元补卡费，拿到小票再去重新领卡。之前测试的数据如没有还卡记录，就都没有了。",
+      "body": "到体育馆前台说明情况，补交10元补卡费，拿到小票再去重新领卡。之前测试的数据如没有还卡记录，就都没有了。",
+      "tags": [
+        "运动",
+        "体测"
+      ],
+      "images": [],
+      "sources": [
+        {
+          "sheet": "运动类",
+          "cells": [
+            "A21",
+            "B21"
+          ]
+        }
+      ],
+      "verification": "pending",
+      "featured": false
+    },
+    {
+      "id": "g-f693f07ebd",
+      "title": "体测成绩在哪里查询？",
+      "category": "sports",
+      "summary": "体测成绩查询方法： 步骤1：打开暨南大学服务号公众号，找到信息服务→微服务 步骤2：向下滑动，找到体测查询，点击即可",
+      "body": "体测成绩查询方法：\n\n步骤1：打开暨南大学服务号公众号，找到信息服务→微服务\n\n步骤2：向下滑动，找到体测查询，点击即可",
+      "tags": [
+        "运动",
+        "体测"
+      ],
+      "images": [
+        {
+          "src": "/seed-images/463afaa1b08c928b80cf.jpeg",
+          "alt": "8.体测成绩在哪里查询？"
+        },
+        {
+          "src": "/seed-images/dc7ef7d8d3f1d7ab1175.jpeg",
+          "alt": "8.体测成绩在哪里查询？"
+        }
+      ],
+      "sources": [
+        {
+          "sheet": "运动类",
+          "cells": [
+            "A22",
+            "B22",
+            "C22",
+            "D22"
+          ]
+        }
+      ],
+      "verification": "pending",
+      "featured": false
+    },
+    {
+      "id": "g-d49b5dfc5f",
+      "title": "往年的测试有缺项怎么办？",
+      "category": "sports",
+      "summary": "往年缺项成绩可以在第二学期(春季)补测阶段测试，并在还卡处登记相关情况(学号，姓名，缺项学年，补测成绩)。",
+      "body": "往年缺项成绩可以在第二学期(春季)补测阶段测试，并在还卡处登记相关情况(学号，姓名，缺项学年，补测成绩)。",
+      "tags": [
+        "运动",
+        "体测"
+      ],
+      "images": [],
+      "sources": [
+        {
+          "sheet": "运动类",
+          "cells": [
+            "A23",
+            "B23"
+          ]
+        }
+      ],
+      "verification": "pending",
+      "featured": false
+    },
+    {
+      "id": "g-c63ec20383",
+      "title": "“跬步暨善-阳光跑”是什么？",
+      "category": "sports",
+      "summary": "1. 暨南大学珠海校区体育部携手蚂蚁集团支付宝推出智能化运动打卡小程序！ 2. 运动的同时融入公益元素，让运动更具温度，助力乡村体育事业发展 3.“跬步暨善”寓意“暨大学子，跬步健体，爱心积善",
+      "body": "1. 暨南大学珠海校区体育部携手蚂蚁集团支付宝推出智能化运动打卡小程序！   \n\n2. 运动的同时融入公益元素，让运动更具温度，助力乡村体育事业发展 \n\n3.“跬步暨善”寓意“暨大学子，跬步健体，爱心积善”，希望引导师生在运动中践行责任，积善行远，共同营造健康向善、充满活力的校园氛围。",
+      "tags": [
+        "运动",
+        "阳光跑",
+        "跬步暨善"
+      ],
+      "images": [],
+      "sources": [
+        {
+          "sheet": "运动类",
+          "cells": [
+            "A27",
+            "B27"
+          ]
+        }
+      ],
+      "verification": "pending",
+      "featured": false
+    },
+    {
+      "id": "g-b92f9ab5dc",
+      "title": "参与“跬步暨善-阳光跑” 有什么意义",
+      "category": "sports",
+      "summary": "健康赋能——强健体魄，释放压力。 习惯养成——走出宿舍，拥抱阳光生活，让运动成为生活的一部分。 体测加分——持之以恒的跑步训练，有助于全面提升体测表现。 意志锤炼——在奔跑中突破自我，积蓄前行",
+      "body": "健康赋能——强健体魄，释放压力。\n\n习惯养成——走出宿舍，拥抱阳光生活，让运动成为生活的一部分。\n\n体测加分——持之以恒的跑步训练，有助于全面提升体测表现。\n\n意志锤炼——在奔跑中突破自我，积蓄前行力量。",
+      "tags": [
+        "运动",
+        "阳光跑",
+        "跬步暨善"
+      ],
+      "images": [],
+      "sources": [
+        {
+          "sheet": "运动类",
+          "cells": [
+            "A28",
+            "B28"
+          ]
+        }
+      ],
+      "verification": "pending",
+      "featured": false
+    },
+    {
+      "id": "g-f01a0128ff",
+      "title": "哪些同学需要参加“跬步暨善-阳光跑”活动？",
+      "category": "sports",
+      "summary": "我们鼓励校区全体同学参加： 1）本学期有体育课程的同学必须参与“跬步暨善-阳光跑”计划，且打卡成绩在期末成绩占比10%； 2）本学期没有体育课程的同学自愿参与创建类跑步活动，达成目标任务即可领",
+      "body": "我们鼓励校区全体同学参加：\n\n1）本学期有体育课程的同学必须参与“跬步暨善-阳光跑”计划，且打卡成绩在期末成绩占比10%；\n\n2）本学期没有体育课程的同学自愿参与创建类跑步活动，达成目标任务即可领取精美礼品！",
+      "tags": [
+        "运动",
+        "阳光跑",
+        "跬步暨善"
+      ],
+      "images": [],
+      "sources": [
+        {
+          "sheet": "运动类",
+          "cells": [
+            "A29",
+            "B29"
+          ]
+        }
+      ],
+      "verification": "pending",
+      "featured": false
+    },
+    {
+      "id": "g-1965e99a09",
+      "title": "“跬步暨善-阳光跑”活动在什么时间、什么地点进行？",
+      "category": "sports",
+      "summary": "活动周期为开学第一周至第十六周，具体通知请密切关注暨珠体育公众号；活动在全球范围内均可参与，可在任意场地（校内田径场、公园跑道等）完成，通过支付宝APP记录轨迹/数据即为有效打卡。",
+      "body": "活动周期为开学第一周至第十六周，具体通知请密切关注暨珠体育公众号；活动在全球范围内均可参与，可在任意场地（校内田径场、公园跑道等）完成，通过支付宝APP记录轨迹/数据即为有效打卡。",
+      "tags": [
+        "运动",
+        "阳光跑",
+        "跬步暨善"
+      ],
+      "images": [],
+      "sources": [
+        {
+          "sheet": "运动类",
+          "cells": [
+            "A30",
+            "B30"
+          ]
+        }
+      ],
+      "verification": "pending",
+      "featured": false
+    },
+    {
+      "id": "g-d272da18eb",
+      "title": "“跬步暨善-阳光跑”运动项目有哪些？",
+      "category": "sports",
+      "summary": "目前只开设了跑步运动打卡，男生1000米跑、女生800米跑。",
+      "body": "目前只开设了跑步运动打卡，男生1000米跑、女生800米跑。",
+      "tags": [
+        "运动",
+        "阳光跑",
+        "跬步暨善"
+      ],
+      "images": [],
+      "sources": [
+        {
+          "sheet": "运动类",
+          "cells": [
+            "A31",
+            "B31"
+          ]
+        }
+      ],
+      "verification": "pending",
+      "featured": false
+    },
+    {
+      "id": "g-fa0114c873",
+      "title": "“跬步暨善-阳光跑”跑步有效标准是什么？ （次数、配速、步频）",
+      "category": "sports",
+      "summary": "“跬步暨善-阳光跑”跑步有效标准是什么？ （次数、配速、步频）",
+      "body": "",
+      "tags": [
+        "运动",
+        "阳光跑",
+        "跬步暨善"
+      ],
+      "images": [
+        {
+          "src": "/seed-images/53a52f52d65acff22168.webp",
+          "alt": "“跬步暨善-阳光跑”跑步有效标准是什么？\n\n（次数、配速、步频）"
+        }
+      ],
+      "sources": [
+        {
+          "sheet": "运动类",
+          "cells": [
+            "A32",
+            "B32"
+          ]
+        }
+      ],
+      "verification": "pending",
+      "featured": false
+    },
+    {
+      "id": "g-132534e4ea",
+      "title": "“跬步暨善-阳光跑”成绩占比是多少？",
+      "category": "sports",
+      "summary": "打满总次数，即可得满分100分； “跬步暨善-阳光跑”计划将在期末成绩中占比10%。",
+      "body": "打满总次数，即可得满分100分；\n“跬步暨善-阳光跑”计划将在期末成绩中占比10%。",
+      "tags": [
+        "运动",
+        "阳光跑",
+        "跬步暨善"
+      ],
+      "images": [],
+      "sources": [
+        {
+          "sheet": "运动类",
+          "cells": [
+            "A33",
+            "B33"
+          ]
+        }
+      ],
+      "verification": "pending",
+      "featured": false
+    },
+    {
+      "id": "g-b98b75532c",
+      "title": "“跬步暨善-阳光跑”活动有什么奖励？",
+      "category": "sports",
+      "summary": "每两周，我们会在暨珠体育公众号表彰优秀的学院和同学（学院人均跑步里程排行榜、学院人均跑步配速排行榜、个人里程排行榜、各学院里程之星），并在期末对优秀同学给予物质奖励。",
+      "body": "每两周，我们会在暨珠体育公众号表彰优秀的学院和同学（学院人均跑步里程排行榜、学院人均跑步配速排行榜、个人里程排行榜、各学院里程之星），并在期末对优秀同学给予物质奖励。",
+      "tags": [
+        "运动",
+        "阳光跑",
+        "跬步暨善"
+      ],
+      "images": [],
+      "sources": [
+        {
+          "sheet": "运动类",
+          "cells": [
+            "A34",
+            "B34"
+          ]
+        }
+      ],
+      "verification": "pending",
+      "featured": false
+    },
+    {
+      "id": "g-15ccf5026a",
+      "title": "如果同学有不适合锻炼的疾病怎么办？ 会不会影响体育成绩？",
+      "category": "sports",
+      "summary": "若有健康问题不适合锻炼，请向体育老师报告情况并 提交证明材料至体育馆107办公室（袁老师 联系方式：18173065150），老师将根据实际情况酌情给分。",
+      "body": "若有健康问题不适合锻炼，请向体育老师报告情况并\n提交证明材料至体育馆107办公室（袁老师 联系方式：18173065150），老师将根据实际情况酌情给分。",
+      "tags": [
+        "运动",
+        "阳光跑",
+        "跬步暨善"
+      ],
+      "images": [],
+      "sources": [
+        {
+          "sheet": "运动类",
+          "cells": [
+            "A35",
+            "B35"
+          ]
+        }
+      ],
+      "verification": "pending",
+      "featured": false
+    },
+    {
+      "id": "g-e993eb7cf7",
+      "title": "参加保健课的同学也要跑步打卡吗？",
+      "category": "sports",
+      "summary": "我们鼓励所有同学进行锻炼，如果确实无法参与，请 参照上一条执行。",
+      "body": "我们鼓励所有同学进行锻炼，如果确实无法参与，请\n参照上一条执行。",
+      "tags": [
+        "运动",
+        "阳光跑",
+        "跬步暨善"
+      ],
+      "images": [],
+      "sources": [
+        {
+          "sheet": "运动类",
+          "cells": [
+            "A36",
+            "B36"
+          ]
+        }
+      ],
+      "verification": "pending",
+      "featured": false
+    },
+    {
+      "id": "g-beb38f8b1c",
+      "title": "女同学生理期不能运动怎么办",
+      "category": "sports",
+      "summary": "女同学在1-4周、5-8周、9-12周、13-16周，四个区间内可减免一周打卡，系统将自动核算。",
+      "body": "女同学在1-4周、5-8周、9-12周、13-16周，四个区间内可减免一周打卡，系统将自动核算。",
+      "tags": [
+        "运动",
+        "阳光跑",
+        "跬步暨善"
+      ],
+      "images": [],
+      "sources": [
+        {
+          "sheet": "运动类",
+          "cells": [
+            "A37",
+            "B37"
+          ]
+        }
+      ],
+      "verification": "pending",
+      "featured": false
+    },
+    {
+      "id": "g-1ec8444c72",
+      "title": "“跬步暨善-阳光跑”小程序如遇到人脸识别不成功该怎么处理？",
+      "category": "sports",
+      "summary": "“跬步暨善-阳光跑”小程序如遇到人脸识别不成功该怎么处理？",
+      "body": "下载重新安装支付宝APP。",
+      "tags": [
+        "运动",
+        "阳光跑",
+        "跬步暨善"
+      ],
+      "images": [],
+      "sources": [
+        {
+          "sheet": "运动类",
+          "cells": [
+            "A38",
+            "B38"
+          ]
+        }
+      ],
+      "verification": "pending",
+      "featured": false
+    },
+    {
+      "id": "g-ad6fe4bfca",
+      "title": "“跬步暨善-阳光跑”小程序如遇到没有权限，该怎么处理？",
+      "category": "sports",
+      "summary": "先解绑校园身份，再用其他支付宝账号（比如亲友的）绑定自己的身份信息，如果可以打卡，再登陆自己的支付宝账号把身份信息绑回来即可。",
+      "body": "先解绑校园身份，再用其他支付宝账号（比如亲友的）绑定自己的身份信息，如果可以打卡，再登陆自己的支付宝账号把身份信息绑回来即可。",
+      "tags": [
+        "运动",
+        "阳光跑",
+        "跬步暨善"
+      ],
+      "images": [],
+      "sources": [
+        {
+          "sheet": "运动类",
+          "cells": [
+            "A39",
+            "B39"
+          ]
+        }
+      ],
+      "verification": "pending",
+      "featured": false
+    },
+    {
+      "id": "g-a4ece114ad",
+      "title": "如果支付宝实名用的家长的话，该怎么处理？",
+      "category": "sports",
+      "summary": "可以注销账号，重新注册绑定自己的身份证。",
+      "body": "可以注销账号，重新注册绑定自己的身份证。",
+      "tags": [
+        "运动",
+        "阳光跑",
+        "跬步暨善"
+      ],
+      "images": [],
+      "sources": [
+        {
+          "sheet": "运动类",
+          "cells": [
+            "A40",
+            "B40"
+          ]
+        }
+      ],
+      "verification": "pending",
+      "featured": false
+    },
+    {
+      "id": "g-ba541bf7c0",
+      "title": "如遇到绑定或验证身份信息时出现姓名和学号不正确该怎么处理？",
+      "category": "sports",
+      "summary": "这类学生是转专业来校区或者是退伍人员，需要收集学号、姓名、学院信息，联系体育部袁老师。",
+      "body": "这类学生是转专业来校区或者是退伍人员，需要收集学号、姓名、学院信息，联系体育部袁老师。",
+      "tags": [
+        "运动",
+        "阳光跑",
+        "跬步暨善"
+      ],
+      "images": [],
+      "sources": [
+        {
+          "sheet": "运动类",
+          "cells": [
+            "A41",
+            "B41"
+          ]
+        }
+      ],
+      "verification": "pending",
+      "featured": false
+    },
+    {
+      "id": "g-59ef9e44a9",
+      "title": "各栋宿管值班电话",
+      "category": "dorm",
+      "summary": "各栋宿管值班电话",
+      "body": "经理：8505448\n\n1#学生公寓：8505114\n\n2#学生公寓：8505224\n\n3#学生公寓：8505336\n\n4#学生公寓：8505448\n\n5#学生公寓：8505519\n\n6#学生公寓：8505602\n\n7#学生公寓：8505756\n\n8#学生公寓：8505854\n\n9#学生公寓：8505949",
+      "tags": [
+        "宿管",
+        "楼栋",
+        "联系",
+        "宿舍"
+      ],
+      "images": [],
+      "sources": [
+        {
+          "sheet": "宿舍须知",
+          "cells": [
+            "A1",
+            "A2",
+            "B2",
+            "A3",
+            "B3",
+            "A4",
+            "B4",
+            "A5",
+            "B5",
+            "A6",
+            "B6",
+            "A7",
+            "B7",
+            "A8",
+            "B8",
+            "A9",
+            "B9",
+            "A10",
+            "B10",
+            "A11",
+            "B11",
+            "A12",
+            "B12"
+          ]
+        }
+      ],
+      "verification": "pending",
+      "featured": false
+    },
+    {
+      "id": "g-7aebe8195d",
+      "title": "宿舍电费充值、查询与用电说明",
+      "category": "dorm",
+      "summary": "电费 0.63 元/度，每人每月补贴 10 度。冷水 2.89 元/吨，每人每月补贴 2 吨。",
+      "body": "## 开学水电缴费\n\n新生推文提到开学会先提供 100 度电，首次补缴按当届通知到宿管处刷卡办理。\n\n冷水按 2.89 元/吨计费，每人每月补贴 2 吨。\n\n电费缴纳和查询方式及误充问题\n\nⅠ.电费充值入口：\n\nhttps://pay.jnu.edu.cn/jnushouyintai/zhxysdf/pay\n\n注意:楼栋一定要正确选择，房号只需要输入后三位数即可\n\nⅡ.电价查询方法\n\n①线下查询：行政楼165\n\n②电话查询：0756-8505361\n\n③网络查询\n\n查询网址：zhsdcx.jnu.edu.cn\n\n账号：0+宿舍房号\n\n密码：空\n\n注：需要IP认证，登录后会弹出一个小窗口，点击“取消”稍等片刻即可显示电费查询页面\n\nⅢ.现行电价及电价公示\n\n①现行电价：0.63 元/度\n\n②电费补助：\n\n按每人每月10度进行补贴。\n\nⅣ.宿舍用电预估\n\n①空调用电预估：\n\n1.5匹空调约1200w，即1小时为1.2度电左右。\n\n②常见家电用电预估：\n\n风扇50w,洗衣机300w,饮水机400w，笔记本电脑150w*4约为600w，冰箱80w，照明灯约70w，即1小时为1.5度电左右。\n\n③房间一天用电量预估\n\n如按室内70%设备启用、每天使用12小时计算，则总用电量约为22度/天。\n\n以上预估均为参考，由于家电设计、材料差异，实际用电量具有一定偏差，同学们可酌情参考\n\n【原表相关问答：宿舍电费收费标准？】\n1⃣️现行电价及电价公示\n①现行电价：0.63 元/度\n②电价公示：于【暨珠服务学生指引】中可查询(如下↓)\n2⃣️电价查询方法\n①线下查询：行政楼165\n②电话查询：0756-8505361\n③网络查询\n查询网址：zhsdcx.jnu.edu.cn\n账号：0+宿舍房号\n密码：空\n注：需要IP认证，登录后会弹出一个小窗口，点击“取消”稍等片刻即可显示电费查询页面\n3⃣️电费补助\n按每人每月10度进行补贴。\n4⃣宿舍用电预估\n①空调用电预估：\n1.5匹空调约1200w，即1小时为1.2度电左右。\n②常见家电用电预估：\n洗衣机300w,饮水机400w，笔记本电脑150w*4约为600w，冰箱80w，照明灯约70w，即1小时为1.5度电左右。\n③房间一天用电量预估\n如按室内70%设备启用、每天使用12小时计算，则总用电量约为22度/天。",
+      "tags": [
+        "电费",
+        "缴费",
+        "充值",
+        "电价",
+        "误充",
+        "宿舍",
+        "冷水费",
+        "水费",
+        "100度电"
+      ],
+      "images": [
+        {
+          "src": "/seed-images/d376ea8767fed1ba63ac.jpeg",
+          "alt": "宿舍电费充值、查询与用电说明"
+        },
+        {
+          "src": "/seed-images/a657bd2842a6d8fdcc9b.png",
+          "alt": "宿舍电费充值、查询与用电说明"
+        }
+      ],
+      "sources": [
+        {
+          "sheet": "宿舍须知",
+          "cells": [
+            "A16",
+            "A17",
+            "A18",
+            "A19",
+            "C19",
+            "A29",
+            "A31",
+            "A32",
+            "A33",
+            "A34",
+            "C34",
+            "A35",
+            "C35",
+            "A36",
+            "A38",
+            "A39",
+            "A40",
+            "B40",
+            "A42",
+            "A43",
+            "A44",
+            "A45",
+            "A46",
+            "A47",
+            "A48",
+            "A50"
+          ]
+        },
+        {
+          "sheet": "常见问题解答",
+          "cells": [
+            "B15",
+            "C15"
+          ]
+        }
+      ],
+      "verification": "pending",
+      "featured": false
+    },
+    {
+      "id": "g-1a6168a465",
+      "title": "调宿申请",
+      "category": "dorm",
+      "summary": "根据社区中心办公室（行政楼108）门口公告栏张贴的调宿问题处理时间前往办公室申请。",
+      "body": "调宿问题\n\n根据社区中心办公室（行政楼108）门口公告栏张贴的调宿问题处理时间前往办公室申请。",
+      "tags": [
+        "调宿",
+        "换宿舍",
+        "宿舍"
+      ],
+      "images": [],
+      "sources": [
+        {
+          "sheet": "宿舍须知",
+          "cells": [
+            "A53",
+            "A54"
+          ]
+        }
+      ],
+      "verification": "pending",
+      "featured": false
+    },
+    {
+      "id": "g-c6724cf85b",
+      "title": "宿舍自习室及讨论室借用",
+      "category": "dorm",
+      "summary": "（1）自习室无须借用，随到随用，不得占座。",
+      "body": "自习室及讨论室借用\n\n（1）自习室无须借用，随到随用，不得占座。\n\n（2）讨论室/活动室须向楼栋宿管阿姨申请借用，获取钥匙。",
+      "tags": [
+        "宿舍",
+        "自习室",
+        "活动室"
+      ],
+      "images": [],
+      "sources": [
+        {
+          "sheet": "宿舍须知",
+          "cells": [
+            "A58",
+            "A59",
+            "A60"
+          ]
+        }
+      ],
+      "verification": "pending",
+      "featured": false
+    },
+    {
+      "id": "g-61a96aa0bd",
+      "title": "宿舍楼栋海报张贴流程",
+      "category": "dorm",
+      "summary": "（1）扫描图中二维码，下载登记表并打印填写",
+      "body": "楼栋海报张贴\n\n（1）扫描图中二维码，下载登记表并打印填写\n\n（2）去行政楼寻找组织/活动的负责老师签字\n\n（3）将登记表交给一栋宿管阿姨查看确认，一栋宿管阿姨会为海报盖章\n\n（4）盖章后的海报再交给相关楼栋宿管阿姨确认",
+      "tags": [
+        "海报",
+        "盖章",
+        "张贴",
+        "宿舍"
+      ],
+      "images": [
+        {
+          "src": "/seed-images/201e65c2f1944cf5e119.jpeg",
+          "alt": "宿舍楼栋海报张贴流程"
+        }
+      ],
+      "sources": [
+        {
+          "sheet": "宿舍须知",
+          "cells": [
+            "A63",
+            "A64",
+            "A65",
+            "A66",
+            "A67",
+            "A69"
+          ]
+        }
+      ],
+      "verification": "pending",
+      "featured": false
+    },
+    {
+      "id": "g-74d3f2cb09",
+      "title": "宿舍热水使用",
+      "category": "dorm",
+      "summary": "午间、傍晚供热水，使用时请带热水卡。",
+      "body": "使用热水时请携带热水卡。\n\n热水相关问题\n\n热水供应时间：12:00-13:00，17:30-23:30。\n\n若热水卡尚未使用就显示不足怎么办：先更换卡片，如果另一张卡可以用就是卡片的问题，可以去一楼找宿管阿姨更换备用卡片；如果更换卡片也无热水，可能是机器的问题，可用云丹田报修。",
+      "tags": [
+        "热水",
+        "水卡",
+        "洗澡",
+        "宿舍"
+      ],
+      "images": [],
+      "sources": [
+        {
+          "sheet": "宿舍须知",
+          "cells": [
+            "A89",
+            "A90",
+            "A91"
+          ]
+        }
+      ],
+      "verification": "pending",
+      "featured": false
+    },
+    {
+      "id": "g-9966335909",
+      "title": "宿舍失物招领",
+      "category": "dorm",
+      "summary": "一栋楼下有失物招领处，同学们有失物可以去失物招领处寻找。",
+      "body": "失物招领\n\n一栋楼下有失物招领处，同学们有失物可以去失物招领处寻找。",
+      "tags": [
+        "失物",
+        "丢失",
+        "招领",
+        "宿舍"
+      ],
+      "images": [],
+      "sources": [
+        {
+          "sheet": "宿舍须知",
+          "cells": [
+            "A95",
+            "A96"
+          ]
+        }
+      ],
+      "verification": "pending",
+      "featured": false
+    },
+    {
+      "id": "g-86f854a2df",
+      "title": "校内办事时间与事项指引",
+      "category": "services",
+      "summary": "各部处联系方式 便于同学们直接联系相关部处进行问题的反馈及解决",
+      "body": "各部处联系方式\n\n便于同学们直接联系相关部处进行问题的反馈及解决\n\n常见问题及负责部门一览:\n\n（1）学院教务：选课、销假、实习、考试、保研、转专业、四六级、成绩咨询、开学注册、休学复学等。\n\n（2）珠区行政楼152室旁边机器：在读证明、成绩单打印。* 如超过额定打印次数需要校园卡扣费\n\n（3）珠区财务部门行政楼122：学费问题、财务报销、奖助学金发放等。\n\n（4）珠海户籍科行政楼165：户籍迁移、借用户口本等。\n\n（5）档案馆：学籍档案迁移、调档、进度查询。*如需查询档案处理进度，可以直接到学校档案馆官网查询。\n\n（6）珠区社区办公室108：火车票、退宿、换宿等宿舍相关。\n\n（7）珠区医务室：看病、医保、体检问题等。\n\n（8）学院办公室：奖助学金申请、党团组织关系等。\n\n（9）珠区心理健康管理中心：心理咨询、情绪疏导。\n\n（10）实C412：校园卡中心、校园网络服务。\n\n（11）珠区保卫科：诈骗、盗窃等宿舍安全保卫问题。\n\n（12）学院办公室：就业协议审核、派遣申请等其他事宜。\"\n\n校内办事指南：https://mp.weixin.qq.com/s/iFehAUYvKna0QZK0-v0WgA\n\n请同学们建立时间观念，在办公时间（非节假日，周一至周五8：00-12：00，14：30-17：30）办理相关业务，注意提前做好时间规划、尽早处理事务，避免等到截止日期、非上班时间、周末、节假日或寒暑假期间才联系办理，易耽误处理进度。",
+      "tags": [
+        "办事",
+        "负责部门",
+        "办公室",
+        "工作时间",
+        "成绩单",
+        "在读证明"
+      ],
+      "images": [],
+      "sources": [
+        {
+          "sheet": "部处紧急联系方式",
+          "cells": [
+            "A1",
+            "D1",
+            "A2",
+            "A3"
+          ]
+        }
+      ],
+      "verification": "pending",
+      "featured": false
+    },
+    {
+      "id": "g-4d4200be97",
+      "title": "党政办公室联系方式",
+      "category": "services",
+      "summary": "主任室：8505160 副主任室(人事)：8585097 副主任室(党政)：8505937 办公室(纪检)：8585067 办公室(工资工会外事)：8505935 办公室(宣传、车辆)：850",
+      "body": "主任室：8505160\n\n副主任室(人事)：8585097\n\n副主任室(党政)：8505937\n\n办公室(纪检)：8585067\n\n办公室(工资工会外事)：8505935\n\n办公室(宣传、车辆)：8505931\n\n办公室(会议室)：8505265\n\n档案室：8505120\n\n保密室：8505010\n\n收发室：8505717",
+      "tags": [
+        "联系",
+        "电话",
+        "办公室",
+        "办事"
+      ],
+      "images": [],
+      "sources": [
+        {
+          "sheet": "部处紧急联系方式",
+          "cells": [
+            "A6",
+            "B6"
+          ]
+        }
+      ],
+      "verification": "pending",
+      "featured": false
+    },
+    {
+      "id": "g-58d6f4c1bb",
+      "title": "本科教学办联系方式",
+      "category": "services",
+      "summary": "主任室：8505893 办公室(教学研究、学籍管理、排课选课管理、教务管理、成绩管理)：8505355 办公室(教学质量管理、实践教学管理、教材管理)：8505335 成绩单打印设备放置室及对",
+      "body": "主任室：8505893\n\n办公室(教学研究、学籍管理、排课选课管理、教务管理、成绩管理)：8505355\n\n办公室(教学质量管理、实践教学管理、教材管理)：8505335\n\n成绩单打印设备放置室及对外窗口：8505789\n\n办公地址：行政楼143、154\n\n工作时间: 周一至周五8:00-11:30；14:30-17:30",
+      "tags": [
+        "联系",
+        "电话",
+        "办公室",
+        "办事"
+      ],
+      "images": [],
+      "sources": [
+        {
+          "sheet": "部处紧急联系方式",
+          "cells": [
+            "A7",
+            "B7"
+          ]
+        }
+      ],
+      "verification": "pending",
+      "featured": false
+    },
+    {
+      "id": "g-56cff80c4f",
+      "title": "体育部联系方式",
+      "category": "sports",
+      "summary": "主任室：8505707 办公室：8505027 体育馆值班室（体育馆前台订场）：8505960",
+      "body": "主任室：8505707\n\n办公室：8505027\n\n体育馆值班室（体育馆前台订场）：8505960",
+      "tags": [
+        "联系",
+        "电话",
+        "办公室",
+        "办事"
+      ],
+      "images": [],
+      "sources": [
+        {
+          "sheet": "部处紧急联系方式",
+          "cells": [
+            "A8",
+            "B8"
+          ]
+        }
+      ],
+      "verification": "pending",
+      "featured": false
+    },
+    {
+      "id": "g-13393eab9d",
+      "title": "财务办联系方式",
+      "category": "services",
+      "summary": "办公地点：行政楼122 联系电话：8505105 办公地址：行政楼122",
+      "body": "办公地点：行政楼122\n\n联系电话：8505105\n\n办公地址：行政楼122",
+      "tags": [
+        "联系",
+        "电话",
+        "办公室",
+        "办事"
+      ],
+      "images": [],
+      "sources": [
+        {
+          "sheet": "部处紧急联系方式",
+          "cells": [
+            "A9",
+            "B9"
+          ]
+        }
+      ],
+      "verification": "pending",
+      "featured": false
+    },
+    {
+      "id": "g-8d20784f0e",
+      "title": "学生工作办公室联系方式",
+      "category": "services",
+      "summary": "主任室：8505806（工作地点：行政楼114B）。",
+      "body": "主任室：8505806（工作地点：行政楼114B）\n\n办公地址：行政楼104\n\n学生教育管理/百年素质讲堂/学生学习与发展：8505668\n\n学生心理健康教育中心：8585766\n\n团工委：8505901",
+      "tags": [
+        "联系",
+        "电话",
+        "办公室",
+        "办事"
+      ],
+      "images": [],
+      "sources": [
+        {
+          "sheet": "部处紧急联系方式",
+          "cells": [
+            "A10",
+            "B10"
+          ]
+        }
+      ],
+      "verification": "pending",
+      "featured": false
+    },
+    {
+      "id": "g-684431047e",
+      "title": "网络中心联系方式",
+      "category": "network",
+      "summary": "工作电话（网络报修电话）：8505230 办公地址：教学综合楼C412 工作时间： 周一到周五8：00——12：00；14：30——17：30",
+      "body": "工作电话（网络报修电话）：8505230\n\n办公地址：教学综合楼C412\n\n工作时间：\n\n周一到周五8：00——12：00；14：30——17：30\n\n【原表相关问答：网络中心办公室】\n实验楼C412",
+      "tags": [
+        "联系",
+        "电话",
+        "办公室",
+        "办事",
+        "网络中心",
+        "校园网",
+        "断网",
+        "连不上",
+        "网速慢",
+        "网络故障"
+      ],
+      "images": [],
+      "sources": [
+        {
+          "sheet": "部处紧急联系方式",
+          "cells": [
+            "A11",
+            "B11"
+          ]
+        },
+        {
+          "sheet": "常见问题解答",
+          "cells": [
+            "B10",
+            "C10"
+          ]
+        }
+      ],
+      "verification": "pending",
+      "featured": false
+    },
+    {
+      "id": "g-ee965f6eba",
+      "title": "保卫科联系方式",
+      "category": "services",
+      "summary": "联系电话：8505130 办公地址：行政楼140",
+      "body": "联系电话：8505130\n\n办公地址：行政楼140",
+      "tags": [
+        "联系",
+        "电话",
+        "办公室",
+        "办事"
+      ],
+      "images": [],
+      "sources": [
+        {
+          "sheet": "部处紧急联系方式",
+          "cells": [
+            "A12",
+            "B12"
+          ]
+        }
+      ],
+      "verification": "pending",
+      "featured": false
+    },
+    {
+      "id": "g-dd6b0f2aef",
+      "title": "图书馆联系方式",
+      "category": "study",
+      "summary": "馆长室：8505025 文献采编室：8505868/8505750 文献服务室：8505868 信息咨询室：8505868 信息技术室：8505623 借还书台：8521507 门卫室：852",
+      "body": "馆长室：8505025\n\n文献采编室：8505868/8505750\n\n文献服务室：8505868\n\n信息咨询室：8505868\n\n信息技术室：8505623\n\n借还书台：8521507\n\n门卫室：8521641",
+      "tags": [
+        "联系",
+        "电话",
+        "办公室",
+        "办事"
+      ],
+      "images": [],
+      "sources": [
+        {
+          "sheet": "部处紧急联系方式",
+          "cells": [
+            "A13",
+            "B13"
+          ]
+        }
+      ],
+      "verification": "pending",
+      "featured": false
+    },
+    {
+      "id": "g-25a8437730",
+      "title": "课室管理中心联系方式",
+      "category": "study",
+      "summary": "工作电话：8505838、8505779 办公地址：实验楼二楼C206 工作时间: 开放时间：固定自习室开放时间为：7：00-22：30 开放的课室： 教409,411,413,511,513",
+      "body": "工作电话：8505838、8505779\n\n办公地址：实验楼二楼C206\n\n工作时间:\n\n开放时间：固定自习室开放时间为：7：00-22：30\n\n开放的课室：\n\n教409,411,413,511,513。\n\n流动自习室在没人上课时可使用\n\n开放课室：教102，103，104，106，108。",
+      "tags": [
+        "联系",
+        "电话",
+        "办公室",
+        "办事"
+      ],
+      "images": [],
+      "sources": [
+        {
+          "sheet": "部处紧急联系方式",
+          "cells": [
+            "A14",
+            "B14"
+          ]
+        }
+      ],
+      "verification": "pending",
+      "featured": false
+    },
+    {
+      "id": "g-4be0d6229c",
+      "title": "卫生服务中心（医务室）联系方式",
+      "category": "health",
+      "summary": "卫生服务中心联系电话 0756-8505210，行政楼162。",
+      "body": "联系电话：0756-8505210；\n办公地点行政楼162",
+      "tags": [
+        "联系",
+        "电话",
+        "办公室",
+        "办事",
+        "看病",
+        "医保",
+        "医务室"
+      ],
+      "images": [],
+      "sources": [
+        {
+          "sheet": "部处紧急联系方式",
+          "cells": [
+            "A15",
+            "B15"
+          ]
+        }
+      ],
+      "verification": "pending",
+      "featured": false
+    },
+    {
+      "id": "g-a3dd6b1852",
+      "title": "饮食服务中心联系方式",
+      "category": "food",
+      "summary": "饮食服务中心负责人：罗芳经理 联系电话：13727014173 工作电话： 罗壮（中心主任）13160666062 罗芳(中心助理)(也负责一楼)13727014173 陈言超(一楼经理) 1",
+      "body": "饮食服务中心负责人：罗芳经理\n\n联系电话：13727014173\n\n工作电话：\n罗壮（中心主任）13160666062\n\n罗芳(中心助理)(也负责一楼)13727014173\n\n陈言超(一楼经理) 13672667390\n\n黄周山(二楼经理) 15992683686\n\n孙丙西 (三楼经理和风味餐厅)1536399120\n\n办公地址：饮食服务中心一楼办公室\n\n办公时间：8：00-12：30；16：00-18：00",
+      "tags": [
+        "联系",
+        "电话",
+        "办公室",
+        "办事",
+        "饮食服务中心"
+      ],
+      "images": [],
+      "sources": [
+        {
+          "sheet": "部处紧急联系方式",
+          "cells": [
+            "A16",
+            "B16"
+          ]
+        },
+        {
+          "sheet": "常见问题解答",
+          "cells": [
+            "B13",
+            "C13",
+            "D13"
+          ]
+        }
+      ],
+      "verification": "pending",
+      "featured": false
+    },
+    {
+      "id": "g-17f776b1b3",
+      "title": "丹田物业联系方式",
+      "category": "dorm",
+      "summary": "丹田物业报修 0756-8504603，管理处 0756-8504651。",
+      "body": "办公地点：学生公寓 1 栋 1 楼\n\n报修电话：0756-8504603\n\n丹田物业管理处：0756-8504651\n\n学校常用电话 https://zh.jnu.edu.cn/8453/list.htm",
+      "tags": [
+        "联系",
+        "电话",
+        "办公室",
+        "办事",
+        "宿舍"
+      ],
+      "images": [],
+      "sources": [
+        {
+          "sheet": "部处紧急联系方式",
+          "cells": [
+            "A17",
+            "B17"
+          ]
+        }
+      ],
+      "verification": "pending",
+      "featured": false
+    },
+    {
+      "id": "g-bd6f5a3a5b",
+      "title": "总务科联系方式",
+      "category": "services",
+      "summary": "后勤办总务科综合咨询 0756-8505106。学生水电查询与医保报销办事 0756-8505361。",
+      "body": "后勤办总务科咨询：0756-8505106，行政楼168。\n\n学生水电查询、医保报销等事项：0756-8505361，行政楼165。\n\n工作时间：非节假日周一至周五8：00-12：00；14：30-17：30\n\n岐关巴士/宿舍饮用水：黄庆章老师\n\n工作电话：13016375879\n\n办公地点：行政楼168\n\n后勤办科室分工 https://zh.jnu.edu.cn/8434/list.htm",
+      "tags": [
+        "联系",
+        "电话",
+        "办公室",
+        "办事"
+      ],
+      "images": [],
+      "sources": [
+        {
+          "sheet": "部处紧急联系方式",
+          "cells": [
+            "A18",
+            "B18"
+          ]
+        }
+      ],
+      "verification": "pending",
+      "featured": false
+    },
+    {
+      "id": "g-d35d2fa588",
+      "title": "学生就业服务窗口（同招生办公室）联系方式",
+      "category": "services",
+      "summary": "学生就业服务窗口（同招生办公室）联系方式",
+      "body": "8505806；行政楼114A",
+      "tags": [
+        "联系",
+        "电话",
+        "办公室",
+        "办事"
+      ],
+      "images": [],
+      "sources": [
+        {
+          "sheet": "部处紧急联系方式",
+          "cells": [
+            "A19",
+            "B19"
+          ]
+        }
+      ],
+      "verification": "pending",
+      "featured": false
+    },
+    {
+      "id": "g-817e4980de",
+      "title": "社区中心联系方式",
+      "category": "dorm",
+      "summary": "联系方式：预约码（右图可点击放大查看） 办公地址：办公地点行政楼108办公室",
+      "body": "联系方式：预约码（右图可点击放大查看）\n\n办公地址：办公地点行政楼108办公室",
+      "tags": [
+        "联系",
+        "电话",
+        "办公室",
+        "办事",
+        "宿舍"
+      ],
+      "images": [
+        {
+          "src": "/seed-images/6d9e73ebaf769764d4d5.jpeg",
+          "alt": "社区中心联系方式"
+        }
+      ],
+      "sources": [
+        {
+          "sheet": "部处紧急联系方式",
+          "cells": [
+            "A20",
+            "B20",
+            "C20"
+          ]
+        }
+      ],
+      "verification": "pending",
+      "featured": false
+    },
+    {
+      "id": "g-f40ad3be20",
+      "title": "校园巴士购票与时刻表",
+      "category": "campus-bus",
+      "summary": "珠海往返广州，微信关注「岐关拱运巴士」购买暨大校园专线车票。",
+      "body": "微信关注「岐关拱运巴士」，在定制出行中选择暨大校园专线，按实际出发地、目的地和日期购票。发车时刻与上车点请查看当日购票页面。\n\n学校校际交通指引 https://jnu.edu.cn/2022/0829/c36421a714343/page.htm",
+      "tags": [
+        "巴士",
+        "校车",
+        "车票",
+        "购票",
+        "交通",
+        "歧关",
+        "样样",
+        "岐关拱运巴士",
+        "校巴",
+        "广州购票"
+      ],
+      "images": [
+        {
+          "src": "/seed-images/391b3ad265256626ca70.png",
+          "alt": "校园巴士购票与时刻表"
+        }
+      ],
+      "sources": [
+        {
+          "sheet": "校园巴士",
+          "cells": [
+            "A1",
+            "A4"
+          ]
+        }
+      ],
+      "verification": "pending",
+      "featured": true
+    },
+    {
+      "id": "g-54b9170eee",
+      "title": "宿舍门禁与夜间管理",
+      "category": "dorm",
+      "summary": "周日至周四 23:30，周五、周六次日 00:00。夜间外出请到宿管处登记。",
+      "body": "## 门禁与外出\n\n周日至周四 23:30 门禁。周五、周六为次日 00:00。夜间外出请先到宿管处登记。\n\n## 用电、熄灯与网络\n\n宿舍供电持续。周日至周四 23:30 关闭大灯。周一至周五凌晨断网，周末全天供网。\n\n## 宿舍安全\n\n禁止使用大功率电器和在宿舍烹煮。不建议挂遮挡上下铺的床帘，贵重物品请妥善保管。",
+      "tags": [
+        "门禁",
+        "宿管",
+        "熄灯",
+        "断电",
+        "断网",
+        "大功率电器"
+      ],
+      "images": [],
+      "verification": "verified",
+      "featured": false
+    },
+    {
+      "id": "g-d4ef39bfb8",
+      "title": "快递寄取与校内商超",
+      "category": "food",
+      "summary": "学生公寓 1 栋后门驿站。开学季营业至 21:00，平时至 19:00。",
+      "body": "## 快递驿站\n\n驿站位于学生公寓 1 栋后门。开学季营业至 21:00，平时 19:00 关门。\n\n邮寄地址为广东省珠海市香洲区前山路 206 号暨南大学珠海校区。\n\n## 校内购物\n\n校内超市和面包店营业至 23:30。\n\n校区地址可查校区官网 https://zh.jnu.edu.cn/",
+      "tags": [
+        "快递",
+        "驿站",
+        "邮寄地址",
+        "超市",
+        "面包店"
+      ],
+      "images": [],
+      "verification": "verified",
+      "featured": false
+    },
+    {
+      "id": "g-abd00cf0f8",
+      "title": "足球场",
+      "category": "sports",
+      "summary": "免费开放，晚间照明至 21:00。",
+      "body": "足球场免费开放，晚间照明至 21:00。",
+      "tags": [
+        "足球",
+        "免费场地",
+        "照明"
+      ],
+      "images": [],
+      "verification": "verified",
+      "featured": false
+    }
+  ],
+  "media": [
+    {
+      "path": "/seed-images/47f0a0a6aa83adf95e23.jpeg",
+      "bytes": 67721
+    },
+    {
+      "path": "/seed-images/c05f295db939db0a5b13.jpeg",
+      "bytes": 49190
+    },
+    {
+      "path": "/seed-images/d376ea8767fed1ba63ac.jpeg",
+      "bytes": 52105
+    },
+    {
+      "path": "/seed-images/a657bd2842a6d8fdcc9b.png",
+      "bytes": 359328
+    },
+    {
+      "path": "/seed-images/8d6b57dc649a89986433.jpeg",
+      "bytes": 148571
+    },
+    {
+      "path": "/seed-images/dea7e401daaddceed8f0.jpeg",
+      "bytes": 40093
+    },
+    {
+      "path": "/seed-images/017d544a32cb77bef5bf.jpeg",
+      "bytes": 39182
+    },
+    {
+      "path": "/seed-images/391b3ad265256626ca70.png",
+      "bytes": 277288
+    },
+    {
+      "path": "/seed-images/201e65c2f1944cf5e119.jpeg",
+      "bytes": 168742
+    },
+    {
+      "path": "/seed-images/463afaa1b08c928b80cf.jpeg",
+      "bytes": 23890
+    },
+    {
+      "path": "/seed-images/dc7ef7d8d3f1d7ab1175.jpeg",
+      "bytes": 33914
+    },
+    {
+      "path": "/seed-images/be145e5d88920328d3d5.png",
+      "bytes": 171653
+    },
+    {
+      "path": "/seed-images/f896fd9eb958e4ed94cb.png",
+      "bytes": 49957
+    },
+    {
+      "path": "/seed-images/6d9e73ebaf769764d4d5.jpeg",
+      "bytes": 79353
+    },
+    {
+      "path": "/seed-images/726b83b076448f5e4007.jpeg",
+      "bytes": 31315
+    },
+    {
+      "path": "/seed-images/45f6f59f6dbc2bbf2778.jpeg",
+      "bytes": 8309
+    },
+    {
+      "path": "/seed-images/d3d5b7a0ea3bc91cecad.jpeg",
+      "bytes": 38758
+    },
+    {
+      "path": "/seed-images/e3aeaa29a3f0cdf62f0e.jpeg",
+      "bytes": 57418
+    },
+    {
+      "path": "/seed-images/137043db4b574fb09cbe.jpeg",
+      "bytes": 71555
+    },
+    {
+      "path": "/seed-images/282f492a1d377524837c.jpeg",
+      "bytes": 100065
+    },
+    {
+      "path": "/seed-images/393ae6f8109d82b67a67.jpeg",
+      "bytes": 38608
+    },
+    {
+      "path": "/seed-images/53a52f52d65acff22168.webp",
+      "bytes": 36166
+    },
+    {
+      "path": "/seed-images/7d176361286146339c49.jpeg",
+      "bytes": 163081
+    }
+  ],
+  "sourceLabel": "原共享表格整理，信息有效性待核实",
+  "importedAt": "2026-11-09"
+}

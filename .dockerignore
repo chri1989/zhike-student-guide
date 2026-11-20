@@ -1,0 +1,12 @@
+node_modules
+.next
+.git
+.env*
+.dev.vars*
+.openai
+.wrangler
+work
+outputs
+backups
+*.sqlite*
+*.tsbuildinfo

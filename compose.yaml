@@ -1,0 +1,27 @@
+services:
+  guide:
+    build: .
+    restart: unless-stopped
+    environment:
+      SITE_URL: https://${SITE_DOMAIN:?Set SITE_DOMAIN}
+      AUTH_SECRET: ${AUTH_SECRET:?Set AUTH_SECRET}
+      BOOTSTRAP_TOKEN: ${BOOTSTRAP_TOKEN:?Set BOOTSTRAP_TOKEN}
+      GUIDE_DATA_DIR: /data
+    volumes:
+      - guide-data:/data
+  web:
+    image: caddy:2
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "443:443"
+    environment:
+      SITE_DOMAIN: ${SITE_DOMAIN:?Set SITE_DOMAIN}
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy-data:/data
+      - caddy-config:/config
+volumes:
+  guide-data:
+  caddy-data:
+  caddy-config:

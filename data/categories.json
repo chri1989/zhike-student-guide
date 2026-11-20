@@ -1,0 +1,56 @@
+[
+  {
+    "id": "study",
+    "name": "学习教务",
+    "description": "图书馆、课室、常用网站与校历",
+    "color": "blue"
+  },
+  {
+    "id": "evaluation",
+    "name": "综测评优",
+    "description": "材料认定、加分规则与常见疑问",
+    "color": "purple"
+  },
+  {
+    "id": "dorm",
+    "name": "宿舍报修",
+    "description": "水电、报修、调宿与宿舍生活",
+    "color": "orange"
+  },
+  {
+    "id": "network",
+    "name": "校园网络",
+    "description": "联网、缴费、校园卡与故障处理",
+    "color": "cyan"
+  },
+  {
+    "id": "health",
+    "name": "就医医保",
+    "description": "医务室、转诊、报销与参保",
+    "color": "rose"
+  },
+  {
+    "id": "sports",
+    "name": "运动场馆",
+    "description": "场馆、体测与阳光跑",
+    "color": "green"
+  },
+  {
+    "id": "food",
+    "name": "饮食生活",
+    "description": "食堂时间、服务与问题反馈",
+    "color": "amber"
+  },
+  {
+    "id": "services",
+    "name": "校园部处",
+    "description": "部处联系方式、办事时间与学代反馈",
+    "color": "slate"
+  },
+  {
+    "id": "campus-bus",
+    "name": "校园巴士",
+    "description": "珠海往返广州的校园巴士购票与时刻表",
+    "color": "blue"
+  }
+]
