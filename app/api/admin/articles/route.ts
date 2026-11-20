@@ -14,6 +14,7 @@ export async function PUT(request:Request) {
     const input=await request.json() as {content:Article;revision:number;active:boolean};
     const content=validateArticle(input.content as Article);
     if(!Number.isInteger(input.revision)||input.revision<0||typeof input.active!=='boolean') throw new HttpError(400,'草稿版本不正确。');
+    if(input.revision===0&&!content.body&&!content.images.length) throw new HttpError(400,'请填写回答或上传图片。');
     const db=bindings().DB;
     const existing=await db.prepare('SELECT content FROM drafts WHERE id=?').bind(content.id).first<{content:string}>();
     if(existing){content.sources=JSON.parse(existing.content).sources;}
