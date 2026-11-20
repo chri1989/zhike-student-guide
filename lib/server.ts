@@ -14,7 +14,7 @@ export function getAuth(request: Request, bootstrap = false) {
     appName: '智科学代指南', secret: bindings().AUTH_SECRET,
     baseURL: origin,
     database: drizzleAdapter(getDb(), { provider: 'sqlite', schema, transaction: false }),
-    emailAndPassword: { enabled: true, disableSignUp: !bootstrap, minPasswordLength: 12 },
+    emailAndPassword: { enabled: true, disableSignUp: !bootstrap, minPasswordLength: 12, revokeSessionsOnPasswordReset: true },
     plugins: [admin({ defaultRole: bootstrap ? 'admin' : 'user' })],
     session: { expiresIn: 60*60*24*7, updateAge: 60*60*12, cookieCache: { enabled: false } },
     rateLimit: { enabled: true, storage: 'database', customRules: { '/sign-in/email': { window:60, max:8 } } },

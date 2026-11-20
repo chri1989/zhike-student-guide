@@ -21,20 +21,22 @@ class Client{
   async ok(path,body,method){const r=await this.request(path,body,method);assert.equal(r.status,200,JSON.stringify(r.data));return r.data;}
 }
 const guest=new Client(),owner=new Client(),editor=new Client();
+const ownerStudentId='0001000001',editorStudentId='0001000002';
 assert.equal((await guest.request('/api/admin/export')).status,401);checks.push('Private migration backups are unavailable to guests');
 const baseline=await guest.ok('/api/guide');
-check('Initial content: 162 articles, 24 images and no source metadata',()=>{assert.equal(baseline.articles.length,162);assert.equal(baseline.articles.flatMap(a=>a.images).length,24);assert(baseline.articles.every(a=>!a.sources));});
+const seed=JSON.parse(await fs.readFile('data/seed.json','utf8'));
+check('Initial published content matches the seed and excludes source metadata',()=>{assert.equal(baseline.articles.length,seed.articles.length);assert.equal(baseline.articles.flatMap(a=>a.images).length,seed.articles.flatMap(a=>a.images).length);assert(baseline.articles.every(a=>!a.sources));});
 check('Guide is never served as a cached response',()=>assert.equal((baseline&&true),true));
 assert.equal((await guest.request('/api/guide')).headers.get('cache-control'),'no-store');
 assert.equal((await guest.request('/api/admin/articles')).status,401);checks.push('Anonymous admin access rejected');
-assert.equal((await guest.request('/api/setup',{token:'invalid',email:'none@guide.test',name:'无效测试',password:'invalid123456'})).status,403);checks.push('Setup requires the private one-time credential');
+assert.equal((await guest.request('/api/setup',{token:'invalid',studentId:ownerStudentId,name:'无效测试',password:'invalid123456'})).status,403);checks.push('Setup requires the private one-time credential');
 const setup=await guest.ok('/api/setup');
 assert(setup.needsSetup,'Run verification against a fresh local database.');
 const password=crypto.randomBytes(24).toString('base64url');
-await owner.ok('/api/setup',{token:vars.BOOTSTRAP_TOKEN,email:'owner@guide.test',name:'本地测试管理员',password});
-assert.equal((await guest.request('/api/setup',{token:vars.BOOTSTRAP_TOKEN,email:'second@guide.test',name:'重复初始化',password})).status,409);checks.push('First administrator can only be created once');
+await owner.ok('/api/setup',{token:vars.BOOTSTRAP_TOKEN,studentId:ownerStudentId,name:'本地测试管理员',password});
+assert.equal((await guest.request('/api/setup',{token:vars.BOOTSTRAP_TOKEN,studentId:editorStudentId,name:'重复初始化',password})).status,409);checks.push('First administrator can only be created once');
 assert.equal((await guest.request('/api/auth/sign-up/email',{name:'Unauthorized',email:'other@guide.test',password})).status,400);checks.push('Public registration is disabled');
-await owner.ok('/api/auth/sign-in/email',{email:'owner@guide.test',password});
+await owner.ok('/api/auth/sign-in/email',{studentId:ownerStudentId,password});
 let admin=await owner.ok('/api/admin/articles');assert.equal(admin.user.role,'admin');checks.push('Ordinary password login and owner role work');
 const first=structuredClone(admin.drafts.find(d=>d.content.title==='宿舍报修流程与电话'));
 const second=structuredClone(admin.drafts.find(d=>d.content.title==='校园网无法连接'));
@@ -62,8 +64,10 @@ admin=await owner.ok('/api/admin/articles');let draft=admin.drafts.find(d=>d.id=
 const nextSave=await owner.ok('/api/admin/articles',{content:draft.content,active:true,revision:draft.revision},'PUT');
 await owner.ok('/api/admin/publish',{expectedRelease:current.release.id,selected:[{id:draft.id,revision:nextSave.revision}],summary:'本地测试：发布图片。'});
 assert.equal((await fetch(origin+upload.src)).status,200);checks.push('Publishing makes the selected uploaded image readable');
-await owner.ok('/api/auth/admin/create-user',{name:'本地测试维护者',email:'editor@guide.test',password,role:'user'});
-await editor.ok('/api/auth/sign-in/email',{email:'editor@guide.test',password});
+const invite=await owner.ok('/api/auth/admin/create-user',{name:'本地测试维护者',studentId:editorStudentId});
+const activateToken=new URLSearchParams(new URL(invite.activationUrl).hash.slice(1)).get('activate');
+await editor.ok('/api/auth/activate',{studentId:editorStudentId,token:activateToken,initialPassword:'000000',newPassword:password});
+await editor.ok('/api/auth/sign-in/email',{studentId:editorStudentId,password});
 const editorData=await editor.ok('/api/admin/articles');assert.equal(editorData.user.role,'user');
 assert.equal((await editor.request('/api/admin/export')).status,403);checks.push('Only the owner can export accounts and content for migration');
 assert.equal((await editor.request('/api/auth/admin/list-users')).status,403);checks.push('Coeditors can maintain content but cannot manage accounts');
@@ -75,11 +79,11 @@ await owner.ok('/api/admin/publish',{expectedRelease:admin.release.id,selected:[
 current=await guest.ok('/api/guide');assert(!current.articles.some(a=>a.id===first.id));assert.equal(current.release.changes[0].kind,'removed');checks.push('Unpublishing removes the article from the shared snapshot and records the change');
 assert((await guest.ok('/api/updates')).length>=4);checks.push('Public update history preserves previous announcements');
 const backup=await owner.ok('/api/admin/export');
-assert.equal(backup.format,1);assert.equal(backup.tables.releases.length,4);assert.equal(backup.images.length,25);
+assert.equal(backup.format,1);assert.equal(backup.tables.releases.length,4);assert.equal(backup.images.length,seed.media.length+1);
 assert.equal(backup.tables.account.filter(a=>a.password).length,2);
 await fs.mkdir('work',{recursive:true});
 await fs.writeFile('work/private-test-backup.json',JSON.stringify(backup));
-await fs.writeFile('work/restart-check.json',JSON.stringify({email:'owner@guide.test',password,guide:current,uploadedImage:upload.src}));
+await fs.writeFile('work/restart-check.json',JSON.stringify({studentId:ownerStudentId,password,guide:current,uploadedImage:upload.src}));
 checks.push('A private backup includes complete release history, account hashes and uploaded images');
 await owner.ok('/api/auth/sign-out',{});assert.equal((await owner.request('/api/admin/articles')).status,401);checks.push('Signing out invalidates the session');
 await fs.mkdir('work',{recursive:true});await fs.writeFile('work/verification.json',JSON.stringify({passed:checks.length,checks},null,2));

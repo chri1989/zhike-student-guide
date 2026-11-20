@@ -2,6 +2,7 @@
 import {useEffect,useMemo,useRef,useState} from 'react';
 import {ArrowLeft,ArrowUpRight,Plus,Search,Save,Eye,Send,LogOut,Users,ImagePlus,Trash2,Check,KeyRound,RefreshCw,BookOpen,Heading2,List,ListOrdered,MessageSquare} from 'lucide-react';
 import {Article,Release,categories,dateLabel,searchArticles,changeLabels} from '@/lib/guide';
+import {studentIdFromEmail,studentIdPattern} from '@/lib/student-account.mjs';
 import {Brand,CategoryIcon,Modal,ArticleBody,ArticleMeta} from './shared';
 import FeedbackInbox from './feedback-inbox';
 import type {Feedback} from '@/lib/feedback';
@@ -18,29 +19,37 @@ async function api<T=Record<string,unknown>>(url:string,body?:unknown,method?:st
 export default function AdminApp(){
   const [stage,setStage]=useState('loading'),[data,setData]=useState<AdminData|null>(null),[error,setError]=useState(''),[message,setMessage]=useState(''),[busy,setBusy]=useState(false);
   const [name,setName]=useState(''),[token,setToken]=useState('');
+  const activation=useRef('');
   const [query,setQuery]=useState(''),[categoryFilter,setCategoryFilter]=useState(''),[onlyPending,setOnlyPending]=useState(false),[edit,setEdit]=useState<Draft|null>(null),[dirty,setDirty]=useState(false),[chosen,setChosen]=useState<Set<string>>(new Set());
   const [preview,setPreview]=useState(false),[publishing,setPublishing]=useState<Draft[]>([]),[summary,setSummary]=useState(''),[membersOpen,setMembersOpen]=useState(false),[members,setMembers]=useState<Maintainer[]>([]);
-  const [memberEmail,setMemberEmail]=useState(''),[memberName,setMemberName]=useState(''),[memberPassword,setMemberPassword]=useState(''),[passwordOpen,setPasswordOpen]=useState(false),[oldPassword,setOldPassword]=useState(''),[newPassword,setNewPassword]=useState('');
+  const [memberStudentId,setMemberStudentId]=useState(''),[memberName,setMemberName]=useState(''),[activationUrl,setActivationUrl]=useState(''),[passwordOpen,setPasswordOpen]=useState(false),[oldPassword,setOldPassword]=useState(''),[newPassword,setNewPassword]=useState('');
   const [zoom,setZoom]=useState<{src:string;alt:string}|null>(null);const textarea=useRef<HTMLTextAreaElement>(null),editorArea=useRef<HTMLElement>(null);
   const [feedbackOpen,setFeedbackOpen]=useState(false);
   async function loadData(keepEdit=false){
     const next=await api<AdminData>('/api/admin/articles');setData(next);setStage('editor');if(!keepEdit)setEdit(null);return next;
   }
   useEffect(()=>{
-    const fragment=new URLSearchParams(window.location.hash.slice(1));if(fragment.get('token')){setToken(fragment.get('token')!);window.history.replaceState(null,'',window.location.pathname);}
+    const fragment=new URLSearchParams(window.location.hash.slice(1));
+    const activationToken=fragment.get('activate')||activation.current;
+    if(activationToken){activation.current=activationToken;setStage('activate');if(fragment.has('activate'))window.history.replaceState(null,'',window.location.pathname);return;}
+    if(fragment.get('token')){setToken(fragment.get('token')!);window.history.replaceState(null,'',window.location.pathname);}
     (async()=>{try{const setup=await api<{needsSetup:boolean}>('/api/setup');if(setup.needsSetup){setStage('setup');return;}await loadData();}catch(e){if((e as {status?:number}).status===401)setStage('login');else{setError((e as Error).message);setStage('login');}}})();
   },[]);
   useEffect(()=>{const guard=(e:BeforeUnloadEvent)=>{if(dirty)e.preventDefault();};window.addEventListener('beforeunload',guard);return()=>window.removeEventListener('beforeunload',guard);},[dirty]);
   async function authSubmit(e:React.FormEvent<HTMLFormElement>){
     e.preventDefault();const form=e.currentTarget,fields=new FormData(form);
-    const email=String(fields.get('email')??'').trim().toLowerCase(),password=String(fields.get('password')??'');
+    const studentId=String(fields.get('studentId')??'').trim(),password=String(fields.get('password')??'');
     setBusy(true);setError('');
     try{
-      if(stage==='setup'){await api('/api/setup',{email,password,name,token});setStage('login');setToken('');}
-      await api('/api/auth/sign-in/email',{email,password});form.reset();await loadData();
+      if(stage==='setup'){await api('/api/setup',{studentId,password,name,token});setStage('login');setToken('');}
+      if(stage==='activate'){
+        await api('/api/auth/activate',{studentId,token:activation.current,initialPassword:fields.get('initialPassword'),newPassword:password});
+        activation.current='';setStage('login');
+      }
+      await api('/api/auth/sign-in/email',{studentId,password});form.reset();await loadData();
     }catch(e){
       const failure=e as Error & {status?:number;code?:string};
-      if(failure.code==='INVALID_EMAIL_OR_PASSWORD'||failure.code==='INVALID_EMAIL')setError('邮箱或密码不正确。请使用已开通的管理员邮箱和对应密码。');
+      if(failure.code==='INVALID_EMAIL_OR_PASSWORD')setError('学号或密码不正确。');
       else if(failure.status===429)setError('登录尝试次数较多，请稍后重试。');
       else setError(failure.message);
     }finally{setBusy(false);}
@@ -93,29 +102,35 @@ export default function AdminApp(){
   async function refresh(){if(dirty&&!window.confirm('重新载入会放弃当前未保存的修改，继续？'))return;setBusy(true);try{const next=await loadData();setDirty(false);if(edit){const d=next.drafts.find(x=>x.id===edit.id);if(d)setEdit(structuredClone(d));}setError('');}catch(e){setError((e as Error).message);}finally{setBusy(false);}}
   async function loadMembers(){try{const r=await api<{users:Maintainer[]}>('/api/auth/admin/list-users');setMembers(r.users);setMembersOpen(true);}catch(e){setError((e as Error).message);}}
   async function createMember(e:React.FormEvent){
-    e.preventDefault();setBusy(true);setError('');setMessage('');
+    e.preventDefault();setBusy(true);setError('');setMessage('');setActivationUrl('');
     try{
-      await api('/api/auth/admin/create-user',{name:memberName.trim(),email:memberEmail.trim().toLowerCase(),password:memberPassword,role:'user'});
-      setMemberName('');setMemberEmail('');setMemberPassword('');await loadMembers();
-      setMessage('管理员已添加。请私下告知对方登录邮箱和临时密码。');
+      const result=await api<{activationUrl:string}>('/api/auth/admin/create-user',{name:memberName.trim(),studentId:memberStudentId.trim()});
+      setMemberName('');setMemberStudentId('');setActivationUrl(result.activationUrl);await loadMembers();
+      setMessage('管理员已添加。');
     }catch(e){
       const failure=e as Error & {code?:string};
-      setError(failure.code==='USER_ALREADY_EXISTS_USE_ANOTHER_EMAIL'?'这个邮箱已经有管理员账号。':failure.message);
+      setError(failure.code==='USER_ALREADY_EXISTS_USE_ANOTHER_EMAIL'?'这个学号已经开通管理员账号。':failure.message);
     }finally{setBusy(false);}
   }
   async function changeMember(m:Maintainer){setBusy(true);try{await api('/api/auth/admin/'+(m.banned?'unban-user':'ban-user'),{userId:m.id,...(!m.banned?{banReason:'由主管理员停用'}:{})});await loadMembers();}catch(e){setError((e as Error).message);}finally{setBusy(false);}}
-  async function resetMember(m:Maintainer){const pass=window.prompt('为 '+m.name+' 设置新的临时密码（至少 12 位）。请私下告知对方。');if(!pass)return;if(pass.length<12){setError('临时密码至少 12 位。');return;}setBusy(true);try{await api('/api/auth/admin/set-user-password',{userId:m.id,newPassword:pass});await api('/api/auth/admin/revoke-user-sessions',{userId:m.id});setMessage('该维护者的密码已重置，旧登录已失效。');}catch(e){setError((e as Error).message);}finally{setBusy(false);}}
+  async function renewActivation(m:Maintainer){
+    setBusy(true);setError('');setMessage('');setActivationUrl('');
+    try{const result=await api<{activationUrl:string}>('/api/auth/admin/activation-link',{userId:m.id});setActivationUrl(result.activationUrl);}
+    catch(e){setError((e as Error).message);}finally{setBusy(false);}
+  }
   async function changePassword(e:React.FormEvent){e.preventDefault();setBusy(true);try{await api('/api/auth/change-password',{currentPassword:oldPassword,newPassword,revokeOtherSessions:true});setPasswordOpen(false);setOldPassword('');setNewPassword('');setMessage('密码已修改，其他设备的登录已失效。');}catch(e){setError((e as Error).message);}finally{setBusy(false);}}
   async function logout(){if(dirty&&!window.confirm('有未保存的修改，仍要退出登录？'))return;try{await api('/api/auth/sign-out',{});setData(null);setEdit(null);setDirty(false);setStage('login');}catch(e){setError((e as Error).message);}}
   if(stage==='loading')return <div className="loading-state"><div className="spinner"/>正在打开管理后台…</div>;
-  if(stage!=='editor')return <div className="auth-page"><div className="auth-nav"><Brand/><a href="/">返回指南<ArrowUpRight size={15}/></a></div><main className="auth-card"><span className="auth-icon"><KeyRound size={25}/></span><span className="eyebrow">智科学代指南 · 管理后台</span><h1>{stage==='setup'?'设置首位管理员':'欢迎回来'}</h1><p>{stage==='setup'?'创建你的管理账号，之后即可邀请其他学代一起维护。':'登录后编辑指南、保存草稿和发布更新。'}</p>
+  if(stage!=='editor')return <div className="auth-page"><div className="auth-nav"><Brand/><a href="/">返回指南<ArrowUpRight size={15}/></a></div><main className="auth-card"><span className="auth-icon"><KeyRound size={25}/></span><span className="eyebrow">智科学代指南 · 管理后台</span><h1>{stage==='setup'?'设置首位管理员':stage==='activate'?'激活管理员账号':'欢迎回来'}</h1><p>{stage==='setup'?'创建你的管理账号，之后即可邀请其他学代一起维护。':stage==='activate'?'输入学号和初始密码，再设置自己的登录密码。':'登录后编辑指南、保存草稿和发布更新。'}</p>
     {error?<div className="error-banner" role="alert">{error}</div>:null}<form onSubmit={authSubmit}>
       {stage==='setup'?<><label>初始化凭证<input value={token} onChange={e=>setToken(e.target.value)} type="password" required autoComplete="off" placeholder="通过专属初始化入口自动填写"/></label><label>你的姓名<input value={name} onChange={e=>setName(e.target.value)} required maxLength={40} autoComplete="name"/></label></>:null}
-      <label>管理员邮箱<input name="email" type="email" required autoComplete="username" placeholder="已开通后台的登录邮箱"/></label><label>密码<input name="password" type="password" required minLength={stage==='setup'?12:1} autoComplete={stage==='setup'?'new-password':'current-password'} placeholder={stage==='setup'?'至少 12 位':'输入你的密码'}/></label>
-      <button className="button primary full" disabled={busy}>{busy?'正在处理…':stage==='setup'?'创建管理员并登录':'登录管理后台'}<ArrowUpRight size={16}/></button></form><p className="auth-footnote">{stage==='setup'?'初始化只需完成一次，请保管好你的账号密码。':'账号由总管理员开通。忘记密码请联系总管理员。'}</p></main><footer className="auth-footer">同学无需登录即可查阅指南</footer></div>;
+      <label>学号<input name="studentId" type="text" inputMode="numeric" pattern={studentIdPattern} maxLength={20} required autoComplete="username" placeholder="请输入学号"/></label>
+      {stage==='activate'?<label>初始密码<input name="initialPassword" type="password" inputMode="numeric" minLength={6} maxLength={6} required autoComplete="off"/></label>:null}
+      <label>{stage==='activate'?'新密码':'密码'}<input name="password" type="password" required minLength={stage==='login'?1:12} maxLength={128} autoComplete={stage==='login'?'current-password':'new-password'} placeholder={stage==='login'?'输入你的密码':'至少 12 位'}/></label>
+      <button className="button primary full" disabled={busy}>{busy?'正在处理…':stage==='setup'?'创建管理员并登录':stage==='activate'?'激活并登录':'登录管理后台'}<ArrowUpRight size={16}/></button></form><p className="auth-footnote">{stage==='setup'?'初始化只需完成一次，请保管好你的账号密码。':stage==='activate'?'激活后使用学号和新密码登录。':'管理员账号由总管理员开通。首次使用请打开激活链接。'}</p></main><footer className="auth-footer">同学无需登录即可查阅指南</footer></div>;
   const owner=data?.user.role==='admin';
   const notice=(error||message)&&!membersOpen&&!passwordOpen&&!publishing.length?<div className={edit?'admin-edit-notice':'admin-announcements'}>{error?<div className="error-banner" role="alert">{error}</div>:null}{message?<div className="success-banner" role="status"><Check size={16}/>{message}</div>:null}</div>:null;
-  return <div className="admin-app"><header className="admin-topbar"><Brand/><span className="admin-badge">{owner?'总管理员':'管理员'}</span><div className="admin-top-actions"><a href="/" target="_blank">查看网站<ArrowUpRight size={14}/></a><button aria-label="问题反馈" onClick={()=>setFeedbackOpen(true)}><MessageSquare size={16}/><span className="desktop-only">问题反馈</span></button>{owner?<button onClick={()=>{setError('');setMessage('');void loadMembers();}}><Users size={16}/>管理员账号</button>:null}<button aria-label="修改密码" onClick={()=>setPasswordOpen(true)}><KeyRound size={16}/><span className="desktop-only">修改密码</span></button><span className="user-name">{data?.user.name}</span><button aria-label="退出登录" onClick={logout}><LogOut size={17}/></button></div></header>
+  return <div className="admin-app"><header className="admin-topbar"><Brand/><span className="admin-badge">{owner?'总管理员':'管理员'}</span><div className="admin-top-actions"><a href="/" target="_blank">查看网站<ArrowUpRight size={14}/></a><button aria-label="问题反馈" onClick={()=>setFeedbackOpen(true)}><MessageSquare size={16}/><span className="desktop-only">问题反馈</span></button>{owner?<button onClick={()=>{setError('');setMessage('');setActivationUrl('');void loadMembers();}}><Users size={16}/>管理员账号</button>:null}<button aria-label="修改密码" onClick={()=>setPasswordOpen(true)}><KeyRound size={16}/><span className="desktop-only">修改密码</span></button><span className="user-name">{data?.user.name}</span><button aria-label="退出登录" onClick={logout}><LogOut size={17}/></button></div></header>
     {!edit?notice:null}
     <div className="admin-workspace"><aside className="admin-list"><div className="admin-list-heading"><h1>指南条目 <span>{data?.drafts.length}</span></h1><button className="button small-button primary" onClick={newArticle} disabled={busy}><Plus size={16}/>新增条目</button></div>
       <select className="admin-category-filter" aria-label="筛选分类" value={categoryFilter} onChange={e=>setCategoryFilter(e.target.value)}><option value="">所有分类</option>{categories.map(c=><option key={c.id} value={c.id}>{c.name}</option>)}</select>
@@ -147,7 +162,27 @@ export default function AdminApp(){
     {feedbackOpen?<Modal title="学生反馈" wide onClose={()=>setFeedbackOpen(false)}><FeedbackInbox onCreateDraft={feedbackDraft}/></Modal>:null}
     {preview&&edit?<Modal title="条目预览" wide onClose={()=>setPreview(false)}><article className="detail preview-detail"><div className="category-eyebrow"><CategoryIcon id={edit.content.category}/>{categories.find(c=>c.id===edit.content.category)?.name}</div><h1>{edit.content.title||'未填写标题'}</h1><ArticleMeta article={edit.content}/><ArticleBody article={edit.content} onImage={(src,alt)=>setZoom({src,alt})}/></article></Modal>:null}
     {publishing.length?<Modal title="发布本次更新" onClose={()=>{if(!busy)setPublishing([]);}}><p className="muted">确认后，下面的条目和更新说明会同时公开。</p><div className="change-list">{publishing.map(d=><div className="change-item" key={d.id}><span className="change-kind">{!d.active?'停用':data?.published.some(a=>a.id===d.id)?'修改':'新增'}</span><span>{d.content.title}</span></div>)}</div><label>本次更新说明<textarea rows={4} value={summary} onChange={e=>setSummary(e.target.value)} maxLength={2000} placeholder="例如：更新宿舍报修联系方式，新增校园网缴费说明。"/></label>{error?<div className="error-banner" role="alert">{error}</div>:null}<button className="button primary full" onClick={publish} disabled={busy||!summary.trim()}><Send size={16}/>{busy?'正在发布…':'确认发布到网站'}</button></Modal>:null}
-    {membersOpen?<Modal title="管理员账号" wide onClose={()=>setMembersOpen(false)}><p className="muted">管理员可以新增、编辑和发布指南。总管理员还可以管理账号。</p><div className="member-list">{members.map(m=><div className="member-row" key={m.id}><span><strong>{m.name}</strong><small>{m.email}</small></span><span>{m.role==='admin'?'总管理员':m.banned?'已停用':'管理员'}</span>{m.id!==data?.user.id?<><button className="text-button" disabled={busy} onClick={()=>resetMember(m)}>重置密码</button><button className="text-button" disabled={busy} onClick={()=>changeMember(m)}>{m.banned?'恢复':'停用'}</button></>:null}</div>)}</div><h3>添加管理员</h3><form className="member-form" onSubmit={createMember}><label>姓名<input value={memberName} onChange={e=>setMemberName(e.target.value)} required maxLength={40}/></label><label>登录邮箱<input type="email" value={memberEmail} onChange={e=>setMemberEmail(e.target.value)} required/></label><label>临时密码<input type="password" value={memberPassword} onChange={e=>setMemberPassword(e.target.value)} required minLength={12} maxLength={128} autoComplete="new-password"/></label><button className="button primary" disabled={busy}>添加管理员<Plus size={16}/></button></form>{error?<div className="error-banner" role="alert">{error}</div>:null}{message?<div className="success-banner" role="status">{message}</div>:null}</Modal>:null}
+    {membersOpen?<Modal title="管理员账号" wide onClose={()=>{setMembersOpen(false);setActivationUrl('');}}>
+      <p className="muted">管理员可以新增、编辑和发布指南。总管理员还可以管理账号。</p>
+      <div className="member-list">{members.map(m=><div className="member-row" key={m.id}>
+        <span><strong>{m.name}</strong><small>{studentIdFromEmail(m.email)??'待绑定学号'}</small></span>
+        <span>{m.role==='admin'?'总管理员':m.banned?'已停用':'管理员'}</span>
+        {m.id!==data?.user.id?<><button className="text-button" disabled={busy||m.banned} onClick={()=>renewActivation(m)}>生成激活链接</button><button className="text-button" disabled={busy} onClick={()=>changeMember(m)}>{m.banned?'恢复':'停用'}</button></>:null}
+      </div>)}</div>
+      <h3>添加管理员</h3>
+      <form className="member-form" onSubmit={createMember}>
+        <label>姓名<input value={memberName} onChange={e=>setMemberName(e.target.value)} required maxLength={40}/></label>
+        <label>学号<input type="text" inputMode="numeric" pattern={studentIdPattern} maxLength={20} value={memberStudentId} onChange={e=>setMemberStudentId(e.target.value)} required/></label>
+        <button className="button primary" disabled={busy}>添加管理员<Plus size={16}/></button>
+      </form>
+      {error?<div className="error-banner" role="alert">{error}</div>:null}
+      {message?<div className="success-banner" role="status">{message}</div>:null}
+      {activationUrl?<div>
+        <label>一次性激活链接<input value={activationUrl} readOnly onFocus={e=>e.target.select()}/></label>
+        <p className="field-help">请把链接私下发给本人。初始密码为 000000，链接 24 小时内有效。</p>
+        <button className="button" onClick={async()=>{try{await navigator.clipboard.writeText(activationUrl);setMessage('激活链接已复制。');}catch{setError('请选中激活链接后手动复制。');}}}>复制激活链接</button>
+      </div>:null}
+    </Modal>:null}
     {passwordOpen?<Modal title="修改你的登录密码" onClose={()=>setPasswordOpen(false)}><form onSubmit={changePassword}><label>原密码<input type="password" value={oldPassword} onChange={e=>setOldPassword(e.target.value)} required autoComplete="current-password"/></label><label>新密码<input type="password" value={newPassword} onChange={e=>setNewPassword(e.target.value)} required minLength={12} autoComplete="new-password"/></label>{error?<div className="error-banner">{error}</div>:null}<button className="button primary full" disabled={busy}>保存新密码</button></form></Modal>:null}
     {zoom?<Modal title={zoom.alt} onClose={()=>setZoom(null)} wide><img className="lightbox-image" src={zoom.src} alt={zoom.alt}/></Modal>:null}
   </div>;

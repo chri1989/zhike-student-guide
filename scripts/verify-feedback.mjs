@@ -4,7 +4,7 @@ import crypto from 'node:crypto';
 
 const origin='http://127.0.0.1:5173',checks=[];
 const credentials=JSON.parse(await fs.readFile('work/restart-check.json','utf8'));
-assert.equal(credentials.email,'owner@guide.test','Use the local verification account only.');
+assert.equal(credentials.studentId,'0001000001','Use the local verification account only.');
 class Client {
   cookies=new Map();
   constructor(ip){this.ip=ip;}
@@ -21,7 +21,7 @@ class Client {
 }
 async function check(name,run){await run();checks.push(name);console.log('PASS '+name);}
 const student=new Client('198.51.100.1'),owner=new Client('198.51.100.2'),editor=new Client('198.51.100.3');
-await owner.ok('/api/auth/sign-in/email',{email:credentials.email,password:credentials.password},'POST');
+await owner.ok('/api/auth/sign-in/email',{studentId:credentials.studentId,password:credentials.password},'POST');
 const guide=await student.ok('/api/guide');
 const payload={title:'校园巴士时刻在哪里查？',body:'希望补充周末校园巴士的查询入口。',contact:'feedback-test@example.invalid'};
 let submitted;
@@ -61,8 +61,12 @@ await check('Conflicting status changes cannot overwrite another maintainer',asy
   assert.equal((await owner.request('/api/admin/feedback',{id:item.id,status:'done',revision:item.revision},'PATCH')).status,409);
 });
 const editorPassword=crypto.randomBytes(24).toString('base64url');
-const user=await owner.ok('/api/auth/admin/create-user',{name:'反馈测试维护者',email:'feedback-editor@guide.test',password:editorPassword,role:'user'},'POST');
-await editor.ok('/api/auth/sign-in/email',{email:'feedback-editor@guide.test',password:editorPassword},'POST');
+const editorStudentId='0001000003';
+const invite=await owner.ok('/api/auth/admin/create-user',{name:'反馈测试维护者',studentId:editorStudentId},'POST');
+const token=new URLSearchParams(new URL(invite.activationUrl).hash.slice(1)).get('activate');
+await editor.ok('/api/auth/activate',{studentId:editorStudentId,token,initialPassword:'000000',newPassword:editorPassword},'POST');
+await editor.ok('/api/auth/sign-in/email',{studentId:editorStudentId,password:editorPassword},'POST');
+const user=await editor.ok('/api/admin/articles');
 await check('A regular maintainer can read feedback and finish processing it',async()=>{
   item=(await editor.ok('/api/admin/feedback?status=processing')).items.find(row=>row.id===submitted.id);
   await editor.ok('/api/admin/feedback',{id:item.id,status:'done',revision:item.revision},'PATCH');
