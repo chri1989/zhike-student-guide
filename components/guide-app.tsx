@@ -134,6 +134,9 @@ export default function GuideApp({articleId,historyView=false,feedbackView=false
             <SiteMetrics/>
             <section className="categories-section"><div className="section-heading"><h2>分类</h2><span>{guide.articles.length} 个条目</span></div><div className="category-grid">{categories.map(c=><button className={'category-card '+c.id} key={c.id} onClick={()=>choose(c.id)}><span className="category-icon"><CategoryIcon id={c.id} size={23}/></span><strong>{c.name}</strong><span className="card-bottom">{counts[c.id]}<ArrowUpRight size={16}/></span></button>)}</div></section>
             <section className="quick-section"><div className="shortcut-grid">{shortcuts.map(s=>{const target=guide.articles.find(a=>a.title.includes(s.term));return <a className="shortcut" key={s.title} href={target?'/guide/'+target.id:'/?q='+encodeURIComponent(s.term)}><s.icon size={19}/><span><strong>{s.title}</strong></span><ArrowUpRight size={15}/></a>;})}</div></section>
+            <a className="home-calculator-link" href="/calculator">
+              <Calculator size={22} aria-hidden="true"/>综测加分自算器<ArrowRight size={18} aria-hidden="true"/>
+            </a>
           </>:null}
           <section className="results-section"><div className="section-heading"><h2>{query?'搜索结果':category?'分类条目':'热门指南'}</h2><span>{query||category?`${filtered.length} 个结果`:<a href="/?category=all" onClick={e=>{e.preventDefault();setCategory('all');}}>查看全部<ArrowRight size={14}/></a>}</span></div>
             <div className="mobile-filters">{(query||category)?<><button className={!category||category==='all'?'selected':''} onClick={()=>setCategory('all')}>全部</button>{categories.map(c=><button key={c.id} className={category===c.id?'selected':''} onClick={()=>setCategory(c.id)}>{c.name}</button>)}</>:null}</div>
