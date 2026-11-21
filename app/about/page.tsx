@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 
 type Photo = [file: string, width: number, height: number, caption: string];
 
-function AboutGallery({ photos, documents = false }: {photos: Photo[]; documents?: boolean}) {
+function AboutGallery({ photos, documents = false, hideCaptions = false }: {photos: Photo[]; documents?: boolean; hideCaptions?: boolean}) {
   return <div className={'about-gallery'+(documents?' about-gallery-documents':'')}>
     {photos.map(([file,width,height,caption]) => {
       const src='/about/'+file+'.webp';
@@ -16,7 +16,7 @@ function AboutGallery({ photos, documents = false }: {photos: Photo[]; documents
         <a href={src} target="_blank" rel="noreferrer" aria-label={'查看'+caption+'的大图'}>
           <img src={src} width={width} height={height} alt={caption} loading="lazy" decoding="async"/>
         </a>
-        <figcaption>{caption}</figcaption>
+        {hideCaptions ? null : <figcaption>{caption}</figcaption>}
       </figure>;
     })}
   </div>;
@@ -101,7 +101,7 @@ function AboutArticle() {
         <section className="about-feature" aria-labelledby="about-capsule">
           <h3 id="about-capsule">时光胶囊</h3>
           <p>「一纸时光·两载回响」邀请同学用信、照片、文字、歌曲或涂鸦留下这一段校园记忆。学代团完成前期策划后发布征集推文，再收集整理作品，共收到 49 份时光胶囊。活动结束后发布总结，展示了部分公开作品。</p>
-          <AboutGallery documents photos={[
+          <AboutGallery documents hideCaptions photos={[
             ['capsule-invitation',579,1207,'时光胶囊活动征集推文'],
             ['capsule-recap',608,1207,'时光胶囊活动总结推文'],
             ['time-capsule',477,660,'公开作品中的旅途照片与文字'],
@@ -129,7 +129,7 @@ function AboutArticle() {
           <h3 id="about-running">码上开跑</h3>
           <p>这是面向智科院同学的跑步打卡活动，以「科技＋运动」鼓励同学走出宿舍、养成运动习惯。见面会回顾的往届活动有 201 名同学参与，累计打卡 3,599 次。单月最高打卡 40 次，有 26 名同学获得「周周跑」标兵称号。</p>
           <p>荧光夜跑开幕式上，师生一起热身，再沿跑道开跑。见面会记录了集合、荧光手环和跑步现场。</p>
-          <AboutGallery photos={[
+          <AboutGallery hideCaptions photos={[
             ['night-run-warmup',1080,720,'荧光夜跑开始前的集体热身'],
             ['night-run-bracelets',769,512,'参加者展示荧光手环'],
             ['night-run-start',695,480,'荧光夜跑开幕式'],
