@@ -100,8 +100,8 @@ export function XiaozhiChat() {
               <p className="xiaozhi-question">{turn.question}</p>
               <div className="xiaozhi-answer">
                 <p>{turn.answer}</p>
-                {turn.sources.length > 0 && <ul className="xiaozhi-references" aria-label="指南依据">{turn.sources.map(source => <li key={source.id}><a href={source.href}>
-                  <BookOpen size={16}/><span><strong>依据《{source.title}》</strong>{source.summary?<small>{source.summary}</small>:null}</span><ArrowUpRight size={15}/>
+                {turn.sources.length > 0 && <ul className="xiaozhi-references" aria-label="站内链接">{turn.sources.map(source => <li key={source.id}><a href={source.href}>
+                  <BookOpen size={16}/><span><strong>{source.kind==='入口'?`打开${source.title}`:source.kind==='推文'?source.title:`依据《${source.title}》`}</strong>{source.summary?<small>{source.summary}</small>:null}</span><ArrowUpRight size={15}/>
                 </a></li>)}</ul>}
                 {turn.resources?.length ? <ul className="xiaozhi-references" aria-label="学校与学院资源">{turn.resources.map(source=><li key={source.href}><a href={source.href} target="_blank" rel="noreferrer"><BookOpen size={16}/><span>{source.title}</span><ArrowUpRight size={15}/></a></li>)}</ul>:null}
               </div>
