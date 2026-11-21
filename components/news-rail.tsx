@@ -99,7 +99,7 @@ export default function NewsRail() {
 
   return <section className="home-news" aria-labelledby="home-news-title">
     <div className="section-heading">
-      <h2 id="home-news-title">学代团News</h2>
+      <h2 id="home-news-title">学院News</h2>
       <a href="/news">查看全部<ArrowRight size={15}/></a>
     </div>
     <a className="news-feature" href={`/news/${featuredNewsPost.id}.pdf`}>

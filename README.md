@@ -1,12 +1,12 @@
 # 智科学代指南
 
-[正式站](https://zhikeguide.cn/)面向暨南大学珠海校区同学，由智能科学与工程学院／人工智能产业学院学生代表团建设和维护。站内提供校园指南、诉求追踪、小智问答、学代团 News 和综测加分自算器。
+[正式站](https://zhikeguide.cn/)面向暨南大学珠海校区同学，由智能科学与工程学院／人工智能产业学院学生代表团建设和维护。站内提供校园指南、诉求追踪、小智问答、学院News 和综测加分自算器。
 
 ## 当前状态
 
 正式站的指南数量和近 30 天发布次数由首页「智科数智服务看板」实时显示。[联系学代](https://zhikeguide.cn/contact)提供反馈渠道，[诉求追踪墙](https://zhikeguide.cn/feedback-progress)展示已审核公开的办理进展。同一次访问对同一指南只能点赞一次。
 
-[小智](https://zhikeguide.cn/xiaozhi)使用通义千问 Flash，保留最近三轮问答上下文。校园回复可附站内指南引用卡片，成长咨询可查看校院公开资源。[学代团 News](https://zhikeguide.cn/news)按发布日期展示推文原稿，[综测加分自算器](https://zhikeguide.cn/calculator)采用学院 2026 年 4 月第一次修订的方案。
+[小智](https://zhikeguide.cn/xiaozhi)使用通义千问 Flash，保留最近三轮问答上下文。校园回复可附站内指南引用卡片，成长咨询可查看校院公开资源。[学院News](https://zhikeguide.cn/news)按发布日期展示推文原稿，[综测加分自算器](https://zhikeguide.cn/calculator)采用学院 2026 年 4 月第一次修订的方案。
 
 ## 从哪里接手
 

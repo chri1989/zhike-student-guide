@@ -80,7 +80,7 @@ export default function GuideApp({articleId,historyView=false,feedbackView=false
         {categories.map(c=><button key={c.id} className={'nav-item '+(category===c.id||article?.category===c.id?'active':'')} onClick={()=>choose(c.id)}><CategoryIcon id={c.id} size={19}/>{c.name}<span>{counts[c.id]||''}</span></button>)}
       </nav><div className="sidebar-label spaced">了解更多</div>
       <a className={'nav-item '+(contentPage?.title==='关于我们'?'active':'')} href="/about" aria-current={contentPage?.title==='关于我们'?'page':undefined}><DelegateIcon/>关于我们</a>
-      <a className={'nav-item '+(contentPage?.title==='学代团News'?'active':'')} href="/news"><Newspaper size={19} aria-hidden="true"/>学代团News</a>
+      <a className={'nav-item '+(contentPage?.title==='学院News'?'active':'')} href="/news"><Newspaper size={19} aria-hidden="true"/>学院News</a>
       <a className={'nav-item '+(contentPage?.title==='诉求追踪墙'?'active':'')} href="/feedback-progress"><ClipboardList size={19} aria-hidden="true"/>诉求追踪墙</a>
       <a className={'nav-item '+(contentPage?.title==='综测加分自算器'?'active':'')} href="/calculator"><Calculator size={19} aria-hidden="true"/>综测加分自算器</a>
       <a href="/updates" className={'nav-item '+(historyView?'active':'')}><History size={19}/>更新记录</a>
