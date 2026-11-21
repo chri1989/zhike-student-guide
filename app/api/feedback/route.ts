@@ -27,7 +27,13 @@ export async function POST(request:Request) {
     const allowance=await db.prepare('INSERT INTO feedback_limits(key,count,expires_at) VALUES(?,1,?) ON CONFLICT(key) DO UPDATE SET count=count+1 WHERE count<60').bind(hash,(window+1)*600000).run();
     if(allowance.meta.changes!==1) throw new HttpError(429,'提交较频繁，请过几分钟再试。');
     const id=crypto.randomUUID(),now=new Date().toISOString();
-    await db.prepare("INSERT INTO feedback(id,title,body,contact,article_id,status,revision,created_at,updated_at) VALUES(?,?,?,?,?,'new',1,?,?)").bind(id,title.trim(),body.trim(),contact.trim(),articleId,now,now).run();
-    return reply({ok:true,id},201);
+    const reference=(id.slice(0,4)+'-'+id.slice(4,8)).toUpperCase();
+    await db.batch([
+      db.prepare("INSERT INTO feedback(id,title,body,contact,article_id,status,revision,created_at,updated_at) VALUES(?,?,?,?,?,'new',1,?,?)")
+        .bind(id,title.trim(),body.trim(),contact.trim(),articleId,now,now),
+      db.prepare("INSERT INTO feedback_progress(feedback_id,title,summary,stage,updated_at) VALUES(?,?,?,'received',?)")
+        .bind(id,'校园问题反馈 '+reference,'已收到网站反馈，等待学代受理。',now),
+    ]);
+    return reply({ok:true,id,reference},201);
   }catch(error){return fail(error);}
 }

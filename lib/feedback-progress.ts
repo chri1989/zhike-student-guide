@@ -1,8 +1,8 @@
 export const progressStages = {
   received: '待受理',
-  following: '学代跟进中',
-  referred: '已对接部处',
-  resolved: '已解决并收录为指南',
+  following: '学代跟进',
+  referred: '对接部处',
+  resolved: '已收录',
 } as const;
 
 export type ProgressStage = keyof typeof progressStages;

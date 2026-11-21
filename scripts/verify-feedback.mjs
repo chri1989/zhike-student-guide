@@ -26,7 +26,14 @@ const guide=await student.ok('/api/guide');
 const payload={title:'校园巴士时刻在哪里查？',body:'希望补充周末校园巴士的查询入口。',contact:'feedback-test@example.invalid'};
 let submitted;
 await check('An anonymous student can submit and receives no private fields',async()=>{
-  const result=await student.request('/api/feedback',payload,'POST');assert.equal(result.status,201);assert.deepEqual(Object.keys(result.data).sort(),['id','ok']);submitted=result.data;
+  const result=await student.request('/api/feedback',payload,'POST');assert.equal(result.status,201);assert.deepEqual(Object.keys(result.data).sort(),['id','ok','reference']);submitted=result.data;
+  assert.match(submitted.reference,/^[0-9A-F]{4}-[0-9A-F]{4}$/);
+});
+await check('The new request is visible as an anonymous pending record',async()=>{
+  const overview=await student.ok('/api/site-overview');
+  const card=overview.progress.find(row=>row.id===submitted.id);
+  assert.equal(card.title,'校园问题反馈 '+submitted.reference);assert.equal(card.stage,'received');
+  assert(!JSON.stringify(card).includes(payload.title)&&!JSON.stringify(card).includes(payload.body)&&!JSON.stringify(card).includes(payload.contact));
 });
 await check('Students cannot list feedback or read the maintenance inbox',async()=>{
   assert.equal((await student.request('/api/feedback')).status,405);assert.equal((await student.request('/api/admin/feedback')).status,401);
@@ -67,10 +74,27 @@ const token=new URLSearchParams(new URL(invite.activationUrl).hash.slice(1)).get
 await editor.ok('/api/auth/activate',{studentId:editorStudentId,token,initialPassword:'000000',newPassword:editorPassword},'POST');
 await editor.ok('/api/auth/sign-in/email',{studentId:editorStudentId,password:editorPassword},'POST');
 const user=await editor.ok('/api/admin/articles');
+assert.equal(user.user.role,'user');
 await check('A regular maintainer can read feedback and finish processing it',async()=>{
   item=(await editor.ok('/api/admin/feedback?status=processing')).items.find(row=>row.id===submitted.id);
   await editor.ok('/api/admin/feedback',{id:item.id,status:'done',revision:item.revision},'PATCH');
   assert((await owner.ok('/api/admin/feedback?status=done')).items.some(row=>row.id===item.id));
+});
+await check('A regular maintainer can edit the public record and move it among all four stages',async()=>{
+  const path='/api/admin/feedback-progress',id=submitted.id;
+  const draft={id,title:'公开报修进展',summary:'学代已整理可公开的情况。',guideId:'',stage:'resolved',revision:1};
+  assert.equal((await student.request(path,draft,'PUT')).status,401);
+  assert.equal((await editor.request(path,draft,'PUT')).status,400);
+  const published=guide.articles[0].id;
+  for(const stage of ['following','referred','resolved','received','resolved']){
+    const {record}=await editor.ok(path+'?id='+id);
+    await editor.ok(path,{...draft,stage,guideId:stage==='resolved'?published:'',revision:record.revision},'PUT');
+    const overview=await student.ok('/api/site-overview');
+    const card=overview.progress.find(row=>row.id===id);
+    assert.equal(card.stage,stage);assert.equal(card.title,draft.title);
+    assert.equal(card.summary,draft.summary);assert.equal(card.guide?.id,stage==='resolved'?published:undefined);
+    assert.equal(overview.resolved,stage==='resolved'?1:0);
+  }
 });
 await check('Invalid status, malformed edits and cross-site updates are rejected',async()=>{
   for(const value of [{id:item.id,status:'__proto__',revision:1},{id:item.id,status:'new',revision:0},null,'{'])assert.equal((await owner.request('/api/admin/feedback',value,'PATCH')).status,400);

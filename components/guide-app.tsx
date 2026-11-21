@@ -121,6 +121,10 @@ export default function GuideApp({articleId,historyView=false,feedbackView=false
             <form className="search-box" onSubmit={searchSubmit}><Search size={23}/><input ref={searchRef} value={query} onChange={e=>setQuery(e.target.value)} placeholder="搜索校园信息" aria-label="搜索指南"/>{query?<button type="button" className="icon-button" aria-label="清空搜索" onClick={()=>setQuery('')}><X size={18}/></button>:<kbd className="desktop-only">Ctrl K</kbd>}</form>
             <XiaozhiLauncher/>
           </div>
+          {category==='network'?<section className="network-support" aria-label="校园网络模块支持">
+            <p><strong>本模块内容全部由珠海校区勤工助学-网络服务中心提供支持</strong></p>
+            <p>欢迎有意愿致力于校园网服务的同学联系勤工助学部门 <span aria-hidden="true">🐾</span></p>
+          </section>:null}
           {!query&&homeView?<NewsRail/>:null}
           <nav className="guide-mobile-links" aria-label="常用入口">
             <a href="/updates"><History size={16} aria-hidden="true"/>更新记录</a>
