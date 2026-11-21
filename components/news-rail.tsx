@@ -1,8 +1,10 @@
 'use client';
 
 import { useEffect, useRef } from 'react';
-import { ArrowRight } from 'lucide-react';
-import { newsPosts } from '@/lib/news';
+import { ArrowRight, ArrowUpRight } from 'lucide-react';
+import { featuredNewsPost, newsPosts } from '@/lib/news';
+
+const carouselPosts = newsPosts.filter(post => post.id !== featuredNewsPost.id);
 
 export default function NewsRail() {
   const rail = useRef<HTMLDivElement>(null);
@@ -100,11 +102,18 @@ export default function NewsRail() {
       <h2 id="home-news-title">学代团News</h2>
       <a href="/news">查看全部<ArrowRight size={15}/></a>
     </div>
+    <a className="news-feature" href={`/news/${featuredNewsPost.id}.pdf`}>
+      <img src={`/news/${featuredNewsPost.id}.webp`} width={1080} height={458} alt="" decoding="async"/>
+      <div className="news-feature-caption">
+        <div><time dateTime={featuredNewsPost.date}>{featuredNewsPost.date}</time><h3>{featuredNewsPost.title}</h3></div>
+        <ArrowUpRight size={20} aria-hidden="true"/>
+      </div>
+    </a>
     <div className="news-marquee" ref={rail}>
       <div className="news-track">
         {['before', 'original', 'after'].map(copy => <div key={copy} className="news-strip"
           ref={copy === 'original' ? originalStrip : undefined} aria-hidden={copy !== 'original' || undefined}>
-          {newsPosts.map(post => <a className="news-card" key={post.id} tabIndex={copy === 'original' ? undefined : -1} href={`/news/${post.id}.pdf`}>
+          {carouselPosts.map(post => <a className="news-card" key={post.id} tabIndex={copy === 'original' ? undefined : -1} href={`/news/${post.id}.pdf`}>
             <img src={`/news/${post.id}.webp`} alt="" decoding="async"/>
             <div><time dateTime={post.date}>{post.date}</time><h3>{post.title}</h3></div>
           </a>)}
