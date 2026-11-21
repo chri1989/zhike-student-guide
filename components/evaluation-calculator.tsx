@@ -10,18 +10,20 @@ type Report=ReturnType<typeof evaluateScores>;
 
 function RuleInput({rule,value,setValue}:{rule:EvaluationRule;value:string;setValue:(v:string)=>void}) {
   const fieldId='eval-'+rule.id;
+  const points=rule.factor&&rule.kind==='count'?`${rule.factor>0?'+':''}${rule.factor} 分／项`:'';
+  const detail=[points,rule.note].filter(Boolean).join('，');
+  const descriptionId=detail?fieldId+'-detail':undefined;
   return <div className="evaluation-rule">
     <div><label htmlFor={fieldId}>{rule.label}</label>
-      {rule.factor&&rule.kind==='count'?<small>{rule.factor>0?'+':''}{rule.factor} 分／项</small>:null}
-      {rule.note?<details><summary>查看计分口径</summary><p>{rule.note}</p></details>:null}
+      {detail?<span id={descriptionId} className="evaluation-rule-note">（{detail}）</span>:null}
     </div>
-    {rule.kind==='flag'||rule.kind==='toggle'?<input id={fieldId} type="checkbox" checked={value==='1'} onChange={e=>setValue(e.target.checked?'1':'')}/>
-    :rule.kind==='choice'?<select id={fieldId} value={value||'0'} onChange={e=>setValue(e.target.value)}>{rule.options?.map(option=><option key={option.label} value={option.score}>{option.label}（{option.score} 分）</option>)}</select>
+    {rule.kind==='flag'||rule.kind==='toggle'?<input id={fieldId} aria-describedby={descriptionId} type="checkbox" checked={value==='1'} onChange={e=>setValue(e.target.checked?'1':'')}/>
+    :rule.kind==='choice'?<select id={fieldId} aria-describedby={descriptionId} value={value||'0'} onChange={e=>setValue(e.target.value)}>{rule.options?.map(option=><option key={option.label} value={option.score}>{option.label}（{option.score} 分）</option>)}</select>
     :rule.kind==='count'?<div className="evaluation-stepper">
       <button type="button" aria-label={'减少'+rule.label} onClick={()=>setValue(String(Math.max(0,(Number(value)||0)-1)))}><Minus size={15}/></button>
-      <input id={fieldId} type="text" inputMode="numeric" value={value||'0'} onChange={e=>setValue(e.target.value.replace(/[^0-9]/g,''))}/>
+      <input id={fieldId} aria-describedby={descriptionId} type="text" inputMode="numeric" value={value||'0'} onChange={e=>setValue(e.target.value.replace(/[^0-9]/g,''))}/>
       <button type="button" aria-label={'增加'+rule.label} onClick={()=>setValue(String((Number(value)||0)+1))}><Plus size={15}/></button>
-    </div>:<input id={fieldId} type="text" inputMode="decimal" value={value} placeholder="0" onChange={e=>setValue(e.target.value)}/>}
+    </div>:<input id={fieldId} aria-describedby={descriptionId} type="text" inputMode="decimal" value={value} placeholder="0" onChange={e=>setValue(e.target.value)}/>}
   </div>;
 }
 
@@ -52,7 +54,7 @@ export default function EvaluationCalculator() {
 
   return <section className="evaluation-page">
     <div className="page-heading"><h1>综测加分自算器</h1></div>
-    <p>按 2026 年 4 月第一次修订的学院方案核算。填写结果暂存在当前浏览器。</p>
+    <p>按 2026 年 4 月第一次修订的学院方案核算。</p>
     <nav className="evaluation-nav" aria-label="综测计算板块"><a href="#eval-base">基础信息</a>{evaluationModules.map(m=><a key={m.id} href={'#'+m.id} onClick={()=>{const el=document.getElementById(m.id);if(el instanceof HTMLDetailsElement)el.open=true;}}>{m.label}</a>)}</nav>
     <section id="eval-base" className="evaluation-group">
       <h2>基础信息</h2>
