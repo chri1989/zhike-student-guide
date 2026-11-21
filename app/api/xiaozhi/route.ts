@@ -8,6 +8,7 @@ export const runtime = 'nodejs';
 export const dynamic = 'force-dynamic';
 
 const model = 'qwen-flash';
+const dailyLimit = 110;
 const unavailable = '小智暂时没能回复，请稍后再试。';
 const chinaDay = new Intl.DateTimeFormat('en-CA', { timeZone: 'Asia/Shanghai', dateStyle: 'short' });
 const questionSchema = z.string().trim().min(1).max(500);
@@ -86,8 +87,8 @@ export async function POST(request: Request) {
 
     const db = bindings().DB;
     await db.prepare('CREATE TABLE IF NOT EXISTS xiaozhi_usage (day TEXT PRIMARY KEY, count INTEGER NOT NULL)').run();
-    const usage = await db.prepare('INSERT INTO xiaozhi_usage(day,count) VALUES(?,1) ON CONFLICT(day) DO UPDATE SET count=count+1 WHERE count<100')
-      .bind(chinaDay.format(Date.now())).run();
+    const usage = await db.prepare('INSERT INTO xiaozhi_usage(day,count) VALUES(?,1) ON CONFLICT(day) DO UPDATE SET count=count+1 WHERE count<?')
+      .bind(chinaDay.format(Date.now()),dailyLimit).run();
     if (usage.meta.changes !== 1) throw new HttpError(429, '小智今天的对话额度已用完，明天可以继续聊。');
 
     const evidence = articles.map(({ title, summary, body }, index) => ({ ref: index + 1, title, summary, body: body.slice(0, 1200) }));
